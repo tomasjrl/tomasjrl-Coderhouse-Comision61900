@@ -20,6 +20,78 @@
   text-align: center;
 }
 
+main {
+  padding-top: 3.33rem;
+}
+
+/* HEADER BOOTSTRAP */ 
+
+header nav.navbar {
+  background-color: var(--color-negro);
+}
+
+.navbar-nav.ms-auto {
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+.navbar-brand:hover {
+  color: var(--color-crema);
+  transition: 0.2s;
+}
+
+#navbarNavAltMarkup {
+  transition: 0.2s;
+}
+
+.navbar-toggler {
+  color: var(--color-negro);
+}
+
+.fas.fa-bars {
+  color: var(--color-blanco);
+  font-size: 1.7rem;
+}
+
+.fas.fa-bars:hover {
+  color: var(--color-crema);
+  transition: 0.2s;
+}
+
+.navbar-nav {
+width: 100%;
+justify-content: space-evenly;
+}
+
+.navbar-nav a {
+  color: var(--color-blanco);
+  font-weight: 200;
+  width: 7rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+a[aria-current="page"] {
+  background-color: var(--color-crema);
+  color: var(--color-negro);
+}
+
+.nav-link:hover {
+  background-color: var(--color-crema);
+  color: var(--color-negro);
+  transition: 0.2s;
+}
+
+header .logo-2 {
+  display: none;
+}
+
+
+
 /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
 h1,
 h2,
@@ -71,68 +143,9 @@ strong {
   letter-spacing: 0.25rem;
 }
 
-/* ----------------- HEADER UNIVERSAL----------------- */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-nav.menu {
-  background-color: var(--color-negro);
-  width: 100%;
-  height: 4.5rem;
-  padding: 0 1.5rem;
-}
-
-nav.menu ul {
-  float: right;
-}
-
-nav.menu ul li {
-  display: inline-block;
-  line-height: 4.5rem;
-}
-
-nav.menu ul li a {
-  color: var(--color-blanco);
-  font-weight: 300;
+a {
+  text-decoration: none;
   letter-spacing: 0.125rem;
-  padding: 0.7rem;
-  border-radius: 10px;
-  margin-left: 1.5rem;
-}
-
-label.logo,
-label.logo-2 {
-  color: var(--color-blanco);
-  font-weight: 300;
-  letter-spacing: 0.125rem;
-  font-size: 2.4rem;
-  line-height: 4.5rem;
-  cursor: pointer;
-  float: left;
-}
-
-label.logo-2,
-.boton-checkbox {
-  display: none;
-}
-
-.boton-hamburguesa {
-  font-size: 1.75rem;
-  color: var(--color-blanco);
-  float: right;
-  line-height: 4.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-nav.menu ul li a:hover,
-nav.menu ul li a.active {
-  color: var(--color-negro);
-  background-color: var(--color-crema);
-  transition: 0.2s;
 }
 
 /* ----------------- FOOTER UNIVERSAL----------------- */
@@ -151,9 +164,6 @@ footer div#redes ul {
   gap: 3rem;
 }
 
-/* ----------------- / HEADER / FOOTER / UNIVERSAL----------------- */
-header nav.menu label.logo a:hover,
-header nav.menu label.logo-2 a:hover,
 footer div#redes ul li a:hover {
   color: var(--color-crema);
   transition: 0.2s;
@@ -481,53 +491,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   p {
     font-size: 0.95rem;
   }
-  /* ----------------- HEADER UNIVERSAL ----------------- */
-  header {
-    position: sticky;
-    z-index: 2;
-  }
-
-  label.logo,
-  label.logo-2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-
-  nav.menu {
-    height: 3rem;
-  }
-
-  nav.menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: var(--color-negro);
-    top: 3rem;
-    left: -100%;
-    transition: all 0.5s;
-  }
-
-  nav.menu ul li a {
-    margin-left: 0;
-  }
-
-  .boton-hamburguesa {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 3rem;
-  }
-
-  .boton-hamburguesa:hover {
-    color: var(--color-crema);
-    transition: 0.2s;
-  }
-
-  .boton-checkbox:checked ~ ul {
-    left: 0;
-  }
 
   /* ----------------- INDEX.HTML SECCION TOP----------------- */
   .section-top {
@@ -635,17 +598,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
 /* ----------------- MEDIAQUERIES 540px----------------- */
 
 @media (max-width: 540px) {
-  /* ----------------- HEADER UNIVERSAL ----------------- */
-  nav.menu ul {
-    flex-direction: column;
-    height: auto;
-    top: 2.5rem;
-  }
-
-  nav.menu ul li {
-    line-height: 3rem;
-  }
-
   /* ----------------- FOOTER UNIVERSAL----------------- */
   footer div#redes ul {
     gap: 1rem;
@@ -741,11 +693,11 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
 
 @media (max-width: 280px) {
   /* ----------------- HEADER UNIVERSAL----------------- */
-  label.logo {
+  header .logo {
     display: none;
   }
 
-  label.logo-2 {
+  header .logo-2 {
     display: block;
   }
   /* ----------------- FOOTER UNIVERSAL----------------- */
