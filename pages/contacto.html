@@ -42,7 +42,7 @@
          <!-- LOGO -->
         
       <label class="logo"><a href="../index.html">MusicArte</a></label>
-      <!-- LISTA DESORDENADA -->
+      <label class="logo-2"><a href="../index.html">♪</a></label>      <!-- LISTA DESORDENADA -->
       <ul class="listado">
           <li class="lista"><a href="../index.html">Inicio</a></li>
           <li class="lista"><a href="piano.html">Piano</a></li>
@@ -59,6 +59,7 @@
 
     <!-- MAIN PRINCIPAL -->
     <main class="contacto">
+      <div class="contenedor">
       <!-- SECCION 1 -->
       <section class="section1">
         <h1>Aprende con nosotros</h1>
@@ -78,10 +79,10 @@
       </section>
       <!-- FIN SECCION 2 -->
 
-      <!-- SECCION 3 -->  <!-- EL USO DE <br> ES TEMPORAL-->
+      <!-- SECCION 3 -->
       <div class="section3">
         <form action="/enviar.php" method="POST">
-          <label for="name">Nombre</label>  <br>
+          <label for="name">Nombre</label>
           <input
             type="text"
             id="name"
@@ -89,8 +90,8 @@
             required
             pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
             placeholder="Escribe tu nombre"
-            > <br>
-          <label for="lastname">Apellido</label> <br>
+            >
+          <label for="lastname">Apellido</label>
           <input
             type="text"
             id="lastname"
@@ -98,8 +99,8 @@
             required
             pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
             placeholder="Escribe tu apellido"
-            > <br>
-          <label for="edad">Edad</label> <br>
+            >
+          <label for="edad">Edad</label>
           <input
             type="number"
             id="edad"
@@ -107,9 +108,9 @@
             min="1"
             placeholder="Escribe tu edad"
             required
-            > <br>
+            >
 
-          <label for="email">Correo electrónico</label> <br>
+          <label for="email">Correo</label>
           <input
             type="email"
             id="email"
@@ -117,8 +118,8 @@
             required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             placeholder="ejemplo@correo.com"
-            > <br>
-          <label for="phone">Teléfono</label> <br>
+            >
+          <label for="phone">Teléfono</label>
           <input
             type="tel"
             id="phone"
@@ -127,8 +128,8 @@
             required
             minlength="10"
             pattern="[0-9]{10,}"
-            > <br>
-          <label for="mensaje">Mensaje</label> <br>
+            >
+          <label for="mensaje">Mensaje</label>
           <textarea
             id="mensaje"
             name="mensaje"
@@ -137,21 +138,22 @@
             required
             placeholder="¡Escribe tu consulta aquí!"
           ></textarea
-          > <br>
+          >
+          <div class="checkbox">
           <input
             type="checkbox"
             id="checkbox"
             name="actividades"
             value="checkbox"
             required
-            > <br>
-          <label for="checkbox">No soy un robot</label> <br>
-
-          <button type="submit">Enviar</button> 
+            >
+          <label for="checkbox">No soy un robot</label>
+        </div>
+          <button type="submit">Enviar</button>
         </form>
         <!-- FIN SECCION 3 -->
       </div>
-
+    </div>
       <!-- FIN MAIN PRINCIPAL -->
     </main>
 
@@ -181,5 +183,8 @@
     <!-- FIN BODY -->
   </body>
 
+  <!-- ENLACE A JAVASCRIPT 
+  <script src="assets/js/index.js"></script>
+-->
   <!-- FIN HTML -->
 </html>

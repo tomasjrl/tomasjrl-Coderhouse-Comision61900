@@ -1,137 +1,131 @@
-/* FUENTE TIPOGRAFICA DE GOOGLEFONT */
+/* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
 
-/* SELECTOR DE VARIABLES CSS */
+/* ----------------- COLORES VARIABLES CSS----------------- */
 :root {
-  /* COLORES */
   --color-negro: #1b1a19;
   --color-blanco: #eaeaea;
   --color-crema: #e1ca53;
 }
 
-/* ------------------------- */
-
-/* UNIVERSALES */
-
+/* ----------------- UNIVERSALES----------------- */
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  text-align: center;
 }
 
-* img {  /* propiedades TEMPORALES hasta aplicar flexbox o grid */
-  width: 200px;
-border-radius: 10px;
-border: solid 1px var(--color-crema) 
-}
-
-/* ------------------------- */
-
-/* COLOR TITULOS Y TEXTOS UNIVERSALES */
+/* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
 h1,
 h2,
 h3,
 h4,
-p {
+p,
+a {
   color: var(--color-blanco);
 }
 
-/* ------------------------- */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
 
-/* PESO TITULOS UNIVERSALES */
+h4 {
+  font-size: 0.7rem;
+  letter-spacing: 0.125rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
 
 h1,
 h1 strong,
 h2,
 h2 strong {
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
-/* PESO TEXTOS UNIVERSALES */
+p {
+  font-size: 1.2rem;
+}
 
 p,
 strong {
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
-/* ------------------------- */
-
-/* COLOR Y PESO TEXTOS = HEADER Y FOOTER UNIVERSALES */
-
-header a,
-footer a {
-  color: var(--color-blanco);
-  letter-spacing: 4px;
+/* ----------------- HEADER UNIVERSAL----------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
-
-/* ------------------------- */
-
-/* TAMAñO TITULOS Y TEXTO UNIVERSALES */
-
-h1 {
-  font-size: 2.5em;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-h4 {
-  font-size: .7em;
-  letter-spacing: 2px;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-/* ------------------------- */
-
-/* HEADER UNIVERSAL */
-
 
 nav.menu {
   background-color: var(--color-negro);
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+}
+
+nav.menu ul {
+  float: right;
+}
+
+nav.menu ul li {
+  display: inline-block;
+  line-height: 4.5rem;
 }
 
 nav.menu ul li a {
   color: var(--color-blanco);
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-left: 1.5rem;
 }
 
-label.logo {
+label.logo,
+label.logo-2 {
   color: var(--color-blanco);
   font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 35px;
+  letter-spacing: 0.125rem;
+  font-size: 2.4rem;
+  line-height: 4.5rem;
   cursor: pointer;
+  float: left;
 }
 
-label.logo:hover {
-  color: var(--color-crema);
-  transition: 0.2s;
-}
-
-.boton-hamburguesa { /* se agregará con mediaqueries */
-  color: var(--color-blanco);
-  cursor: pointer;
+label.logo-2,
+.boton-checkbox {
   display: none;
 }
 
-.boton-checkbox { /* se agregará con mediaqueries */
-  display: none; 
+.boton-hamburguesa {
+  font-size: 1.75rem;
+  color: var(--color-blanco);
+  float: right;
+  line-height: 4.5rem;
+  cursor: pointer;
+  display: none;
 }
 
 nav.menu ul li a:hover,
@@ -141,145 +135,632 @@ nav.menu ul li a.active {
   transition: 0.2s;
 }
 
-/* ------------------------- */
-
-/* FOOTER UNIVERSAL */
-
+/* ----------------- FOOTER UNIVERSAL----------------- */
 footer {
   background-color: var(--color-negro);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
 }
 
-/* ------------------------- */
+footer div#redes ul {
+  display: flex;
+  gap: 3rem;
+}
 
-/* HEADER MAIN FOOTER UNIVERSAL */
-
+/* ----------------- / HEADER / FOOTER / UNIVERSAL----------------- */
 header nav.menu label.logo a:hover,
+header nav.menu label.logo-2 a:hover,
 footer div#redes ul li a:hover {
   color: var(--color-crema);
   transition: 0.2s;
 }
 
-main {
-  text-align: center;
-  }
+/* ----------------- INDEX.HTML ----------------- */
 
-/* ------------------------- */
+.main {
+  margin: auto;
+  max-width: 90%;
+  height: 100%;
+}
 
-/* INDEX.HTML MAIN */
-
-main.index {
+main#index {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
     url(../assets/img/background/1.png);
   background-size: cover;
   background-position: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* ------------------------- */
-
-/* INDEX.HTML SECCION TOP */
-
-/* ------------------------- */
-
-/* INDEX.HTML SECCION 1 */
-
-/* ------------------------- */
-
-/* INDEX.HTML SECCION 2 */
-
-/* ------------------------- */
-
-/* INDEX.HTML SECCION 3  */
-
-main.index .section3 {
-  text-align: center;
+/* ----------------- INDEX.HTML SECCION TOP----------------- */
+.section-top {
+  width: 100%;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-main.index .section3 .divisor3 .mapa {
+.section-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------- INDEX.HTML SECCION 1----------------- */
+.main .section1 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  margin: auto;
+}
+
+/* ----------------- INDEX.HTML SECCION 2----------------- */
+.main .section2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.1rem;
+}
+
+.main .section2 .divisor {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.1rem;
+}
+
+.main .section2 .divisor img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.main .section2 .divisor .divisor-texto {
+  width: 90%;
+  margin: auto;
+  order: -1;
+}
+
+/* ----------------- INDEX.HTML SECCION 3 ----------------- */
+.main .section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.main .section3 .divisor1 {
+  width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.main .section3 .divisor2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main .section3 .divisor2 img {
+  border-radius: 20px;
+  width: 10rem;
+  height: 20rem;
+  gap: 2px;
+  object-fit: cover;
+  border: 1px solid var(--color-crema);
+}
+
+.main .section3 .divisor3 {
+  padding-top: 4rem;
+}
+
+.main .section3 .divisor3 .mapa {
+  max-width: 1000px;
+  width: 80%;
+  margin-top: 40px;
   border-radius: 20px;
   border: solid 1px var(--color-negro);
 }
 
-/* ------------------------- */
-
-/* PIANO.HTML */ /* CANTO.HTML */ /* VIOLIN.HTML */
-
+/* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
 main.piano {
-  
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-  url(../assets/img/background/1.png);
+    url(../assets/img/background/1.png);
 }
 
 main.canto {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-  url(../assets/img/background/4.jpg);
+    url(../assets/img/background/4.jpg);
 }
 
 main.violin {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-  url(../assets/img/background/3.jpg);
+    url(../assets/img/background/1.jpg);
 }
 
-main.piano,
-main.canto,
-main.violin {
+main#musica {
   background-size: cover;
   background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 4rem;
 }
 
-main.piano .divisor-2 .section3 a,
-main.canto .divisor-2 .section3 a,
-main.violin .divisor-2 .section3 a {
+/* ----------------- #MUSICA DIVISOR 1 ----------------- */
+main#musica .divisor-1 {
+  width: 70%;
+  height: auto;
+}
+
+main#musica .divisor-1 section div img {
+  width: 22rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  border: solid 1px var(--color-crema);
+  margin: 3rem;
+}
+
+/* ----------------- #MUSICA DIVISOR 2 ----------------- */
+main#musica .divisor-2 {
+  width: 14rem;
+  margin-left: 4rem;
+  position: sticky;
+  top: 5rem;
+}
+
+main#musica .divisor-2 .section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+main#musica .divisor-2 .section3 h3 {
+  padding-bottom: 0;
+}
+
+main#musica .divisor-2 .section3 img {
+  width: 10rem;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 1px var(--color-crema);
+}
+
+main#musica .divisor-2 .section3 a {
   background-color: var(--color-negro);
   color: var(--color-blanco);
+  padding: 1.5em;
+  width: auto;
   border-radius: 10px;
   border: solid 1px var(--color-crema);
   font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 1px;
 }
 
-main.piano .divisor-2 .section3 a:hover,
-main.canto .divisor-2 .section3 a:hover,
-main.violin .divisor-2 .section3 a:hover {
+main#musica .divisor-2 .section3 a:hover {
   color: var(--color-negro);
   background-color: var(--color-crema);
   transition: 0.2s;
 }
 
-/* ------------------------- */
-
-/* CONTACTO.HTML */
-
+/* ----------------------------------- CONTACTO.HTML ---------------------------------- */
 main.contacto {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url(../assets/img/background/2.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
-main.contacto .section3 form label {
+.contenedor {
+  display: grid;
+  min-height: auto;
+  width: 100%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "section1 section2 section3"
+    "section1 section2 section3"
+    "section1 section2 section3";
+}
+
+main.contacto .contenedor .section1 {
+  grid-area: section1;
+}
+main.contacto .contenedor .section2 {
+  grid-area: section2;
+}
+main.contacto .contenedor .section3 {
+  grid-area: section3;
+}
+
+main.contacto .contenedor .section3 form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main.contacto .contenedor .section3 form label {
   color: var(--color-blanco);
-  letter-spacing: 4px;
+  padding: 4px;
+  letter-spacing: 0.25rem;
 }
 
-main.contacto .section3 form input,
-main.contacto .section3 form textarea,
-main.contacto .section3 form button {
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
   border-radius: 20px;
+  max-width: 10rem;
+  min-height: 1.4rem;
+  margin: auto;
   letter-spacing: 1px;
   text-align: center;
 }
 
-main.contacto .section3 form button:hover,
-main.contacto .section3 form input:hover,
-main.contacto .section3 form textarea:hover {
+main.contacto .contenedor .section3 form button {
+  width: 8rem;
+  padding: 0.4em;
+}
+
+main.contacto .contenedor .section3 form button:hover,
+main.contacto .contenedor .section3 form input:hover,
+main.contacto .contenedor .section3 form textarea:hover {
   background-color: var(--color-crema);
   transition: 0.2s;
 }
 
-main.contacto .section3 form #checkbox {
+main.contacto .contenedor .section3 form .checkbox {
+  display: flex;
+  margin: auto;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+main.contacto .contenedor .section3 form .checkbox input#checkbox {
+  width: 1.1rem;
   accent-color: var(--color-crema);
 }
 
-/* ------------------------- */
-/* ------------------------- */
-/* ------------------------- */
+@media (max-width: 1024px) {
+  /* ----------------- MEDIAQUERIES 1024px ----------------- */
+
+  /* ----------------- INDEX.HTML----------------- */
+  .section-top {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .main .section2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* ----------------- CONTACTO.HTML ----------------- */
+  main.contacto .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "section1 section3"
+      "section2 section3";
+    align-items: self-start;
+  }
+}
+/* ----------------- MEDIAQUERIES 790px ----------------- */
+
+@media (max-width: 790px) {
+  /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+  /* ----------------- HEADER UNIVERSAL ----------------- */
+  header {
+    position: sticky;
+    z-index: 2;
+  }
+
+  label.logo,
+  label.logo-2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  nav.menu {
+    height: 3rem;
+  }
+
+  nav.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-negro);
+    top: 3rem;
+    left: -100%;
+    transition: all 0.5s;
+  }
+
+  nav.menu ul li a {
+    margin-left: 0;
+  }
+
+  .boton-hamburguesa {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .boton-hamburguesa:hover {
+    color: var(--color-crema);
+    transition: 0.2s;
+  }
+
+  .boton-checkbox:checked ~ ul {
+    left: 0;
+  }
+
+  /* ----------------- INDEX.HTML SECCION TOP----------------- */
+  .section-top {
+    width: 100%;
+    height: 10rem;
+  }
+
+  /* ----------------- INDEX.HTML SECCION 2----------------- */
+  .main .section2 .divisor {
+    width: 24rem;
+  }
+
+  /* ----------------- INDEX.HTML SECCION 3----------------- */
+  .main .section3 .divisor2 img {
+    width: 10rem;
+    height: 14rem;
+  }
+
+  .main .section3 .divisor3 .mapa {
+    height: 15rem;
+  }
+
+  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
+  main#musica {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main#musica .divisor-1 {
+    width: 100%;
+  }
+
+  main#musica .divisor-1 .section1,
+  main#musica .divisor-1 .section2,
+  main#musica .divisor-1 .section3 {
+    display: flex;
+    align-items: center;
+  }
+
+  main#musica .divisor-1 .section1 .texto1,
+  main#musica .divisor-1 .section2 .texto2,
+  main#musica .divisor-1 .section3 .texto3 {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  main#musica .divisor-1 section div img {
+    max-width: 22rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  main#musica .divisor-2 {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: auto;
+  }
+
+  main#musica .divisor-2 .section3  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  main#musica .divisor-2 .section3 p {
+    margin-right: 0.5rem;
+  }
+  main#musica .divisor-2 .section3 a {
+    width: 40%;
+  }
+
+  main#musica .divisor-2 .section3 img {
+    margin: 1rem;
+  }
+
+  /* ----------------- CONTACTO.HTML----------------- */
+  main.contacto .contenedor {
+    position: static;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "section1"
+      "section2"
+      "section3";
+    padding: 2rem;
+  }
+
+  main.contacto .contenedor .section3 form {
+    padding-top: 1.5rem;
+    gap: 0.1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 18rem;
+  }
+
+  main.contacto .contenedor .section3 form input,
+  main.contacto .contenedor .section3 form textarea {
+    margin-right: 0;
+  }
+}
+/* ----------------- MEDIAQUERIES 540px----------------- */
+
+@media (max-width: 540px) {
+  /* ----------------- HEADER UNIVERSAL ----------------- */
+  nav.menu ul {
+    flex-direction: column;
+    height: auto;
+    top: 2.5rem;
+  }
+
+  nav.menu ul li {
+    line-height: 3rem;
+  }
+
+  /* ----------------- FOOTER UNIVERSAL----------------- */
+  footer div#redes ul {
+    gap: 1rem;
+  }
+
+  /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* ----------------- INDEX.HTML ----------------- */
+  .main .section1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .main .section2 .divisor {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main .section2 .divisor-texto {
+    padding-top: 1rem;
+  }
+
+  .main .section2 .divisor img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .main .section3 .divisor2 {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  .main .section3 .divisor2 img {
+    height: 8rem;
+    margin: 0.4rem;
+  }
+
+  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
+
+  main#musica .divisor-1 .section1,
+  main#musica .divisor-1 .section2,
+  main#musica .divisor-1 .section3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main#musica .divisor-2 {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: auto;
+  }
+
+  main#musica .divisor-2 .section3 {
+    flex-direction: column;
+  }
+
+  main#musica .divisor-2 .section3 p {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  main#musica .divisor-2 .section3 a {
+    width: 30%;
+    margin: auto;
+  }
+
+  /* ----------------- CONTACTO.HTML----------------- */
+  main.contacto .contenedor .section3 form input,
+  main.contacto .contenedor .section3 form textarea {
+    width: 80%;
+    padding: 0;
+  }
+
+  main#musica .divisor-2 .section3 a {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+}
+/* ----------------- MEDIAQUERIES 280px----------------- */
+
+@media (max-width: 280px) {
+  /* ----------------- HEADER UNIVERSAL----------------- */
+  label.logo {
+    display: none;
+  }
+
+  label.logo-2 {
+    display: block;
+  }
+  /* ----------------- FOOTER UNIVERSAL----------------- */
+  footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  /* ----------------- CONTACTO----------------- */
+  main.contacto .contenedor .section3 form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  main.contacto .contenedor .section3 form input,
+  main.contacto .contenedor .section3 form textarea {
+    margin: auto;
+  }
+}
