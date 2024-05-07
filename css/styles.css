@@ -230,10 +230,15 @@ main#index {
 }
 
 .main .section2 .divisor .divisor-texto {
-  width: 90%;
+  width: 100%;
   margin: auto;
   order: -1;
 }
+
+.main .section2 .divisor .divisor-texto h3 {
+padding: 0;
+}
+
 
 /* ----------------- INDEX.HTML SECCION 3 ----------------- */
 .main .section3 {
@@ -453,8 +458,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   accent-color: var(--color-crema);
 }
 
-@media (max-width: 1024px) {
-  /* ----------------- MEDIAQUERIES 1024px ----------------- */
+@media (max-width: 995px) {
+  /* ----------------- MEDIAQUERIES 995px ----------------- */
 
   /* ----------------- INDEX.HTML----------------- */
   .section-top {
