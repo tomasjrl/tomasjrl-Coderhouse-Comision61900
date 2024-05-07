@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <!-- METADATOS -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ENLACE A ESTILOS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- ENLACE A ICONOS DE FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+  >
+    <!-- ENLACE A FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon.ico"
+      type="image/x-icon"
+  >
+    <!-- TITULO DEL SITIO WEB -->
+    <title>MusicArte - Escuela de Música</title>
+    <!-- DESCRIPCION DEL SITIO WEB -->
+    <meta
+      name="description"
+      content="Escuela de enseñanza de instrumentos musicales"
+  >
+
+    <!-- FIN DE METADATOS -->
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+  <header>
+
+    <!-- MENU NAVEGACION -->
+
+  <nav class="menu">
+    <input type="checkbox" class="boton-checkbox" id="mi-check">
+    <label for="mi-check" class="boton-hamburguesa"><i class="fa fa-bars"></i></label>
+         <!-- LOGO -->
+        
+      <label class="logo"><a href="../index.html">MusicArte</a></label>
+      <!-- LISTA DESORDENADA -->
+      <ul class="listado">
+          <li class="lista"><a href="../index.html">Inicio</a></li>
+          <li class="lista"><a href="piano.html">Piano</a></li>
+          <li class="lista"><a href="canto.html">Canto</a></li>
+          <li class="lista"><a href="violin.html">Violín</a></li>
+          <li class="lista"><a href="#" class="active">Contacto</a></li>
+        </ul>
+  </nav>
+
+
+  <!-- FIN HEADER -->
+</header>
+
+
+    <!-- MAIN PRINCIPAL -->
+    <main class="contacto">
+      <!-- SECCION 1 -->
+      <section class="section1">
+        <h1>Aprende con nosotros</h1>
+        <!-- FIN SECCION 1 -->
+      </section>
+
+      <!-- SECCION 2 -->
+      <section class="section2">
+        <div>
+          <h2>Reserva tu Clase</h2>
+          <p>
+            ¿Listo para comenzar tu viaje <em>musical</em>? Estamos aquí para
+            ayudarte a alcanzar tus <em>metas musicales</em> y estamos ansiosos
+            por conocerte. ¡Te estamos esperando!
+          </p>
+        </div>
+      </section>
+      <!-- FIN SECCION 2 -->
+
+      <!-- SECCION 3 -->  <!-- EL USO DE <br> ES TEMPORAL-->
+      <div class="section3">
+        <form action="/enviar.php" method="POST">
+          <label for="name">Nombre</label>  <br>
+          <input
+            type="text"
+            id="name"
+            name="nombre"
+            required
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+            placeholder="Escribe tu nombre"
+            > <br>
+          <label for="lastname">Apellido</label> <br>
+          <input
+            type="text"
+            id="lastname"
+            name="apellido"
+            required
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+            placeholder="Escribe tu apellido"
+            > <br>
+          <label for="edad">Edad</label> <br>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="1"
+            placeholder="Escribe tu edad"
+            required
+            > <br>
+
+          <label for="email">Correo electrónico</label> <br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            placeholder="ejemplo@correo.com"
+            > <br>
+          <label for="phone">Teléfono</label> <br>
+          <input
+            type="tel"
+            id="phone"
+            name="telefono"
+            placeholder="11-1111-1111"
+            required
+            minlength="10"
+            pattern="[0-9]{10,}"
+            > <br>
+          <label for="mensaje">Mensaje</label> <br>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            cols="40"
+            required
+            placeholder="¡Escribe tu consulta aquí!"
+          ></textarea
+          > <br>
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="actividades"
+            value="checkbox"
+            required
+            > <br>
+          <label for="checkbox">No soy un robot</label> <br>
+
+          <button type="submit">Enviar</button> 
+        </form>
+        <!-- FIN SECCION 3 -->
+      </div>
+
+      <!-- FIN MAIN PRINCIPAL -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <h4 id="copyright">&copy; 2024 <strong>MusicArte</strong></h4>
+      <div id="redes">
+        <ul>
+          <li>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FIN FOOTER -->
+    </footer>
+
+    <!-- FIN BODY -->
+  </body>
+
+  <!-- FIN HTML -->
+</html>

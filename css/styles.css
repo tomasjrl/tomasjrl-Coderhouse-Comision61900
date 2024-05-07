@@ -1,0 +1,285 @@
+/* FUENTE TIPOGRAFICA DE GOOGLEFONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
+
+/* SELECTOR DE VARIABLES CSS */
+:root {
+  /* COLORES */
+  --color-negro: #1b1a19;
+  --color-blanco: #eaeaea;
+  --color-crema: #e1ca53;
+}
+
+/* ------------------------- */
+
+/* UNIVERSALES */
+
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+* img {  /* propiedades TEMPORALES hasta aplicar flexbox o grid */
+  width: 200px;
+border-radius: 10px;
+border: solid 1px var(--color-crema) 
+}
+
+/* ------------------------- */
+
+/* COLOR TITULOS Y TEXTOS UNIVERSALES */
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--color-blanco);
+}
+
+/* ------------------------- */
+
+/* PESO TITULOS UNIVERSALES */
+
+h1,
+h1 strong,
+h2,
+h2 strong {
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+/* PESO TEXTOS UNIVERSALES */
+
+p,
+strong {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+/* ------------------------- */
+
+/* COLOR Y PESO TEXTOS = HEADER Y FOOTER UNIVERSALES */
+
+header a,
+footer a {
+  color: var(--color-blanco);
+  letter-spacing: 4px;
+}
+
+/* ------------------------- */
+
+/* TAMAñO TITULOS Y TEXTO UNIVERSALES */
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: .7em;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* ------------------------- */
+
+/* HEADER UNIVERSAL */
+
+
+nav.menu {
+  background-color: var(--color-negro);
+}
+
+nav.menu ul li a {
+  color: var(--color-blanco);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+label.logo {
+  color: var(--color-blanco);
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+label.logo:hover {
+  color: var(--color-crema);
+  transition: 0.2s;
+}
+
+.boton-hamburguesa { /* se agregará con mediaqueries */
+  color: var(--color-blanco);
+  cursor: pointer;
+  display: none;
+}
+
+.boton-checkbox { /* se agregará con mediaqueries */
+  display: none; 
+}
+
+nav.menu ul li a:hover,
+nav.menu ul li a.active {
+  color: var(--color-negro);
+  background-color: var(--color-crema);
+  transition: 0.2s;
+}
+
+/* ------------------------- */
+
+/* FOOTER UNIVERSAL */
+
+footer {
+  background-color: var(--color-negro);
+}
+
+/* ------------------------- */
+
+/* HEADER MAIN FOOTER UNIVERSAL */
+
+header nav.menu label.logo a:hover,
+footer div#redes ul li a:hover {
+  color: var(--color-crema);
+  transition: 0.2s;
+}
+
+main {
+  text-align: center;
+  }
+
+/* ------------------------- */
+
+/* INDEX.HTML MAIN */
+
+main.index {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(../assets/img/background/1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------------------- */
+
+/* INDEX.HTML SECCION TOP */
+
+/* ------------------------- */
+
+/* INDEX.HTML SECCION 1 */
+
+/* ------------------------- */
+
+/* INDEX.HTML SECCION 2 */
+
+/* ------------------------- */
+
+/* INDEX.HTML SECCION 3  */
+
+main.index .section3 {
+  text-align: center;
+}
+
+main.index .section3 .divisor3 .mapa {
+  border-radius: 20px;
+  border: solid 1px var(--color-negro);
+}
+
+/* ------------------------- */
+
+/* PIANO.HTML */ /* CANTO.HTML */ /* VIOLIN.HTML */
+
+main.piano {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+  url(../assets/img/background/1.png);
+}
+
+main.canto {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+  url(../assets/img/background/4.jpg);
+}
+
+main.violin {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+  url(../assets/img/background/3.jpg);
+}
+
+main.piano,
+main.canto,
+main.violin {
+  background-size: cover;
+  background-position: center;
+}
+
+main.piano .divisor-2 .section3 a,
+main.canto .divisor-2 .section3 a,
+main.violin .divisor-2 .section3 a {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  border-radius: 10px;
+  border: solid 1px var(--color-crema);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+main.piano .divisor-2 .section3 a:hover,
+main.canto .divisor-2 .section3 a:hover,
+main.violin .divisor-2 .section3 a:hover {
+  color: var(--color-negro);
+  background-color: var(--color-crema);
+  transition: 0.2s;
+}
+
+/* ------------------------- */
+
+/* CONTACTO.HTML */
+
+main.contacto {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../assets/img/background/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main.contacto .section3 form label {
+  color: var(--color-blanco);
+  letter-spacing: 4px;
+}
+
+main.contacto .section3 form input,
+main.contacto .section3 form textarea,
+main.contacto .section3 form button {
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+main.contacto .section3 form button:hover,
+main.contacto .section3 form input:hover,
+main.contacto .section3 form textarea:hover {
+  background-color: var(--color-crema);
+  transition: 0.2s;
+}
+
+main.contacto .section3 form #checkbox {
+  accent-color: var(--color-crema);
+}
+
+/* ------------------------- */
+/* ------------------------- */
+/* ------------------------- */
