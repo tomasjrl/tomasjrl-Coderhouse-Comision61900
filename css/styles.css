@@ -80,6 +80,10 @@ a[aria-current="page"] {
   color: var(--color-negro);
 }
 
+a[aria-current="page"]:visited {
+  color: var(--color-negro);
+}
+
 .nav-link:hover {
   background-color: var(--color-crema);
   color: var(--color-negro);
@@ -89,8 +93,6 @@ a[aria-current="page"] {
 header .logo-2 {
   display: none;
 }
-
-
 
 /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
 h1,
