@@ -458,8 +458,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   accent-color: var(--color-crema);
 }
 
-@media (max-width: 995px) {
-  /* ----------------- MEDIAQUERIES 995px ----------------- */
+@media (max-width: 992px) {
+  /* ----------------- MEDIAQUERIES 992px ----------------- */
 
   /* ----------------- INDEX.HTML----------------- */
   .section-top {
