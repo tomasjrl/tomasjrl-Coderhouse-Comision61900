@@ -24,8 +24,13 @@
 <!-- BODY -->
 
 <body>
-  <!-- HEADER -->
-  <header>
+  <!-- MODO CLARO/OSCURO -->
+ <input type="checkbox" id="toggleMode">
+  <label for="toggleMode" class="toggleDark"><i class="fas fa-sun"></i></label>
+  <label for="toggleMode" class="toggleLight"><i class="fas fa-moon"></i></label>
+ <div id="container">
+ <!-- HEADER -->
+<header>
       <!-- MENU NAVEGACION BOOTSTRAP -->
     <nav class="navbar navbar-expand-lg fixed-top py-0" data-bs-theme="dark">
       <div class="container-fluid">
@@ -56,35 +61,29 @@
      <!-- DIVISOR 1 -->
      <div class="divisor-1">
       <section class="section1">
-        <article class="texto1">
         <h1>Aprende Violín</h1>
         <p>
           Nuestras clases son <em>personalizadas e individuales</em>, lo que garantiza una atención
           exclusiva y un progreso más rápido.
         </p>
-        </article>
         <div class="imagen1">
           <img src="../assets/img/violin/1.jpg" alt="imagen de violín">
         </div>
       </section>
       <section class="section2">
-        <article class="texto2">
         <h3>Adultos y Niños</h3>
         <p>
           Apto para todas las edades y niveles. Anímate y reserva tu clase para conocernos.
         </p>
-      </article>
         <div class="imagen2">
           <img src="../assets/img/violin/2.jpg" alt="adultos y niños tocando violín">
         </div>
       </section>
       <section class="section3">
-        <article class="texto3">
         <h3>Sumate a nuestra comunidad</h3>
         <p>
           Muchos músicos alrededor del mundo <em>iniciaron su camino con nosotros</em>. Queremos invitarte a que te sumes también en este hermoso viaje.
         </p>
-        </article>
         <div class="imagen2">
           <img src="../assets/img/violin/3.jpg" alt="violinista global">
         </div>
@@ -96,7 +95,7 @@
       <section class="section3">
         <h3>Reserva tu Clase</h3>
         <img src="../assets/img/profesores/s3.jpg" alt="profesora de violín">
-        <a href="contacto.html">¡Quiero mi clase!</a>
+        <a href="contacto.html">Reservar</a>
         <!-- FIN SECCION 3 -->
       </section>
     </div>
@@ -124,13 +123,15 @@
         </ul>
       </div>
 
-      <!-- FIN FOOTER -->
-    </footer>
+    <!-- FIN FOOTER -->
+  </footer>
+ </div>
+  <!-- SCRIPT DE BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!-- SCRIPT DE JAVASCRIPT -->
+  <script src="/assets/js/toogle.js"></script>
+  <!-- FIN BODY -->
+</body>
 
-    <!-- SCRIPT DE BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- FIN BODY -->
-  </body>
-  
-  <!-- FIN HTML -->
-  </html>
+<!-- FIN HTML -->
+</html>
