@@ -33,8 +33,9 @@
 .toggleLight {
   cursor: pointer;
   position: fixed;
-  top: 60px;
-  left: 14px;
+  z-index: 9999;
+  top: 17px;
+  left: 10px;
 }
 
 .toggleDark {
@@ -89,6 +90,7 @@ header nav.navbar {
   font-weight: 200;
   font-size: 1.8rem;
   color: var(--color-secundario);
+  padding-left: 20px;
 }
 
 .navbar-brand:visited {
