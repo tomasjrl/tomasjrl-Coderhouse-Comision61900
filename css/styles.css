@@ -234,14 +234,8 @@ footer div#redes ul li a:hover {
 
 /* ----------------- INDEX.HTML ----------------- */
 
-.main {
-  margin: auto;
-  max-width: 90%;
-  height: 100%;
-  padding-top: 3.33rem;
-}
-
 main#index {
+  padding-top: 1.8rem;
   background: linear-gradient(var(--color-1-op100), var(--color-1-op50)),
     url(../assets/img/background/1.png);
   background-size: cover;
