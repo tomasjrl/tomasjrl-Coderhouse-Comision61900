@@ -22,11 +22,9 @@
   text-align: center;
 }
 
-main {
-  padding-top: 3.33rem;
-}
 
-/* ----------------- TOGGLERS ----------------- */
+
+/* ------------ TOGGLER CLARO/OSCURO ------------ */
 #toggleMode {
   visibility: hidden;
 }
@@ -35,8 +33,7 @@ main {
 .toggleLight {
   cursor: pointer;
   position: fixed;
-  z-index: 2;
-  top: 17px;
+  top: 60px;
   left: 10px;
 }
 
@@ -68,17 +65,9 @@ main {
   display: block;
 }
 
-/* ----------------- CONTAINER ----------------- */
-
-#container {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: 1;
-}
-
-#toggleMode:checked ~ #container {
+#toggleMode:checked ~ header,
+#toggleMode:checked ~ main,
+#toggleMode:checked ~ footer {
   --color-primario: rgb(234, 234, 234);
   --color-secundario: rgb(27, 26, 25);
   --color-terciario: rgb(83, 152, 225);
@@ -100,7 +89,10 @@ header nav.navbar {
   font-weight: 200;
   font-size: 1.8rem;
   color: var(--color-secundario);
-  margin-left: 20px;
+}
+
+.navbar-brand:visited {
+  color: var(--color-secundario);
 }
 
 .navbar-brand:hover {
@@ -114,6 +106,7 @@ header nav.navbar {
 
 .navbar-toggler {
   color: var(--color-primario);
+  border: none;
 }
 
 .fas.fa-bars {
@@ -222,8 +215,16 @@ footer {
 }
 
 footer div#redes ul {
-  display: flex;
-  gap: 3rem;
+display: flex;
+margin: auto;
+gap: 3rem;
+padding-left: 0;
+}
+
+footer a,
+footer h4 {
+  padding: 0;
+  margin: 0;
 }
 
 footer div#redes ul li a:hover {
@@ -237,6 +238,7 @@ footer div#redes ul li a:hover {
   margin: auto;
   max-width: 90%;
   height: 100%;
+  padding-top: 3.33rem;
 }
 
 main#index {
@@ -367,7 +369,7 @@ main#musica {
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
-  padding: 4rem;
+  padding-top: 5rem;
 }
 
 /* ----------------- #MUSICA DIVISOR 1 ----------------- */
@@ -391,6 +393,11 @@ main#musica .divisor-2 {
   margin-left: 2rem;
   position: sticky;
   top: 5rem;
+}
+
+main#musica p {
+width: 80%;
+margin: auto;
 }
 
 main#musica .divisor-2 .section3 {
@@ -442,6 +449,7 @@ main.contacto {
   background-position: center;
   width: 100%;
   min-height: 100vh;
+  padding-top: 3rem;
 }
 
 .contenedor {
@@ -599,8 +607,18 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
   main#musica {
     flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  main#musica p {
     padding: 1rem;
   }
+
+  main#musica h1,h3 {
+    width: 200px;
+  }
+
 
   main#musica .divisor-1 {
     width: 100%;
@@ -614,8 +632,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
 
   main#musica .divisor-1 section div img {
-    max-width: 22rem;
-    width: 100%;
+    max-width: 12rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -671,9 +688,9 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin-right: 0;
   }
 }
-/* ----------------- MEDIAQUERIES 540px----------------- */
+/* ----------------- MEDIAQUERIES 620px----------------- */
 
-@media (max-width: 540px) {
+@media (max-width: 620px) {
   /* ----------------- FOOTER UNIVERSAL----------------- */
   footer div#redes ul {
     gap: 1rem;
@@ -779,8 +796,21 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   /* ----------------- FOOTER UNIVERSAL----------------- */
   footer {
     flex-direction: column;
-    height: 100%;
+    height: 6rem;
   }
+  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
+  
+  main#musica h1,
+  main#musica h3 {
+    width: 100%;
+  }
+
+  main#musica .divisor-1 section div img,
+  main#musica .divisor-2 .section3 img {
+    max-width: 80%;
+    margin: auto;
+  }
+
   /* ----------------- CONTACTO----------------- */
   main.contacto .contenedor .section3 form {
     width: 100%;
