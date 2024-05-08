@@ -272,6 +272,7 @@ main#index {
 /* ----------------- INDEX.HTML SECCION 2----------------- */
 .main .section2 {
   width: 100%;
+  padding-top: 2rem;
   max-width: 1400px;
   margin: auto;
   display: flex;
@@ -299,7 +300,8 @@ main#index {
 }
 
 .main .section2 .divisor .divisor-texto h3 {
-  padding: 0;
+
+  margin: auto;
 }
 
 /* ----------------- INDEX.HTML SECCION 3 ----------------- */
@@ -592,8 +594,10 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   /* ----------------- INDEX.HTML SECCION 2----------------- */
   .main .section2 .divisor {
-    width: 24rem;
+    width: 26rem;
   }
+
+
 
   /* ----------------- INDEX.HTML SECCION 3----------------- */
   .main .section3 .divisor2 img {
@@ -795,11 +799,33 @@ margin: auto;
   header .logo-2 {
     display: block;
   }
+
+  h1,
+  h1 strong,
+  h2,
+  h2 strong,
+  h3,
+  h4 {
+    font-size: 0.7rem;
+    width: auto;
+  }
+  p {
+    font-size: 0.6rem;
+    width: auto;
+  }
+
   /* ----------------- FOOTER UNIVERSAL----------------- */
   footer {
     flex-direction: column;
     height: 6rem;
   }
+
+    /* ----------------- INDEX.HTML ----------------- */
+
+  .main .section3 .divisor2 img {
+    width: 100%;
+  }
+
   /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
   
   main#musica h1,
