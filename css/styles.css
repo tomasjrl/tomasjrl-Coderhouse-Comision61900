@@ -1,9 +1,7 @@
 /* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
 
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
-
 :root {
   --color-primero: rgb(27, 26, 25);
   --color-segundo: rgb(234, 234, 234);
@@ -25,7 +23,6 @@
 }
 
 /* ----------------- COLOR PRIMERO ----------------- */
-
 .navbar-toggler,
 main#musica .divisor-2 .section3 a:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -43,7 +40,6 @@ main.contacto .contenedor .section3 form button {
 }
 
 /* ----------------- COLOR SEGUNDO ----------------- */
-
 .navbar-brand,
 .navbar-brand:visited,
 .fas.fa-bars,
@@ -60,8 +56,6 @@ main.contacto .contenedor .section3 form button {
 }
 
 /* ----------------- COLOR TERCERO ----------------- */
-
-
 .toggleDark,
 .toggleLight:hover,
 .navbar-brand:hover,
@@ -83,14 +77,12 @@ a[aria-current="page"],
 }
 
 /* ----------------- COLOR CUARTO ----------------- */
-
 .toggleDark:hover,
 .toggleLight {
   color: var(--color-cuarto);
 }
 
 /* ----------------- UNIVERSALES ----------------- */
-
 * {
   padding: 0;
   margin: 0;
@@ -103,14 +95,12 @@ a[aria-current="page"],
 }
 
 /* ------------ UNIVERSALES TRANSICIONES ----------- */
-
 *:hover,
 #navbarNavAltMarkup {
   transition: 0.2s;
 }
 
 /* ------------ MODO CLARO/OSCURO ------------ */
-
 #toggleMode {
   visibility: hidden;
 }
@@ -137,7 +127,6 @@ a[aria-current="page"],
 
 
 /* ----------------- HEADER BOOTSTRAP ----------------- */
-
 .navbar-nav.ms-auto {
   align-items: center;
 }
@@ -173,7 +162,6 @@ header .logo-2 {
 }
 
 /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
-
 h1,
 h2,
 h3 {
@@ -254,7 +242,6 @@ footer h4 {
 }
 
 /* ----------------- INDEX.HTML ----------------- */
-
 main#index {
   padding-top: 1.8rem;
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
