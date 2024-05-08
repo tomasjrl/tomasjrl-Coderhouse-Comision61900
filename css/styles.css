@@ -94,13 +94,12 @@ a[aria-current="page"],
   text-align: center;
 }
 
-/* ------------ UNIVERSALES TRANSICIONES ----------- */
 *:hover,
 #navbarNavAltMarkup {
   transition: 0.2s;
 }
 
-/* ------------ MODO CLARO/OSCURO ------------ */
+/* ------------ MODO OSCURO/CLARO ------------ */
 #toggleMode {
   visibility: hidden;
 }
@@ -124,9 +123,7 @@ a[aria-current="page"],
   display: none;
 }
 
-
-
-/* ----------------- HEADER BOOTSTRAP ----------------- */
+/* ----------------- HEADER ----------------- */
 .navbar-nav.ms-auto {
   align-items: center;
 }
@@ -161,7 +158,7 @@ header .logo-2 {
   display: none;
 }
 
-/* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
+/* ----------------- TITULOS Y TEXTOS ----------------- */
 h1,
 h2,
 h3 {
@@ -218,7 +215,7 @@ a {
   letter-spacing: 0.125rem;
 }
 
-/* ----------------- FOOTER UNIVERSAL----------------- */
+/* ----------------- FOOTER ----------------- */
 footer {
   display: flex;
   justify-content: space-between;
@@ -357,7 +354,7 @@ main#index {
   border: solid 1px var(--color-primero);
 }
 
-/* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
+/* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
 main.piano {
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
     url(../assets/img/background/1.png);
@@ -441,7 +438,7 @@ main#musica .divisor-2 .section3 a {
   letter-spacing: 1px;
 }
 
-/* ----------------------------------- CONTACTO.HTML ---------------------------------- */
+/* ---------------- CONTACTO.HTML --------------- */
 main.contacto {
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
     url(../assets/img/background/2.jpg);
@@ -531,8 +528,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   accent-color: var(--color-tercero);
 }
 
-@media (max-width: 992px) {
   /* ----------------- MEDIAQUERIES 992px ----------------- */
+@media (max-width: 992px) {
 
   /* ----------------- INDEX.HTML----------------- */
   .section-top {
@@ -555,10 +552,11 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     align-items: self-start;
   }
 }
-/* ----------------- MEDIAQUERIES 790px ----------------- */
 
+/* ----------------- MEDIAQUERIES 790px ----------------- */
 @media (max-width: 790px) {
-  /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
+
+  /* ----------------- TITULOS Y TEXTOS ----------------- */
   h1,
   h1 strong,
   h2,
@@ -590,7 +588,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     height: 15rem;
   }
 
-  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
+  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica {
     flex-direction: column;
     padding-left: 0.5rem;
@@ -660,15 +658,16 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin-right: 0;
   }
 }
-/* ----------------- MEDIAQUERIES 620px----------------- */
 
+/* ----------------- MEDIAQUERIES 620px----------------- */
 @media (max-width: 620px) {
-  /* ----------------- FOOTER UNIVERSAL----------------- */
+
+  /* ----------------- FOOTER ----------------- */
   footer div#redes ul {
     gap: 1rem;
   }
 
-  /* ----------------- TITULOS Y TEXTOS UNIVERSALES----------------- */
+  /* ----------------- TITULOS Y TEXTOS ----------------- */
   h1,
   h1 strong,
   h2,
@@ -713,8 +712,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin: 0.4rem;
   }
 
-  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
-
+ /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica .divisor-1 .section1,
   main#musica .divisor-1 .section2,
   main#musica .divisor-1 .section3 {
@@ -755,10 +753,11 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     font-size: 0.9rem;
   }
 }
-/* ----------------- MEDIAQUERIES 290px----------------- */
 
+/* ----------------- MEDIAQUERIES 290px----------------- */
 @media (max-width: 290px) {
-  /* ----------------- HEADER UNIVERSAL----------------- */
+
+  /* ----------------- HEADER ----------------- */
   header .logo {
     display: none;
   }
@@ -781,7 +780,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     width: auto;
   }
 
-  /* ----------------- FOOTER UNIVERSAL----------------- */
+  /* ----------------- FOOTER ----------------- */
   footer {
     flex-direction: column;
     height: 6rem;
@@ -793,8 +792,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     width: 100%;
   }
 
-  /* ----------------- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ----------------- */
-
+  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica h1,
   main#musica h3 {
     width: 100%;
