@@ -1,6 +1,43 @@
 /* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
 
+/* ----------------- UNIVERSALES ----------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+*:hover,
+#navbarNavAltMarkup {
+  transition: 0.2s;
+}
+
+/* ----------------- GENERALES ----------------- */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main .section2 .divisor img, 
+.main .section3 .divisor2 img,
+.main .section3 .divisor3 .mapa,
+main#musica .divisor-1 section div img,
+main#musica .divisor-2 .section3 img,
+main#musica .divisor-2 .section3 a,
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button
+{
+  border-radius: 20px;
+}
+
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
 :root {
   --color-primero: rgb(27, 26, 25);
@@ -40,6 +77,10 @@ main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
 }
 
+.main .section3 .divisor3 .mapa {
+  border: solid 1px var(--color-primero);
+  }
+
 /* ----------------- COLOR SEGUNDO ----------------- */
 .navbar-brand,
 .navbar-brand:visited,
@@ -75,27 +116,18 @@ a[aria-current="page"],
   background-color: var(--color-tercero);
 }
 
+.main .section3 .divisor2 img,
+main#musica .divisor-1 section div img,
+main#musica .divisor-2 .section3 img,
+main.contacto .contenedor .section3 form button,
+main#musica .divisor-2 .section3 a {
+  border: solid 1px var(--color-tercero);
+  }
+
 /* ----------------- COLOR CUARTO ----------------- */
 .toggleDark:hover,
 .toggleLight {
   color: var(--color-cuarto);
-}
-
-/* ----------------- UNIVERSALES ----------------- */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-align: center;
-}
-
-*:hover,
-#navbarNavAltMarkup {
-  transition: 0.2s;
 }
 
 /* ------------ MODO OSCURO/CLARO ------------ */
@@ -119,41 +151,6 @@ a[aria-current="page"],
 
 .toggleLight,
 #toggleMode:checked ~ .toggleDark {
-  display: none;
-}
-
-/* ----------------- HEADER ----------------- */
-.navbar-nav.ms-auto {
-  align-items: center;
-}
-
-.navbar-brand {
-  font-weight: 200;
-  font-size: 1.8rem;
-  padding-left: 20px;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.fas.fa-bars {
-  font-size: 1.7rem;
-}
-
-.navbar-nav {
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.navbar-nav a {
-  font-weight: 200;
-  width: 6rem;
-  text-align: center;
-  margin: 0.2rem;
-}
-
-header .logo-2 {
   display: none;
 }
 
@@ -214,6 +211,41 @@ a {
   letter-spacing: 0.125rem;
 }
 
+/* ----------------- HEADER ----------------- */
+.navbar-nav.ms-auto {
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 200;
+  font-size: 1.8rem;
+  padding-left: 20px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.fas.fa-bars {
+  font-size: 1.7rem;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbar-nav a {
+  font-weight: 200;
+  width: 6rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+header .logo-2 {
+  display: none;
+}
+
 /* ----------------- FOOTER ----------------- */
 footer {
   display: flex;
@@ -244,8 +276,6 @@ main#index {
     url(../assets/img/background/1.png);
   background-size: cover;
   background-position: center;
-  width: 100%;
-  min-height: 100vh;
 }
 
 /* ----------------- INDEX.HTML SECCION TOP----------------- */
@@ -294,7 +324,6 @@ main#index {
 .main .section2 .divisor img {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
 }
 
 .main .section2 .divisor .divisor-texto {
@@ -334,8 +363,6 @@ main#index {
 
 .main .section3 .divisor2 img {
 width: 80%;
-border-radius: 20px;
-border: solid 1px var(--color-tercero);
 }
 
 .main .section3 .divisor3 {
@@ -346,8 +373,6 @@ border: solid 1px var(--color-tercero);
   max-width: 1000px;
   width: 80%;
   margin-top: 40px;
-  border-radius: 20px;
-  border: solid 1px var(--color-primero);
 }
 
 /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
@@ -369,8 +394,6 @@ main.violin {
 main#musica {
   background-size: cover;
   background-position: center;
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: flex-start;
   padding-top: 5rem;
@@ -387,10 +410,10 @@ main#musica .divisor-1 section div img {
   width: 22rem;
   height: auto;
   object-fit: cover;
-  border-radius: 20px;
-  border: solid 1px var(--color-tercero);
   margin: 3rem;
 }
+
+
 
 /* ----------------- #MUSICA DIVISOR 2 ----------------- */
 main#musica .divisor-2 {
@@ -416,15 +439,11 @@ main#musica .divisor-2 .section3 {
 main#musica .divisor-2 .section3 img {
   width: 10rem;
   margin: auto;
-  border-radius: 10px;
-  border: solid 1px var(--color-tercero);
 }
 
 main#musica .divisor-2 .section3 a {
   padding: 1em;
   max-width: 8rem;
-  border-radius: 10px;
-  border: solid 1px var(--color-tercero);
   font-weight: 300;
   text-transform: uppercase;
   display: flex;
@@ -440,8 +459,6 @@ main.contacto {
     url(../assets/img/background/2.jpg);
   background-size: cover;
   background-position: center;
-  width: 100%;
-  min-height: 100vh;
   padding-top: 3rem;
 }
 
@@ -492,7 +509,6 @@ main.contacto .contenedor .section3 form label {
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form button {
-  border-radius: 20px;
   max-width: 10rem;
   min-height: 1.4rem;
   margin: auto;
@@ -506,12 +522,11 @@ main.contacto .contenedor .section3 form textarea {
 
 main.contacto .contenedor .section3 form button {
   padding: 0.8em;
-  border-radius: 10px;
-  border: solid 1px var(--color-tercero);
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 main.contacto .contenedor .section3 form .checkbox {
   display: flex;
   margin: auto;
