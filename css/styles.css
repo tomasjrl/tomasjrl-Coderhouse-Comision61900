@@ -394,38 +394,59 @@ main.violin {
 main#musica {
   background-size: cover;
   background-position: center;
-  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding-top: 5rem;
   padding-bottom: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-/* ----------------- #MUSICA DIVISOR 1 ----------------- */
-main#musica .divisor-1 {
-  width: 70%;
-  height: auto;
-}
-
-main#musica .divisor-1 section div img {
-  width: 22rem;
-  height: auto;
-  object-fit: cover;
-  margin: 3rem;
-}
-
-
-
-/* ----------------- #MUSICA DIVISOR 2 ----------------- */
-main#musica .divisor-2 {
-  width: 10rem;
-  margin-left: 2rem;
-  position: sticky;
-  top: 5rem;
+main#musica h1,
+h3 {
+  width: 200px;
 }
 
 main#musica p {
   width: 80%;
   margin: auto;
+  padding: 1rem;
+}
+
+/* ----------------- #MUSICA DIVISOR 1 ----------------- */
+main#musica .divisor-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: auto;
+}
+
+main#musica .divisor-1 section div img {
+  max-width: 12rem;
+  height: auto;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main#musica .divisor-1 .section1,
+main#musica .divisor-1 .section2,
+main#musica .divisor-1 .section3 {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ----------------- #MUSICA DIVISOR 2 ----------------- */
+main#musica .divisor-2 {
+  width: 100%;
+  height: auto;
+  margin-left: 2rem;
+  position: static;
+  margin: auto;
+  top: 5rem;
 }
 
 main#musica .divisor-2 .section3 {
@@ -438,7 +459,7 @@ main#musica .divisor-2 .section3 {
 
 main#musica .divisor-2 .section3 img {
   width: 10rem;
-  margin: auto;
+  margin: 1rem;
 }
 
 main#musica .divisor-2 .section3 a {
@@ -592,53 +613,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   .main .section3 .divisor3 .mapa {
     height: 15rem;
   }
-
-  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
-  main#musica {
-    flex-direction: column;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  main#musica p {
-    padding: 1rem;
-  }
-
-  main#musica h1,
-  h3 {
-    width: 200px;
-  }
-
-  main#musica .divisor-1 {
-    width: 100%;
-  }
-
-  main#musica .divisor-1 .section1,
-  main#musica .divisor-1 .section2,
-  main#musica .divisor-1 .section3 {
-    display: flex;
-    align-items: center;
-  }
-
-  main#musica .divisor-1 section div img {
-    max-width: 12rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  main#musica .divisor-2 {
-    width: 100%;
-    height: auto;
-    position: static;
-    margin: auto;
-  }
-
-  main#musica .divisor-2 .section3 img {
-    margin: 1rem;
-  }
-
   /* ----------------- CONTACTO.HTML----------------- */
   main.contacto .contenedor {
     position: static;
