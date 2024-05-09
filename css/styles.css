@@ -27,14 +27,15 @@
 main#musica .divisor-2 .section3 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
-main.contacto .contenedor .section3 form textarea:hover {
+main.contacto .contenedor .section3 form textarea:hover,
+header a[aria-current="page"],
+.nav-link:hover {
   color: var(--color-primero);
 }
 
 header nav.navbar,
 footer,
 main#musica .divisor-2 .section3 a,
-main#musica .divisor-2 .section3 a:hover,
 main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
 }
@@ -64,16 +65,13 @@ footer div#redes ul li a:hover {
   color: var(--color-tercero);
 }
 
+main#musica .divisor-2 .section3 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
-main.contacto .contenedor .section3 form textarea:hover {
-  background-color: var(--color-tercero);
-}
-
+main.contacto .contenedor .section3 form textarea:hover,
 a[aria-current="page"],
 .nav-link:hover {
   background-color: var(--color-tercero);
-  color: var(--color-primero);
 }
 
 /* ----------------- COLOR CUARTO ----------------- */
@@ -677,7 +675,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin: auto;
   }
 
-  p {
+  p,
+  main#musica .divisor-2 .section3 a {
     font-size: 0.9rem;
   }
 
@@ -750,7 +749,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
 
   main#musica .divisor-2 .section3 a {
     width: 50%;
-    font-size: 0.9rem;
   }
 }
 
