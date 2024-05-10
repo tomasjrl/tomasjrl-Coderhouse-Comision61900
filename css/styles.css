@@ -402,7 +402,7 @@ main#musica {
 }
 
 main#musica h1,
-h3 {
+main#musica h3 {
   width: 21rem;
 }
 
@@ -665,6 +665,11 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
 
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+  main#musica h1,
+  main#musica h3 {
+  width: auto;
+}
+  
   main#musica .divisor-1 .section1,
   main#musica .divisor-1 .section2,
   main#musica .divisor-1 .section3 {
@@ -741,6 +746,16 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
 
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+  
+  main#musica {
+    margin: 0;
+    padding: 0;
+  }
+
+  main#musica p {
+    padding: 0;
+  }
+  
   main#musica h1,
   main#musica h3 {
     width: 100%;
