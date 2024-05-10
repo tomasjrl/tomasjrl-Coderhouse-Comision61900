@@ -275,6 +275,16 @@ main#index {
   background-position: center;
 }
 
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto; 
+  min-height: 200px; 
+}
+
+#carouselExampleAutoplaying {
+}
+
 /* ----------------- INDEX.HTML SECCION 1----------------- */
 .main .section1 {
   width: 100%;
