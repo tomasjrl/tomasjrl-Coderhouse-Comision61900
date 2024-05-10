@@ -750,6 +750,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#musica .divisor-2 .section3 img {
     max-width: 80%;
     margin: auto;
+    margin-bottom: 1rem;
   }
 
   /* ----------------- CONTACTO----------------- */
