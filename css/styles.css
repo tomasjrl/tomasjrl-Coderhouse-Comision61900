@@ -26,6 +26,8 @@ main {
 }
 
 .main .section2 .divisor img,
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
 .main .section3 .divisor2 img,
 .main .section3 .divisor3 .mapa,
 main#musica div section div img,
@@ -70,6 +72,8 @@ header a[aria-current="page"],
 
 header nav.navbar,
 footer,
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
@@ -90,6 +94,7 @@ h3,
 h4,
 p,
 a,
+.main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form button {
@@ -114,6 +119,8 @@ a[aria-current="page"],
   background-color: var(--color-tercero);
 }
 
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
 .main .section3 .divisor2 img,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
@@ -285,7 +292,7 @@ main#index {
 /* ----------------- INDEX.HTML SECCION 1----------------- */
 .main .section1 {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-top: 4rem;
   padding-right: 1rem;
   padding-bottom: 4rem;
@@ -296,7 +303,7 @@ main#index {
 /* ----------------- INDEX.HTML SECCION 2----------------- */
 .main .section2 {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -342,16 +349,26 @@ main#index {
 
 .main .section3 .divisor1 {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  vertical-align: middle;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.main .section3 .divisor1 h2 {
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .main .section3 .divisor2 .card {
   background-color: transparent;
   border: none;
+}
+
+.main .section3 .divisor2 h3 {
+  padding: 10px;
 }
 
 .main .section3 .divisor2 img {
@@ -583,6 +600,11 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
 
   .main .section3 .divisor3 .mapa {
     height: 15rem;
+  }
+
+    /* ----------------- INDEX.HTML----------------- */
+  .main .section3 .divisor1 {
+    padding-top: 1rem;
   }
   /* ----------------- CONTACTO.HTML----------------- */
   main.contacto .contenedor {
