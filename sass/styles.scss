@@ -1,0 +1,16 @@
+// Importar variables globales
+@import "variables/variables";
+
+// Importar estilos generales
+@import "components/header";
+@import "components/footer";
+
+// Importar estilos de páginas
+@import "pages/index";
+@import "pages/instrumentos";
+
+// Importar estilos para media queries
+@import "breakpoints/medium";
+@import "breakpoints/small";
+@import "breakpoints/x-small";
+@import "breakpoints/xx-small";

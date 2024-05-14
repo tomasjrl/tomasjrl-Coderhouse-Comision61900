@@ -1,0 +1,22 @@
+# Ignora archivos y carpetas temporales
+temp/
+node_modules/
+tmp/
+
+# Ignora archivos de registro, temporales y generados
+*.{log,tmp,map,iml}
+
+# Ignora archivos y carpetas específicos del entorno local
+.DS_Store
+Thumbs.db
+
+# Ignora carpetas de construcción y dependencias generadas
+dist/
+build/
+out/
+.gradle/
+
+# Ignora archivos de configuración específicos del entorno local
+*.env
+.vscode/settings.json
+.idea/
