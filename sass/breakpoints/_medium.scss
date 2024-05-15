@@ -1,0 +1,22 @@
+/* ----------------- MEDIAQUERIES 992px ----------------- */
+@media (max-width: 992px) {
+  /* ----------------- INDEX.HTML----------------- */
+  .main {
+    .section2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  /* ----------------- CONTACTO.HTML ----------------- */
+  main.contacto {
+    .contenedor {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "section1 section3"
+        "section2 section3";
+      align-items: self-start;
+    }
+  }
+}

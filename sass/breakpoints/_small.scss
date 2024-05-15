@@ -1,0 +1,70 @@
+/* ----------------- MEDIAQUERIES 768px ----------------- */
+@media (max-width: 768px) {
+  /* ----------------- TITULOS Y TEXTOS ----------------- */
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .main {
+    .section2 {
+      .divisor {
+        width: 100%;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .divisor-texto {
+        padding-top: 1rem;
+      }
+
+      .divisor img {
+        height: 7rem;
+        width: 7rem;
+      }
+    }
+
+    .section3 {
+      .divisor3 .mapa {
+        height: 15rem;
+      }
+
+      .divisor1 {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  /* ----------------- CONTACTO.HTML----------------- */
+  main.contacto {
+    .contenedor {
+      position: static;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+        "section1"
+        "section2"
+        "section3";
+      padding: 2rem;
+
+      .section3 form {
+        padding-top: 1.5rem;
+        gap: 0.1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 18rem;
+
+        input,
+        textarea {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

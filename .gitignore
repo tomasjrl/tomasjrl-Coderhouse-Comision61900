@@ -4,7 +4,11 @@ node_modules/
 tmp/
 
 # Ignora archivos de registro, temporales y generados
-*.{log,tmp,map,iml}
+*.log
+*.tmp
+*.map
+*.iml
+
 
 # Ignora archivos y carpetas específicos del entorno local
 .DS_Store

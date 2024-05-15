@@ -1,0 +1,23 @@
+/* ------------ MODO OSCURO/CLARO ------------ */
+#toggleMode {
+  visibility: hidden;
+}
+
+.toggleDark,
+.toggleLight {
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  top: 17px;
+  left: 10px;
+}
+
+.toggleDark,
+#toggleMode:checked ~ .toggleLight {
+  display: block;
+}
+
+.toggleLight,
+#toggleMode:checked ~ .toggleDark {
+  display: none;
+}

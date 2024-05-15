@@ -1,0 +1,79 @@
+/* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+main.piano {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+             url(../assets/img/background/1.png);
+}
+
+main.canto {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+             url(../assets/img/background/4.jpg);
+}
+
+main.violin {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+             url(../assets/img/background/1.jpg);
+}
+
+main#musica {
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  padding-top: 4rem;
+
+  h1,
+  h3 {
+    width: 21rem;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+  }
+
+  p {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  div section div img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+
+  /* ----------------- #MUSICA DIVISOR 1 ----------------- */
+  .divisor-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .section1,
+    .section2,
+    .section3 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  /* ----------------- #MUSICA DIVISOR 2 ----------------- */
+  .divisor-2 {
+    margin: auto;
+    padding-top: 2rem;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .section4 a {
+      padding: 1.5em;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/* ---------------- CONTACTO.HTML --------------- */
+main.contacto {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+             url(../assets/img/background/2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+
+  .contenedor {
+    display: grid;
+    min-height: auto;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+      "section1 section2 section3"
+      "section1 section2 section3"
+      "section1 section2 section3";
+
+    .section1 {
+      grid-area: section1;
+    }
+    .section2 {
+      grid-area: section2;
+    }
+    .section3 {
+      grid-area: section3;
+
+      form {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          padding: 4px;
+          letter-spacing: 0.25rem;
+        }
+
+        input,
+        textarea,
+        button {
+          max-width: 10rem;
+          min-height: 1.4rem;
+          margin: auto;
+          letter-spacing: 1px;
+        }
+
+        input,
+        textarea {
+          font-style: italic;
+        }
+
+        button {
+          padding: 0.8em;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .checkbox {
+          display: flex;
+          margin: auto;
+          padding: 0.5rem;
+          align-items: center;
+
+          input#checkbox {
+            width: 1.1rem;
+            accent-color: var(--color-tercero);
+          }
+        }
+      }
+    }
+  }
+}

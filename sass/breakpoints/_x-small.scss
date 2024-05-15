@@ -1,0 +1,77 @@
+/* ----------------- MEDIAQUERIES 576px----------------- */
+@media (max-width: 576px) {
+  /* ----------------- FOOTER ----------------- */
+  footer {
+    div#redes ul {
+      gap: 1rem;
+    }
+  }
+
+  /* ----------------- TITULOS Y TEXTOS ----------------- */
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p,
+  main#musica .divisor-2 .section3 a {
+    font-size: 0.9rem;
+  }
+
+  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+  main#musica {
+    h1,
+    h3 {
+      width: auto;
+    }
+
+    .divisor-1 {
+      .section1,
+      .section2,
+      .section3 {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section div {
+        order: -1;
+      }
+    }
+
+    .divisor-2 {
+      width: 100%;
+      height: auto;
+      position: static;
+      margin: auto;
+
+      .section3 {
+        flex-direction: column;
+
+        p {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          width: 30%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  /* ----------------- CONTACTO.HTML----------------- */
+  main.contacto {
+    .contenedor {
+      .section3 form {
+        input,
+        textarea {
+          width: 80%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

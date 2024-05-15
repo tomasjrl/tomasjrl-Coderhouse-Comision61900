@@ -1,0 +1,18 @@
+/* ----------------- GENERALES ----------------- */
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main .section2 .divisor img,
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
+.main .section3 .divisor2 img,
+.main .section3 .divisor3 .mapa,
+main#musica div section div img,
+main#musica .divisor-2 .section4 a,
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
+  border-radius: 20px;
+}

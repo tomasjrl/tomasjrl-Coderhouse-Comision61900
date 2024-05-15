@@ -1,0 +1,111 @@
+/* ----------------- INDEX.HTML ----------------- */
+main#index {
+  padding-top: 1.8rem;
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/1.png);
+  background-size: cover;
+  background-position: center;
+
+  #carouselExampleAutoplaying .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto; 
+    min-height: 200px; 
+  }
+}
+
+/* ----------------- INDEX.HTML SECCION 1----------------- */
+main#index .section1 {
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 4rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  margin: auto;
+}
+
+/* ----------------- INDEX.HTML SECCION 2----------------- */
+main#index .section2 {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .divisor {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin: auto;
+    justify-content: space-between;
+
+    img {
+      height: 8rem;
+      object-fit: cover;
+    }
+
+    .divisor-texto {
+      width: 100%;
+      height: 9rem;
+      margin: auto;
+      order: -1;
+
+      h3 {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* ----------------- INDEX.HTML SECCION 3 ----------------- */
+main#index .section3 {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+
+  .divisor1 {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h2 {
+      padding: 1rem;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .divisor2 .card {
+    background-color: transparent;
+    border: none;
+
+    h3 {
+      padding: 10px;
+    }
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .divisor3 {
+    padding-top: 4rem;
+
+    .mapa {
+      max-width: 700px;
+      width: 80%;
+      margin-top: 40px;
+    }
+  }
+}

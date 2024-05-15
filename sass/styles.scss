@@ -1,15 +1,22 @@
-// Importar variables globales
-@import "variables/variables";
+/* Importando estilos universales */
+@import "global/universales";
+@import "global/colores";
+@import "global/fuente-tipografica";
+@import "global/textos";
 
-// Importar estilos generales
+/* Importando estilos comunes de secciones  */
+@import "components/toggle";
 @import "components/header";
+@import "components/main";
 @import "components/footer";
 
-// Importar estilos de páginas
+/* Importando estilos en páginas */
 @import "pages/index";
 @import "pages/instrumentos";
+@import "pages/contacto";
 
-// Importar estilos para media queries
+
+/* Importando mediaqueries */
 @import "breakpoints/medium";
 @import "breakpoints/small";
 @import "breakpoints/x-small";
