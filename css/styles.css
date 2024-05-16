@@ -13,17 +13,36 @@
   text-align: center;
 }
 
-*:hover,
-#navbarNavAltMarkup {
+* {
   transition: 0.2s;
 }
 
-* img {
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+img {
   transition: transform 0.3s ease;
 }
 
-* img:hover {
+img:hover {
   transform: scale(1.06);
+}
+
+main img,
+main p {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
@@ -256,6 +275,13 @@ main.contacto .contenedor .section3 form button {
   border-radius: 20px;
 }
 
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
 /* ----------------- FOOTER ----------------- */
 footer {
   display: flex;
@@ -287,12 +313,6 @@ main#index {
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/1.webp);
   background-size: cover;
   background-position: center;
-}
-main#index #carouselExampleAutoplaying .carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  min-height: 200px;
 }
 
 /* ----------------- INDEX.HTML SECCION 1----------------- */
@@ -409,8 +429,6 @@ main.violin {
 main#musica {
   background-size: cover;
   background-position: center;
-  padding: 1rem;
-  padding-top: 4rem;
   /* ----------------- #MUSICA DIVISOR 1 ----------------- */
   /* ----------------- #MUSICA DIVISOR 2 ----------------- */
 }
@@ -437,6 +455,8 @@ main#musica .divisor-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0.5rem;
+  margin-top: 4rem;
 }
 main#musica .divisor-1 .section1,
 main#musica .divisor-1 .section2,

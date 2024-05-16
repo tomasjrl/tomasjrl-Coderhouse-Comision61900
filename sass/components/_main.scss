@@ -16,3 +16,10 @@ main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form button {
   border-radius: 20px;
 }
+
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}

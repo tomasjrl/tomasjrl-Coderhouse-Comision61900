@@ -17,8 +17,6 @@ main.violin {
 main#musica {
   background-size: cover;
   background-position: center;
-  padding: 1rem;
-  padding-top: 4rem;
 
   h1,
   h3 {
@@ -47,6 +45,8 @@ main#musica {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0.5rem;
+    margin-top: 4rem;
 
     .section1,
     .section2,
