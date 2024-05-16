@@ -19,6 +19,7 @@
   --color-fondo-op100: rgb(220, 220, 220, 0.9);
 }
 
+
 /* ----------------- COLOR PRIMERO ----------------- */
 .navbar-toggler,
 main#musica .divisor-2 .section4 a:hover,
@@ -33,7 +34,6 @@ header a[aria-current="page"],
 header nav.navbar,
 footer,
 .main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
@@ -55,7 +55,6 @@ h4,
 p,
 a,
 .main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form button {
   color: var(--color-segundo);
@@ -94,3 +93,5 @@ main#musica .divisor-2 .section4 a {
 .toggleLight {
   color: var(--color-cuarto);
 }
+
+

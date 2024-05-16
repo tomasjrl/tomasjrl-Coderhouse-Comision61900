@@ -18,6 +18,14 @@
   transition: 0.2s;
 }
 
+* img {
+  transition: transform 0.3s ease;
+}
+
+* img:hover {
+  transform: scale(1.06);
+}
+
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
 :root {
   --color-primero: rgb(27, 26, 25);
@@ -53,7 +61,6 @@ header a[aria-current=page],
 header nav.navbar,
 footer,
 .main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
@@ -75,7 +82,6 @@ h4,
 p,
 a,
 .main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form button {
   color: var(--color-segundo);
@@ -224,6 +230,9 @@ header .navbar-nav a {
   text-align: center;
   margin: 0.2rem;
 }
+header .navbar-nav a:hover {
+  transform: scale(1.05);
+}
 header .logo-2 {
   display: none;
 }
@@ -357,8 +366,17 @@ main#index .section3 .divisor2 .card {
   background-color: transparent;
   border: none;
 }
-main#index .section3 .divisor2 .card h3 {
-  padding: 10px;
+main#index .section3 .divisor2 .card a.link {
+  background-color: var(--color-primero);
+  border-radius: 20px;
+  border: 1px solid var(--color-tercero);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+main#index .section3 .divisor2 .card a.link:hover {
+  color: var(--color-primero);
+  background-color: var(--color-tercero);
+  transform: scale(1.05);
 }
 main#index .section3 .divisor2 .card img {
   width: 80%;
@@ -370,6 +388,9 @@ main#index .section3 .divisor3 .mapa {
   max-width: 700px;
   width: 80%;
   margin-top: 40px;
+}
+main#index .section3 .divisor3 .mapa:hover {
+  transform: scale(1.05);
 }
 
 /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
