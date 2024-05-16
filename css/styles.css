@@ -315,6 +315,7 @@ main#index .section2 .divisor {
 main#index .section2 .divisor img {
   height: 8rem;
   object-fit: cover;
+  padding: 0.2rem;
 }
 main#index .section2 .divisor .divisor-texto {
   width: 100%;
@@ -537,19 +538,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   p {
     font-size: 0.95rem;
   }
-  .main .section2 .divisor {
-    width: 100%;
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .main .section2 .divisor-texto {
-    padding-top: 1rem;
-  }
-  .main .section2 .divisor img {
-    height: 7rem;
-    width: 7rem;
-  }
+  /* ----------------- INDEX.HTML ----------------- */
   .main .section3 .divisor3 .mapa {
     height: 15rem;
   }
@@ -591,6 +580,14 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   p,
   main#musica .divisor-2 .section3 a {
     font-size: 0.9rem;
+  }
+  /* ----------------- INDEX.HTML ----------------- */
+  .main .section2 .divisor {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main .section2 .divisor .divisor-imagen {
+    flex-direction: row;
   }
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica h1,

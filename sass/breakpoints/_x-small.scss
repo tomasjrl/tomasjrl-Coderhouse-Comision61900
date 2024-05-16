@@ -20,6 +20,21 @@
     font-size: 0.9rem;
   }
 
+  /* ----------------- INDEX.HTML ----------------- */
+
+  .main {
+    .section2 {
+      .divisor {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .divisor-imagen {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica {
     h1,
