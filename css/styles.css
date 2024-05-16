@@ -448,6 +448,9 @@ main#musica div section div img {
   object-fit: cover;
   margin-bottom: 2rem;
 }
+main#musica .section-top {
+  padding-top: 1.8rem;
+}
 main#musica .divisor-1 {
   width: 100%;
   max-width: 1200px;
