@@ -21,6 +21,22 @@
       .divisor1 {
         padding-top: 1rem;
       }
+
+      .divisor2 {
+        .row {
+          .card.col-lg-4.col-sm-12 {
+            .card {
+              .row {
+                .col-lg-12.col-sm-6 {
+                  .card-img-top {
+                    max-width: 60%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 

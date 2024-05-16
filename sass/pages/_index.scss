@@ -2,15 +2,15 @@
 main#index {
   padding-top: 1.8rem;
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-    url(../assets/img/background/1.png);
+    url(../assets/img/background/1.webp);
   background-size: cover;
   background-position: center;
 
   #carouselExampleAutoplaying .carousel-item img {
     object-fit: cover;
     width: 100%;
-    height: auto; 
-    min-height: 200px; 
+    height: auto;
+    min-height: 200px;
   }
 }
 
@@ -41,7 +41,7 @@ main#index .section2 {
     justify-content: space-between;
 
     img {
-      height: 8rem;
+      height: 10rem;
       object-fit: cover;
       padding: 0.2rem;
     }

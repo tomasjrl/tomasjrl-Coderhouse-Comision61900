@@ -29,7 +29,11 @@
         flex-direction: column-reverse;
 
         .divisor-imagen {
-          flex-direction: row;
+          
+          img {
+            max-height: 9rem;
+            
+          }
         }
       }
     }

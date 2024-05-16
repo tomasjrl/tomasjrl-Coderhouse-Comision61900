@@ -1,7 +1,7 @@
-@charset "UTF-8";
-/* Importando estilos universales */
-/* ----------------- UNIVERSALES ----------------- */
+/* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
+
+/* ----------------- UNIVERSALES ----------------- */
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +16,26 @@
 *:hover,
 #navbarNavAltMarkup {
   transition: 0.2s;
+}
+
+/* ----------------- GENERALES ----------------- */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main .section2 .divisor img,
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
+.main .section3 .divisor2 img,
+.main .section3 .divisor3 .mapa,
+main#musica div section div img,
+main#musica .divisor-2 .section4 a,
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
+  border-radius: 20px;
 }
 
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
@@ -45,7 +65,7 @@ main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-header a[aria-current=page],
+header a[aria-current="page"],
 .nav-link:hover {
   color: var(--color-primero);
 }
@@ -94,7 +114,7 @@ main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-a[aria-current=page],
+a[aria-current="page"],
 .nav-link:hover {
   background-color: var(--color-tercero);
 }
@@ -115,7 +135,30 @@ main#musica .divisor-2 .section4 a {
   color: var(--color-cuarto);
 }
 
-/* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
+/* ------------ MODO OSCURO/CLARO ------------ */
+#toggleMode {
+  visibility: hidden;
+}
+
+.toggleDark,
+.toggleLight {
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  top: 17px;
+  left: 10px;
+}
+
+.toggleDark,
+#toggleMode:checked ~ .toggleLight {
+  display: block;
+}
+
+.toggleLight,
+#toggleMode:checked ~ .toggleDark {
+  display: none;
+}
+
 /* ----------------- TITULOS Y TEXTOS ----------------- */
 h1,
 h2,
@@ -140,11 +183,9 @@ h4 {
 h1 {
   font-size: 2.5rem;
 }
-
 h2 {
   font-size: 2rem;
 }
-
 h3 {
   font-size: 1.5rem;
 }
@@ -174,77 +215,39 @@ a {
   letter-spacing: 0.125rem;
 }
 
-/* Importando estilos comunes de secciones  */
-/* ------------ MODO OSCURO/CLARO ------------ */
-#toggleMode {
-  visibility: hidden;
-}
-
-.toggleDark,
-.toggleLight {
-  cursor: pointer;
-  position: fixed;
-  z-index: 9999;
-  top: 17px;
-  left: 10px;
-}
-
-.toggleDark,
-#toggleMode:checked ~ .toggleLight {
-  display: block;
-}
-
-.toggleLight,
-#toggleMode:checked ~ .toggleDark {
-  display: none;
-}
-
 /* ----------------- HEADER ----------------- */
-header .navbar-nav.ms-auto {
+.navbar-nav.ms-auto {
   align-items: center;
 }
-header .navbar-brand {
+
+.navbar-brand {
   font-weight: 200;
   font-size: 1.8rem;
   padding-left: 20px;
 }
-header .navbar-toggler {
+
+.navbar-toggler {
   border: none;
 }
-header .fas.fa-bars {
+
+.fas.fa-bars {
   font-size: 1.7rem;
 }
-header .navbar-nav {
+
+.navbar-nav {
   width: 100%;
   justify-content: space-evenly;
 }
-header .navbar-nav a {
+
+.navbar-nav a {
   font-weight: 200;
   width: 6rem;
   text-align: center;
   margin: 0.2rem;
 }
+
 header .logo-2 {
   display: none;
-}
-
-/* ----------------- GENERALES ----------------- */
-main {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.main .section2 .divisor img,
-.main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
-.main .section3 .divisor2 img,
-.main .section3 .divisor3 .mapa,
-main#musica div section div img,
-main#musica .divisor-2 .section4 a,
-main.contacto .contenedor .section3 form input,
-main.contacto .contenedor .section3 form textarea,
-main.contacto .contenedor .section3 form button {
-  border-radius: 20px;
 }
 
 /* ----------------- FOOTER ----------------- */
@@ -256,38 +259,38 @@ footer {
   width: 100%;
   height: 4rem;
 }
+
 footer div#redes ul {
   display: flex;
   margin: auto;
   gap: 3rem;
   padding-left: 0;
 }
-footer div#redes ul li a {
-  padding: 0;
-  margin: 0;
-}
+
+footer a,
 footer h4 {
   padding: 0;
   margin: 0;
 }
 
-/* Importando estilos en páginas */
 /* ----------------- INDEX.HTML ----------------- */
 main#index {
   padding-top: 1.8rem;
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/1.webp);
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/1.png);
   background-size: cover;
   background-position: center;
 }
-main#index #carouselExampleAutoplaying .carousel-item img {
+
+#carouselExampleAutoplaying .carousel-item img {
   object-fit: cover;
   width: 100%;
-  height: auto;
-  min-height: 200px;
+  height: auto; 
+  min-height: 200px; 
 }
 
 /* ----------------- INDEX.HTML SECCION 1----------------- */
-main#index .section1 {
+.main .section1 {
   width: 100%;
   max-width: 1000px;
   padding-top: 4rem;
@@ -298,39 +301,43 @@ main#index .section1 {
 }
 
 /* ----------------- INDEX.HTML SECCION 2----------------- */
-main#index .section2 {
+.main .section2 {
   width: 100%;
   max-width: 1000px;
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-main#index .section2 .divisor {
+
+.main .section2 .divisor {
   width: 100%;
   display: flex;
   gap: 0.5rem;
   margin: auto;
   justify-content: space-between;
 }
-main#index .section2 .divisor img {
-  height: 10rem;
+
+.main .section2 .divisor img {
+  height: 8rem;
   object-fit: cover;
-  padding: 0.2rem;
+
 }
-main#index .section2 .divisor .divisor-texto {
+
+.main .section2 .divisor .divisor-texto {
   width: 100%;
   height: 9rem;
   margin: auto;
   order: -1;
 }
-main#index .section2 .divisor .divisor-texto h3 {
+
+.main .section2 .divisor .divisor-texto h3 {
   width: 90%;
   margin: auto;
   padding-bottom: 10px;
 }
 
 /* ----------------- INDEX.HTML SECCION 3 ----------------- */
-main#index .section3 {
+.main .section3 {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -339,7 +346,8 @@ main#index .section3 {
   justify-content: space-between;
   padding-bottom: 4rem;
 }
-main#index .section3 .divisor1 {
+
+.main .section3 .divisor1 {
   width: 100%;
   max-width: 1000px;
   display: flex;
@@ -348,25 +356,31 @@ main#index .section3 .divisor1 {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-main#index .section3 .divisor1 h2 {
+
+.main .section3 .divisor1 h2 {
   padding: 1rem;
   margin: auto;
   margin-bottom: 1rem;
 }
-main#index .section3 .divisor2 .card {
+
+.main .section3 .divisor2 .card {
   background-color: transparent;
   border: none;
 }
-main#index .section3 .divisor2 .card h3 {
+
+.main .section3 .divisor2 h3 {
   padding: 10px;
 }
-main#index .section3 .divisor2 .card img {
+
+.main .section3 .divisor2 img {
   width: 80%;
 }
-main#index .section3 .divisor3 {
+
+.main .section3 .divisor3 {
   padding-top: 4rem;
 }
-main#index .section3 .divisor3 .mapa {
+
+.main .section3 .divisor3 .mapa {
   max-width: 700px;
   width: 80%;
   margin-top: 40px;
@@ -374,15 +388,18 @@ main#index .section3 .divisor3 .mapa {
 
 /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
 main.piano {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/1.webp);
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/1.png);
 }
 
 main.canto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/4.webp);
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/4.jpg);
 }
 
 main.violin {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/3.webp);
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/1.jpg);
 }
 
 main#musica {
@@ -390,25 +407,28 @@ main#musica {
   background-position: center;
   padding: 1rem;
   padding-top: 4rem;
-  /* ----------------- #MUSICA DIVISOR 1 ----------------- */
-  /* ----------------- #MUSICA DIVISOR 2 ----------------- */
 }
+
 main#musica h1,
 main#musica h3 {
   width: 21rem;
   margin-bottom: 1rem;
   line-height: 2.5rem;
 }
+
 main#musica p {
   width: 80%;
   padding: 1rem;
 }
+
 main#musica div section div img {
   width: 12rem;
   height: 12rem;
   object-fit: cover;
   margin-bottom: 2rem;
 }
+
+/* ----------------- #MUSICA DIVISOR 1 ----------------- */
 main#musica .divisor-1 {
   width: 100%;
   max-width: 1200px;
@@ -417,16 +437,20 @@ main#musica .divisor-1 {
   flex-direction: column;
   justify-content: center;
 }
+
 main#musica .divisor-1 .section1,
 main#musica .divisor-1 .section2,
 main#musica .divisor-1 .section3 {
   display: flex;
   align-items: center;
 }
+
+/* ----------------- #MUSICA DIVISOR 2 ----------------- */
 main#musica .divisor-2 {
   margin: auto;
   padding-top: 2rem;
 }
+
 main#musica .divisor-2 section {
   display: flex;
   flex-direction: column;
@@ -434,6 +458,7 @@ main#musica .divisor-2 section {
   gap: 1rem;
   align-items: center;
 }
+
 main#musica .divisor-2 .section4 a {
   padding: 1.5em;
   font-weight: 300;
@@ -443,12 +468,18 @@ main#musica .divisor-2 .section4 a {
 
 /* ---------------- CONTACTO.HTML --------------- */
 main.contacto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url(../assets/img/background/2.webp);
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
+    url(../assets/img/background/2.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 3rem;
 }
-main.contacto .contenedor {
+
+main.contacto .contenedor p {
+  padding: 1rem;
+}
+
+.contenedor {
   display: grid;
   min-height: auto;
   width: 100%;
@@ -460,8 +491,12 @@ main.contacto .contenedor {
   grid-gap: 0px;
   justify-content: center;
   align-items: center;
-  grid-template-areas: "section1 section2 section3" "section1 section2 section3" "section1 section2 section3";
+  grid-template-areas:
+    "section1 section2 section3"
+    "section1 section2 section3"
+    "section1 section2 section3";
 }
+
 main.contacto .contenedor .section1 {
   grid-area: section1;
 }
@@ -471,16 +506,19 @@ main.contacto .contenedor .section2 {
 main.contacto .contenedor .section3 {
   grid-area: section3;
 }
+
 main.contacto .contenedor .section3 form {
   width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
+
 main.contacto .contenedor .section3 form label {
   padding: 4px;
   letter-spacing: 0.25rem;
 }
+
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form button {
@@ -489,28 +527,31 @@ main.contacto .contenedor .section3 form button {
   margin: auto;
   letter-spacing: 1px;
 }
+
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea {
   font-style: italic;
 }
+
 main.contacto .contenedor .section3 form button {
   padding: 0.8em;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 main.contacto .contenedor .section3 form .checkbox {
   display: flex;
   margin: auto;
   padding: 0.5rem;
   align-items: center;
 }
+
 main.contacto .contenedor .section3 form .checkbox input#checkbox {
   width: 1.1rem;
   accent-color: var(--color-tercero);
 }
 
-/* Importando mediaqueries */
 /* ----------------- MEDIAQUERIES 992px ----------------- */
 @media (max-width: 992px) {
   /* ----------------- INDEX.HTML----------------- */
@@ -519,13 +560,17 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     align-items: center;
     gap: 2rem;
   }
+
   /* ----------------- CONTACTO.HTML ----------------- */
   main.contacto .contenedor {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "section1 section3" "section2 section3";
+    grid-template-areas:
+      "section1 section3"
+      "section2 section3";
     align-items: self-start;
   }
 }
+
 /* ----------------- MEDIAQUERIES 768px ----------------- */
 @media (max-width: 768px) {
   /* ----------------- TITULOS Y TEXTOS ----------------- */
@@ -535,26 +580,46 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   h3 {
     font-size: 1.2rem;
   }
+
   p {
     font-size: 0.95rem;
   }
-  /* ----------------- INDEX.HTML ----------------- */
+
+  .main .section2 .divisor {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main .section2 .divisor-texto {
+    padding-top: 1rem;
+  }
+
+  .main .section2 .divisor img {
+    height: 7rem;
+    width: 7rem;
+  }
+
   .main .section3 .divisor3 .mapa {
     height: 15rem;
   }
+
+    /* ----------------- INDEX.HTML----------------- */
   .main .section3 .divisor1 {
     padding-top: 1rem;
-  }
-  .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 .card-img-top {
-    max-width: 60%;
   }
   /* ----------------- CONTACTO.HTML----------------- */
   main.contacto .contenedor {
     position: static;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "section1" "section2" "section3";
+    grid-template-areas:
+      "section1"
+      "section2"
+      "section3";
     padding: 2rem;
   }
+
   main.contacto .contenedor .section3 form {
     padding-top: 1.5rem;
     gap: 0.1rem;
@@ -562,17 +627,20 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     flex-wrap: wrap;
     width: 18rem;
   }
+
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form textarea {
     margin-right: 0;
   }
 }
+
 /* ----------------- MEDIAQUERIES 576px----------------- */
 @media (max-width: 576px) {
   /* ----------------- FOOTER ----------------- */
   footer div#redes ul {
     gap: 1rem;
   }
+
   /* ----------------- TITULOS Y TEXTOS ----------------- */
   h1,
   h1 strong,
@@ -580,65 +648,73 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   h3 {
     font-size: 1.1rem;
   }
+
   p,
   main#musica .divisor-2 .section3 a {
     font-size: 0.9rem;
   }
-  /* ----------------- INDEX.HTML ----------------- */
-  .main .section2 .divisor {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .main .section2 .divisor .divisor-imagen img {
-    max-height: 9rem;
-  }
+
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
   main#musica h1,
   main#musica h3 {
-    width: auto;
-  }
+  width: auto;
+}
+  
   main#musica .divisor-1 .section1,
   main#musica .divisor-1 .section2,
   main#musica .divisor-1 .section3 {
     flex-direction: column;
     align-items: center;
   }
+
   main#musica .divisor-1 section div {
     order: -1;
   }
+
   main#musica .divisor-2 {
     width: 100%;
     height: auto;
     position: static;
     margin: auto;
   }
+
   main#musica .divisor-2 .section3 {
     flex-direction: column;
   }
+
   main#musica .divisor-2 .section3 p {
     margin-right: 0;
     margin-bottom: 1rem;
   }
+
   main#musica .divisor-2 .section3 a {
     width: 30%;
     margin: auto;
   }
+
   /* ----------------- CONTACTO.HTML----------------- */
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form textarea {
     width: 80%;
     padding: 0;
   }
+
+  main#musica .divisor-2 .section3 a {
+    width: 50%;
+  }
 }
+
 /* ----------------- MEDIAQUERIES 290px----------------- */
 @media (max-width: 290px) {
   /* ----------------- HEADER ----------------- */
   header .logo {
     display: none;
   }
+
   header .logo-2 {
     display: block;
   }
+
   h1,
   h1 strong,
   h2,
@@ -652,23 +728,29 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     font-size: 0.6rem;
     width: auto;
   }
+
   /* ----------------- FOOTER ----------------- */
   footer {
     flex-direction: column;
     height: 6rem;
   }
+
   /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+  
   main#musica {
     margin: 0;
     padding: 0;
   }
+
+  main#musica p {
+    padding: 0;
+  }
+  
   main#musica h1,
   main#musica h3 {
     width: 100%;
   }
-  main#musica p {
-    padding: 0;
-  }
+
   main#musica .divisor-1 section div img,
   main#musica .divisor-2 .section3 img {
     max-width: 80%;
@@ -676,19 +758,24 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+
   main#musica .divisor-2 .section4 a {
     padding: 0.5rem;
   }
+
   main#musica .divisor-2 .section4 img {
     width: 90%;
+    
   }
-  /* ----------------- CONTACTO ----------------- */
+
+  /* ----------------- CONTACTO----------------- */
   main.contacto .contenedor .section3 form {
     width: 100%;
     flex-direction: column;
   }
+
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form textarea {
     margin: auto;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
