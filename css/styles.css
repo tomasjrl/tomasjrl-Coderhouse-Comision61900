@@ -252,6 +252,9 @@ header .navbar-nav a {
 header .navbar-nav a:hover {
   transform: scale(1.05);
 }
+header .navbar-nav a[aria-current=page] {
+  pointer-events: none;
+}
 header .logo-2 {
   display: none;
 }
