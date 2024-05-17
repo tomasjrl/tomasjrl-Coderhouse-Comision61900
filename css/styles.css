@@ -13,8 +13,15 @@
   text-align: center;
 }
 
-* {
-  transition: 0.2s;
+.navbar a {
+  transition: 0.25s;
+}
+
+main a:hover,
+main img:hover,
+main iframe.mapa:hover {
+  transition: 0.25s;
+  transform: scale(1.06);
 }
 
 @keyframes show {
@@ -27,22 +34,25 @@
     scale: 100%;
   }
 }
-img {
-  transition: transform 0.3s ease;
+img,
+a,
+iframe.mapa {
+  transition: transform 0.25s ease;
 }
 
-img:hover {
-  transform: scale(1.06);
-}
-
-main img,
-main p {
+img,
+p,
+iframe.mapa {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 50%;
+  animation-range: entry 20% cover 40%;
   animation-fill-mode: both;
+}
+
+a[aria-current=page] {
+  pointer-events: none;
 }
 
 /* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
@@ -249,12 +259,6 @@ header .navbar-nav a {
   text-align: center;
   margin: 0.2rem;
 }
-header .navbar-nav a:hover {
-  transform: scale(1.05);
-}
-header .navbar-nav a[aria-current=page] {
-  pointer-events: none;
-}
 header .logo-2 {
   display: none;
 }
@@ -399,7 +403,6 @@ main#index .section3 .divisor2 .card a.link {
 main#index .section3 .divisor2 .card a.link:hover {
   color: var(--color-primero);
   background-color: var(--color-tercero);
-  transform: scale(1.05);
 }
 main#index .section3 .divisor2 .card img {
   width: 80%;
@@ -411,9 +414,6 @@ main#index .section3 .divisor3 .mapa {
   max-width: 700px;
   width: 80%;
   margin-top: 40px;
-}
-main#index .section3 .divisor3 .mapa:hover {
-  transform: scale(1.05);
 }
 
 /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */

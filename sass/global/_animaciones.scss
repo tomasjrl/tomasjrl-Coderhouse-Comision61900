@@ -1,0 +1,50 @@
+.navbar a {
+  transition: 0.25s;
+}
+
+main {
+a:hover,
+img:hover,
+iframe.mapa:hover {
+  transition: 0.25s;
+  transform: scale(1.06);
+}
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img,
+a,
+iframe.mapa
+ {
+  transition: transform 0.25s ease;
+}
+
+img,
+p,
+iframe.mapa {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 20% cover 40%;
+  animation-fill-mode: both;
+}
+
+a {
+  &[aria-current="page"] {
+    pointer-events: none;
+  }
+}

@@ -95,7 +95,6 @@ main#index .section3 {
       &:hover {
         color: var(--color-primero);
         background-color: var(--color-tercero);
-        transform: scale(1.05);
      }
     }
 
@@ -112,9 +111,6 @@ main#index .section3 {
       width: 80%;
       margin-top: 40px;
 
-      &:hover {
-        transform: scale(1.05);
-      }
     }
   }
 }
