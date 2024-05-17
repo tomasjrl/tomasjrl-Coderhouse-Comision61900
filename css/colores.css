@@ -22,6 +22,7 @@
 
 /* ----------------- COLOR PRIMERO ----------------- */
 .navbar-toggler,
+main .divisor2 .card a.link:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -34,6 +35,7 @@ header a[aria-current="page"],
 header nav.navbar,
 footer,
 .main .section3 .divisor1 h2,
+.main .divisor2 .card a.link,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
   background-color: var(--color-primero);
@@ -69,6 +71,7 @@ footer div#redes ul li a:hover {
   color: var(--color-tercero);
 }
 
+main .divisor2 .card a.link:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -81,11 +84,16 @@ a[aria-current="page"],
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
 .main .section3 .divisor2 img,
+.main .divisor2 .card a.link,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
 main.contacto .contenedor .section3 form button,
 main#musica .divisor-2 .section4 a {
   border: solid 1px var(--color-tercero);
+}
+
+.checkbox input#checkbox {
+  accent-color: var(--color-tercero);
 }
 
 /* ----------------- COLOR CUARTO ----------------- */
