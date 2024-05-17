@@ -1,23 +1,33 @@
-// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML 
-main.piano {
+// Mixin para definir estilos de fondo comunes
+@mixin background-styles($background-image) {
   background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-             url(../assets/img/background/1.webp);
+             url($background-image);
+  background-size: cover;
+  background-position: center;
 }
 
-main.canto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-             url(../assets/img/background/4.webp);
+// Mixin para definir estilos de secciones comunes
+@mixin section-styles {
+  display: flex;
+  flex-direction: column;
 }
 
-main.violin {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-             url(../assets/img/background/3.webp);
+// Mixin para definir estilos de enlaces comunes
+@mixin link-styles {
+  padding: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+// Estilos específicos para cada página de música
+main.piano, main.canto, main.violin {
+  @include background-styles('../assets/img/background/1.webp');
 }
 
 main#musica {
-  background-size: cover;
-  background-position: center;
-
+  @include background-styles('../assets/img/background/3.webp');
+  
   h1,
   h3 {
     width: 21rem;
@@ -41,7 +51,7 @@ main#musica {
     padding-top: 1.8rem;
   }
 
-  // #MUSICA DIVISOR 1 
+  // #MUSICA DIVISOR 1
   .divisor-1 {
     width: 100%;
     max-width: 1200px;
@@ -55,12 +65,12 @@ main#musica {
     .section1,
     .section2,
     .section3 {
-      display: flex;
+      @include section-styles;
       align-items: center;
     }
   }
 
-  // #MUSICA DIVISOR 2 
+  // #MUSICA DIVISOR 2
   .divisor-2 {
     margin: auto;
     padding-top: 2rem;
@@ -74,10 +84,7 @@ main#musica {
     }
 
     .section4 a {
-      padding: 1.5em;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      @include link-styles;
     }
   }
 }

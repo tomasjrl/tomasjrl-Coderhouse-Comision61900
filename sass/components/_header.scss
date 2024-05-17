@@ -1,3 +1,40 @@
+// Mixin para font-weight
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+// Mixin para font-size
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+// Mixin para padding
+@mixin padding($padding-left: null) {
+  @if $padding-left != null {
+    padding-left: $padding-left;
+  }
+}
+
+// Mixin para border
+@mixin border($border) {
+  border: $border;
+}
+
+// Mixin para display
+@mixin display($display) {
+  display: $display;
+}
+
+// Mixin para width y justify-content
+@mixin flex-container($width: null, $justify: null) {
+  @if $width != null {
+    width: $width;
+  }
+  @if $justify != null {
+    justify-content: $justify;
+  }
+}
+
 /* ----------------- HEADER ----------------- */
 header {
   .navbar-nav.ms-auto {
@@ -5,33 +42,38 @@ header {
   }
 
   .navbar-brand {
-    font-weight: 200;
-    font-size: 1.8rem;
-    padding-left: 20px;
+    @include font-weight(200);
+    @include font-size(1.8rem);
+    @include padding(20px);
   }
 
   .navbar-toggler {
-    border: none;
+    @include border(none);
   }
 
   .fas.fa-bars {
-    font-size: 1.7rem;
+    @include font-size(1.7rem);
   }
 
   .navbar-nav {
-    width: 100%;
-    justify-content: space-evenly;
+    @include flex-container(100%, space-evenly);
 
     a {
-      font-weight: 200;
+      @include font-weight(200);
       width: 6rem;
       text-align: center;
       margin: 0.2rem;
+
+      // Estilos para enlaces con aria-current="page"
+
+  &[aria-current="page"] {
+    pointer-events: none;
+  }
 
     }
   }
 
   .logo-2 {
-    display: none;
+    @include display(none);
   }
 }

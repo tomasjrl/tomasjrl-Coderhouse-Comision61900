@@ -1,13 +1,13 @@
-/* ----------------- MEDIAQUERIES 576px----------------- */
+// MEDIAQUERIES 576px
 @media (max-width: 576px) {
-  /* ----------------- FOOTER ----------------- */
+  // FOOTER 
   footer {
     div#redes ul {
       gap: 1rem;
     }
   }
 
-  /* ----------------- TITULOS Y TEXTOS ----------------- */
+  // TITULOS Y TEXTOS 
   h1,
   h1 strong,
   h2,
@@ -20,7 +20,7 @@
     font-size: 0.9rem;
   }
 
-  /* ----------------- INDEX.HTML ----------------- */
+  // INDEX.HTML 
 
   .main {
     .section2 {
@@ -39,7 +39,7 @@
     }
   }
 
-  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML
   main#musica {
     h1,
     h3 {
@@ -81,7 +81,7 @@
     }
   }
 
-  /* ----------------- CONTACTO.HTML----------------- */
+  // CONTACTO.HTML
   main.contacto {
     .contenedor {
       .section3 form {

@@ -1,50 +1,62 @@
-.navbar a {
-  transition: 0.25s;
+// Mixin para transiciones
+@mixin transition($properties) {
+  transition: $properties;
 }
 
+// Mixin para animaciones
+@mixin animation($name, $timeline, $range) {
+  animation-timeline: $timeline;
+  animation-name: $name;
+  animation-range: $range;
+  animation-fill-mode: both;
+}
+
+// Mixin para transformaciones al hover
+@mixin hover-transform($scale) {
+  &:hover {
+    @include transition(transform 0.25s ease);
+    transform: scale($scale);
+  }
+}
+
+// Estilos de la barra de navegación
+.navbar {
+  a {
+    @include transition(0.25s);
+  }
+}
+
+// Estilos de main con elementos hover
 main {
-a:hover,
-img:hover,
-iframe.mapa:hover {
-  transition: 0.25s;
-  transform: scale(1.06);
-}
+  a,
+  img,
+  iframe.mapa  {
+    @include hover-transform(1.06);
+    @include transition(transform 0.25s ease);
+  }
 }
 
+// Keyframes para animación show
 @keyframes show {
   from {
     opacity: 0;
     scale: 25%;
   }
-
   to {
     opacity: 1;
     scale: 100%;
   }
 }
 
-img,
-a,
-iframe.mapa
- {
-  transition: transform 0.25s ease;
-}
+// Estilos para img, p, iframe.mapa
 
 img,
 p,
 iframe.mapa {
   view-timeline-name: --image;
   view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: show;
-
-  animation-range: entry 20% cover 40%;
-  animation-fill-mode: both;
+  @include animation(show, --image, entry 15% cover 40%);
 }
 
-a {
-  &[aria-current="page"] {
-    pointer-events: none;
-  }
-}
+
+

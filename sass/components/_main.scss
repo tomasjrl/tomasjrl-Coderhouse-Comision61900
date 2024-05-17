@@ -1,9 +1,18 @@
-/* ----------------- GENERALES ----------------- */
+// GENERALES
 main {
   width: 100%;
   min-height: 100vh;
 }
 
+// TOP SECTION CAROUSEL
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+// BORDER RADIUS
 .main .section2 .divisor img,
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
@@ -15,11 +24,4 @@ main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form button {
   border-radius: 20px;
-}
-
-#carouselExampleAutoplaying .carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  min-height: 200px;
 }

@@ -1,33 +1,62 @@
-/* ----------------- FOOTER ----------------- */
+// Mixin para display flex y justify-content
+@mixin flex-container($display: flex, $justify: null, $align: null) {
+  display: $display;
+  @if $justify != null {
+    justify-content: $justify;
+  }
+  @if $align != null {
+    align-items: $align;
+  }
+}
+
+// Mixin para padding
+@mixin padding($padding: null) {
+  @if $padding != null {
+    padding: $padding;
+  }
+}
+
+// Mixin para margin
+@mixin margin($margin: null) {
+  @if $margin != null {
+    margin: $margin;
+  }
+}
+
+// Mixin para width y height
+@mixin size($width: null, $height: null) {
+  @if $width != null {
+    width: $width;
+  }
+  @if $height != null {
+    height: $height;
+  }
+}
+
+// FOOTER
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.8rem;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
+  @include flex-container(flex, space-between, center);
+  @include padding(0.8rem);
+  @include size(100%, 4rem);
 
   div#redes {
-  
-
     ul {
-      display: flex;
-      margin: auto;
+      @include flex-container(flex);
+      @include margin(auto);
       gap: 3rem;
       padding-left: 0;
 
       li {
         a {
-          padding: 0;
-          margin: 0;
+          @include padding(0);
+          @include margin(0);
         }
       }
     }
   }
 
   h4 {
-    padding: 0;
-    margin: 0;
+    @include padding(0);
+    @include margin(0);
   }
-
 }

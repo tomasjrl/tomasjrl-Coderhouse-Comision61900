@@ -1,6 +1,6 @@
-/* ----------------- MEDIAQUERIES 290px----------------- */
+// MEDIAQUERIES 290px
 @media (max-width: 290px) {
-  /* ----------------- HEADER ----------------- */
+  // HEADER 
   header {
     .logo {
       display: none;
@@ -26,13 +26,13 @@
     width: auto;
   }
 
-  /* ----------------- FOOTER ----------------- */
+  // FOOTER 
   footer {
     flex-direction: column;
     height: 6rem;
   }
 
-  /* ---- #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML ---- */
+// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML 
   main#musica {
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@
     }
   }
 
-  /* ----------------- CONTACTO ----------------- */
+  // CONTACTO 
   main.contacto {
     .contenedor {
       .section3 form {

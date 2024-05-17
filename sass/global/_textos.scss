@@ -1,55 +1,72 @@
-/* ----------------- TITULOS Y TEXTOS ----------------- */
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
+// Mixin para text-transform
+@mixin text-transform($transform) {
+  text-transform: $transform;
 }
 
-h1,
-h1 strong,
-h2,
-h2 strong,
-p,
-strong {
-  letter-spacing: 0.25rem;
+// Mixin para letter-spacing
+@mixin letter-spacing($spacing) {
+  letter-spacing: $spacing;
 }
 
-h3,
-h4 {
-  letter-spacing: 0.125rem;
+// Mixin para font-size
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+// Mixin para font-weight
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+// TITULOS Y TEXTOS
+h1, h2, h3 {
+  @include text-transform(uppercase);
+}
+
+h1, h1 strong, h2, h2 strong, p, strong {
+  @include letter-spacing(0.25rem);
+}
+
+h3, h4 {
+  @include letter-spacing(0.125rem);
 }
 
 h1 {
-  font-size: 2.5rem;
+  @include font-size(2.5rem);
+  @include font-weight(500);
+
+  strong {
+    @include font-weight(500);
+  }
 }
+
 h2 {
-  font-size: 2rem;
+  @include font-size(2rem);
+  @include font-weight(500);
+
+  strong {
+    @include font-weight(500);
+  }
 }
+
 h3 {
-  font-size: 1.5rem;
+  @include font-size(1.5rem);
 }
 
 h4 {
-  font-size: 0.7rem;
+  @include font-size(0.7rem);
 }
 
 p {
-  font-size: 1.2rem;
+  @include font-size(1.2rem);
+  @include font-weight(400);
 }
 
-h1,
-h1 strong,
-h2,
-h2 strong {
-  font-weight: 500;
-}
-
-p,
 strong {
-  font-weight: 400;
+  @include font-weight(400);
 }
 
 a {
   text-decoration: none;
-  letter-spacing: 0.125rem;
+  @include letter-spacing(0.125rem);
 }
