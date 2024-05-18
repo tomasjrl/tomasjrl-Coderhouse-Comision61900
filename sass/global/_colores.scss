@@ -136,7 +136,7 @@ body.light-mode {
    }
 
    main {
-    &#index {
+    &.main {
     @include background-image("../assets/img/background/1.webp");
    }
   
