@@ -89,7 +89,213 @@ iframe.mapa,
   animation-fill-mode: forwards;
 }
 
-/* ----------------- VARIABLES COLORES PRINCIPALES MODO OSCURO  ----------------- */
+main#index {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background-size: cover;
+  background-position: center;
+}
+main.piano {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background-size: cover;
+  background-position: center;
+}
+main.canto {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/4.webp");
+  background-size: cover;
+  background-position: center;
+}
+main.violin {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/3.webp");
+  background-size: cover;
+  background-position: center;
+}
+main.contacto {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-toggler,
+main .divisor2 .card a.link:hover,
+main#musica .divisor-2 .section4 a:hover,
+main.contacto .contenedor .section3 form button:hover,
+main.contacto .contenedor .section3 form input:hover,
+main.contacto .contenedor .section3 form textarea:hover,
+header a[aria-current=page],
+.nav-link:hover {
+  color: rgb(27, 26, 25);
+}
+
+header nav.navbar,
+footer,
+.main .section3 .divisor1 h2,
+.main .divisor2 .card a.link,
+main#musica .divisor-2 .section4 a,
+main.contacto .contenedor .section3 form button {
+  background-color: rgb(27, 26, 25);
+}
+
+.main .section3 .divisor3 .mapa {
+  border: solid 1px rgb(27, 26, 25);
+}
+
+.navbar-brand,
+.navbar-brand:visited,
+.fas.fa-bars,
+.navbar-nav a,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.main .section3 .divisor1 h2,
+main.contacto .contenedor .section3 form label,
+main.contacto .contenedor .section3 form button {
+  color: rgb(234, 234, 234);
+}
+
+.toggleDark,
+.toggleLight:hover,
+.navbar-brand:hover,
+.fas.fa-bars:hover,
+footer div#redes ul li a:hover {
+  color: rgb(225, 202, 83);
+}
+
+main .divisor2 .card a.link:hover,
+main#musica .divisor-2 .section4 a:hover,
+main.contacto .contenedor .section3 form button:hover,
+main.contacto .contenedor .section3 form input:hover,
+main.contacto .contenedor .section3 form textarea:hover,
+a[aria-current=page],
+.nav-link:hover {
+  background-color: rgb(225, 202, 83);
+}
+
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
+.main .section3 .divisor2 img,
+.main .divisor2 .card a.link,
+main#musica .divisor-1 section div img,
+main#musica .divisor-2 .section4 img,
+main.contacto .contenedor .section3 form button,
+main#musica .divisor-2 .section4 a {
+  border: solid 1px rgb(225, 202, 83);
+}
+
+.checkbox input#checkbox {
+  accent-color: rgb(225, 202, 83);
+}
+
+.toggleDark:hover,
+.toggleLight {
+  color: rgb(83, 152, 225);
+}
+
+body.light-mode main#index {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode main.piano {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode main.canto {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/4.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode main.violin {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/3.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode main.contacto {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode .navbar-toggler,
+body.light-mode main .divisor2 .card a.link:hover,
+body.light-mode main#musica .divisor-2 .section4 a:hover,
+body.light-mode main.contacto .contenedor .section3 form button:hover,
+body.light-mode main.contacto .contenedor .section3 form input:hover,
+body.light-mode main.contacto .contenedor .section3 form textarea:hover,
+body.light-mode header a[aria-current=page],
+body.light-mode .nav-link:hover {
+  color: rgb(234, 234, 234);
+}
+body.light-mode header nav.navbar,
+body.light-mode footer,
+body.light-mode .main .section3 .divisor1 h2,
+body.light-mode .main .divisor2 .card a.link,
+body.light-mode main#musica .divisor-2 .section4 a,
+body.light-mode main.contacto .contenedor .section3 form button {
+  background-color: rgb(234, 234, 234);
+}
+body.light-mode .main .section3 .divisor3 .mapa {
+  border: solid 1px rgb(234, 234, 234);
+}
+body.light-mode main.contacto {
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+  background-size: cover;
+  background-position: center;
+}
+body.light-mode .navbar-brand,
+body.light-mode .navbar-brand:visited,
+body.light-mode .fas.fa-bars,
+body.light-mode .navbar-nav a,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode p,
+body.light-mode a,
+body.light-mode .main .section3 .divisor1 h2,
+body.light-mode main.contacto .contenedor .section3 form label,
+body.light-mode main.contacto .contenedor .section3 form button {
+  color: rgb(27, 26, 25);
+}
+body.light-mode .toggleDark,
+body.light-mode .toggleLight:hover,
+body.light-mode .navbar-brand:hover,
+body.light-mode .fas.fa-bars:hover,
+body.light-mode footer div#redes ul li a:hover {
+  color: rgb(83, 152, 225);
+}
+body.light-mode main .divisor2 .card a.link:hover,
+body.light-mode main#musica .divisor-2 .section4 a:hover,
+body.light-mode main.contacto .contenedor .section3 form button:hover,
+body.light-mode main.contacto .contenedor .section3 form input:hover,
+body.light-mode main.contacto .contenedor .section3 form textarea:hover,
+body.light-mode a[aria-current=page],
+body.light-mode .nav-link:hover {
+  background-color: rgb(83, 152, 225);
+}
+body.light-mode .main .section3 .divisor1 h2,
+body.light-mode .main .section3 .divisor2 h3,
+body.light-mode .main .section3 .divisor2 img,
+body.light-mode .main .divisor2 .card a.link,
+body.light-mode main#musica .divisor-1 section div img,
+body.light-mode main#musica .divisor-2 .section4 img,
+body.light-mode main.contacto .contenedor .section3 form button,
+body.light-mode main#musica .divisor-2 .section4 a {
+  border: solid 1px rgb(83, 152, 225);
+}
+body.light-mode .checkbox input#checkbox {
+  accent-color: rgb(83, 152, 225);
+}
+body.light-mode .toggleDark:hover,
+body.light-mode .toggleLight {
+  color: rgb(83, 152, 225);
+}
+
+/*  
+
+
 :root {
   --color-primero: rgb(27, 26, 25);
   --color-segundo: rgb(234, 234, 234);
@@ -99,7 +305,7 @@ iframe.mapa,
   --color-fondo-op100: rgb(0, 0, 0);
 }
 
-/* ----------------- VARIABLES COLORES ALTERNATIVOS MODO CLARO  ----------------- */
+
 #toggleMode:checked ~ header,
 #toggleMode:checked ~ main,
 #toggleMode:checked ~ footer {
@@ -110,14 +316,15 @@ iframe.mapa,
   --color-fondo-op100: rgb(220, 220, 220, 0.9);
 }
 
-/* ----------------- COLOR PRIMERO ----------------- */
+
+
 .navbar-toggler,
 main .divisor2 .card a.link:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-header a[aria-current=page],
+header a[aria-current="page"],
 .nav-link:hover {
   color: var(--color-primero);
 }
@@ -135,7 +342,7 @@ main.contacto .contenedor .section3 form button {
   border: solid 1px var(--color-primero);
 }
 
-/* ----------------- COLOR SEGUNDO ----------------- */
+
 .navbar-brand,
 .navbar-brand:visited,
 .fas.fa-bars,
@@ -152,7 +359,7 @@ main.contacto .contenedor .section3 form button {
   color: var(--color-segundo);
 }
 
-/* ----------------- COLOR TERCERO ----------------- */
+
 .toggleDark,
 .toggleLight:hover,
 .navbar-brand:hover,
@@ -166,7 +373,7 @@ main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-a[aria-current=page],
+a[aria-current="page"],
 .nav-link:hover {
   background-color: var(--color-tercero);
 }
@@ -186,12 +393,14 @@ main#musica .divisor-2 .section4 a {
   accent-color: var(--color-tercero);
 }
 
-/* ----------------- COLOR CUARTO ----------------- */
+
 .toggleDark:hover,
 .toggleLight {
   color: var(--color-cuarto);
 }
 
+
+*/
 h1, h2, h3 {
   text-transform: uppercase;
 }
@@ -350,9 +559,6 @@ footer h4 {
 /* Importando estilos en páginas */
 main#index {
   padding-top: 1.8rem;
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url("../assets/img/background/1.webp");
-  background-size: cover;
-  background-position: center;
 }
 main#index .section1 {
   width: 100%;
@@ -439,15 +645,6 @@ main#index .section3 .divisor3 .mapa {
   margin-top: 40px;
 }
 
-main.piano {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url("../assets/img/background/1.webp");
-}
-main.canto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url("../assets/img/background/4.webp");
-}
-main.violin {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url("../assets/img/background/3.webp");
-}
 main#musica {
   background-size: cover;
   background-position: center;
@@ -508,9 +705,6 @@ main#musica .divisor-2 .section4 a {
 }
 
 main.contacto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url("../assets/img/background/2.webp");
-  background-size: cover;
-  background-position: center;
   padding-top: 3rem;
 }
 main.contacto .contenedor {

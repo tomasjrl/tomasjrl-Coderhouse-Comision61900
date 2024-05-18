@@ -1,5 +1,5 @@
 @mixin background-image($url) {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url($url);
+ background: linear-gradient(#{$color-fondo-op100}, #{$color-fondo-op50}), url($url);
   background-size: cover;
   background-position: center;
 }
@@ -10,7 +10,7 @@
 }
 
 main.contacto {
-  @include background-image("../assets/img/background/2.webp");
+
   padding-top: 3rem;
 
   .contenedor {
