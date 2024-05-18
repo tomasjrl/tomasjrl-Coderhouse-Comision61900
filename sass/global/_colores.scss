@@ -24,7 +24,7 @@ $color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
 // MODO OSCURO
 
 main {
-  &#index {
+  &.main {
   @include background-image("../assets/img/background/1.webp");
  }
 
