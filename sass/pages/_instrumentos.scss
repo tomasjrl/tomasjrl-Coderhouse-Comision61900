@@ -19,6 +19,7 @@ main#musica {
   background-position: center;
 
   h1,
+  h2,
   h3 {
     width: 21rem;
     margin-bottom: 1rem;
@@ -57,6 +58,7 @@ main#musica {
     .section3 {
       display: flex;
       align-items: center;
+      padding-bottom: 2rem;
     }
   }
 

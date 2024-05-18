@@ -79,6 +79,22 @@
         }
       }
     }
+
+  // ANIMACIONES
+.fade1 {
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.fade2 {
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.fade3 {
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
   }
 
   // CONTACTO.HTML

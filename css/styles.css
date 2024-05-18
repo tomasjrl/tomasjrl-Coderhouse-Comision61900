@@ -40,7 +40,9 @@ main iframe.mapa:hover {
 }
 img,
 p,
-iframe.mapa {
+iframe.mapa,
+#musica h2,
+#musica h3 {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
@@ -63,23 +65,26 @@ iframe.mapa {
     visibility: visible;
   }
 }
-.fade-in-image {
+.fade-in {
   opacity: 0;
   visibility: hidden;
   animation: fadeIn 2s forwards;
 }
 
-.section1 {
+.section1,
+.fade1 {
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
 }
 
-.section2 {
+.section2,
+.fade2 {
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
 
-.section3 {
+.section3,
+.fade3 {
   animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
@@ -452,6 +457,7 @@ main#musica {
   background-position: center;
 }
 main#musica h1,
+main#musica h2,
 main#musica h3 {
   width: 21rem;
   margin-bottom: 1rem;
@@ -485,6 +491,7 @@ main#musica .divisor-1 .section2,
 main#musica .divisor-1 .section3 {
   display: flex;
   align-items: center;
+  padding-bottom: 2rem;
 }
 main#musica .divisor-2 {
   margin: auto;
@@ -671,6 +678,18 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#musica .divisor-2 .section3 a {
     width: 30%;
     margin: auto;
+  }
+  main#musica .fade1 {
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  main#musica .fade2 {
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+  }
+  main#musica .fade3 {
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
   }
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form textarea {

@@ -51,7 +51,9 @@ main {
 // Estilos para img, p, iframe.mapa
 img,
 p,
-iframe.mapa {
+iframe.mapa,
+#musica h2,
+#musica h3 {
   view-timeline-name: --image;
   view-timeline-axis: block;
   @include animation(show, --image, entry 15% cover 40%);
@@ -74,23 +76,26 @@ iframe.mapa {
   }
 }
 
-.fade-in-image { 
+.fade-in { 
   opacity: 0;
   visibility: hidden;
   animation: fadeIn 2s forwards;
 }
 
-.section1 {
+.section1,
+.fade1 {
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
 }
 
-.section2 {
+.section2,
+.fade2 {
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
 
-.section3 {
+.section3,
+.fade3 {
   animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
