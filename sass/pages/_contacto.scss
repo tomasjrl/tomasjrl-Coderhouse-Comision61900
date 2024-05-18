@@ -1,9 +1,16 @@
-// CONTACTO.HTML
-main.contacto {
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-             url(../assets/img/background/2.webp);
+@mixin background-image($url) {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url($url);
   background-size: cover;
   background-position: center;
+}
+
+@mixin section-padding($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+main.contacto {
+  @include background-image("../assets/img/background/2.webp");
   padding-top: 3rem;
 
   .contenedor {
@@ -11,8 +18,7 @@ main.contacto {
     min-height: auto;
     width: 100%;
     margin: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    @include section-padding(4rem, 4rem);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     grid-gap: 0px;

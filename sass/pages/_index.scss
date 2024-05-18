@@ -1,111 +1,109 @@
-// INDEX.HTML 
-main#index {
-  padding-top: 1.8rem;
-  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)),
-    url(../assets/img/background/1.webp);
+@mixin background-image($url) {
+  background: linear-gradient(var(--color-fondo-op100), var(--color-fondo-op50)), url($url);
   background-size: cover;
   background-position: center;
-
 }
 
-// INDEX.HTML SECCION 1
-main#index .section1 {
-  width: 100%;
-  max-width: 1000px;
-  padding-top: 4rem;
-  padding-right: 1rem;
-  padding-bottom: 4rem;
-  padding-left: 1rem;
-  margin: auto;
+@mixin section-padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
 }
 
-// INDEX.HTML SECCION 2
-main#index .section2 {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+main#index {
+  padding-top: 1.8rem;
+  @include background-image("../assets/img/background/1.webp");
 
-  .divisor {
+  .section1 {
     width: 100%;
-    display: flex;
-    gap: 0.5rem;
+    max-width: 1000px;
+    @include section-padding(4rem, 1rem, 4rem, 1rem);
     margin: auto;
-    justify-content: space-between;
+  }
 
-    img {
-      height: 10rem;
-      object-fit: cover;
-      padding: 0.2rem;
+  .section2 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .divisor {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      margin: auto;
+      justify-content: space-between;
+
+      img {
+        height: 10rem;
+        object-fit: cover;
+        padding: 0.2rem;
+      }
+
+      .divisor-texto {
+        width: 100%;
+        height: 9rem;
+        margin: auto;
+        order: -1;
+
+        h3 {
+          width: 90%;
+          margin: auto;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+
+    .divisor1 {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      @include section-padding(4rem, 0, 4rem, 0);
+
+      h2 {
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+      }
     }
 
-    .divisor-texto {
-      width: 100%;
-      height: 9rem;
-      margin: auto;
-      order: -1;
+    .divisor2 .card {
+      background-color: transparent;
+      border: none;
 
-      h3 {
-        width: 90%;
-        margin: auto;
-        padding-bottom: 10px;
+      a.link {
+        border-radius: 20px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .divisor3 {
+      padding-top: 4rem;
+
+      .mapa {
+        max-width: 700px;
+        width: 80%;
+        margin-top: 40px;
       }
     }
   }
 }
-
-// INDEX.HTML SECCION 3
-main#index .section3 {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 4rem;
-
-  .divisor1 {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    h2 {
-      padding: 1rem;
-      margin: auto;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .divisor2 .card {
-    background-color: transparent;
-    border: none;
-
-    a.link {
-      border-radius: 20px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    img {
-      width: 80%;
-    }
-  }
-
-  .divisor3 {
-    padding-top: 4rem;
-
-    .mapa {
-      max-width: 700px;
-      width: 80%;
-      margin-top: 40px;
-
-    }
-  }
-}
-
-
