@@ -24,7 +24,7 @@ $color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
 // MODO OSCURO
 
 main {
-  &.main {
+  &.principal {
   @include background-image("../assets/img/background/1.webp");
  }
 
@@ -71,7 +71,7 @@ main.contacto .contenedor .section3 form button {
 
 .navbar-brand,
 .navbar-brand:visited,
-.fas.fa-bars,
+.navbar-toggler svg,
 .navbar-nav a,
 h1,
 h2,
@@ -89,7 +89,7 @@ main.contacto .contenedor .section3 form button {
 .toggleDark,
 .toggleLight:hover,
 .navbar-brand:hover,
-.fas.fa-bars:hover,
+.navbar-toggler svg:hover,
 footer div#redes ul li a:hover {
   color: $color-tercero;
 }
@@ -136,7 +136,7 @@ body.light-mode {
    }
 
    main {
-    &.main {
+    &.principal {
     @include background-image("../assets/img/background/1.webp");
    }
   
@@ -187,7 +187,7 @@ main.contacto {
 
 .navbar-brand,
 .navbar-brand:visited,
-.fas.fa-bars,
+.navbar-toggler svg,
 .navbar-nav a,
 h1,
 h2,
@@ -205,7 +205,7 @@ main.contacto .contenedor .section3 form button {
 .toggleDark,
 .toggleLight:hover,
 .navbar-brand:hover,
-.fas.fa-bars:hover,
+.navbar-toggler svg:hover,
 footer div#redes ul li a:hover {
   color: $color-tercero-claro;
 }

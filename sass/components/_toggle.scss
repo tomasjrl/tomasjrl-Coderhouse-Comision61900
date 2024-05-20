@@ -35,7 +35,7 @@
 .toggleDark,
 .toggleLight {
   @include cursor(pointer);
-  @include position(fixed, 17px, 10px, 9999);
+  @include position(fixed, 15px, 10px, 9999);
 }
 
 .toggleDark,
