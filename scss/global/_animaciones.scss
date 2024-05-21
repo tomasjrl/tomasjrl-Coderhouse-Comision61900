@@ -40,13 +40,14 @@ main {
 @keyframes show {
   from {
     opacity: 0;
-    scale: 25%;
+    transform: scale(0.25);
   }
   to {
     opacity: 1;
-    scale: 100%;
+    transform: scale(1);
   }
 }
+
 
 // Estilos para img, p, iframe.mapa
 img,
