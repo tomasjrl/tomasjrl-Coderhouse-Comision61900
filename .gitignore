@@ -6,7 +6,6 @@ tmp/
 # Ignora archivos de registro, temporales y generados
 *.log
 *.tmp
-*.map
 *.iml
 
 
