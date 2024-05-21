@@ -1,22 +1,24 @@
-/* Importando estilos universales */
-@import "global/universales";
+/* Importando utilities */
+@import "utilities/reset";
+
+/* Importando universales */
 @import "global/animaciones";
 @import "global/colores";
 @import "global/textos";
 
-/* Importando estilos comunes de secciones  */
+/* Importando components  */
 @import "components/toggle";
 @import "components/header";
 @import "components/main";
 @import "components/footer";
 
-/* Importando estilos en páginas */
+/* Importando pages */
 @import "pages/index";
 @import "pages/canto-piano-violin";
 @import "pages/contacto";
 
 
-/* Importando mediaqueries */
+/* Importando breakpoints */
 @import "breakpoints/medium";
 @import "breakpoints/small";
 @import "breakpoints/x-small";

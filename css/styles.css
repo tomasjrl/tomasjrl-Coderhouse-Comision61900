@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* Importando estilos universales */
+/* Importando utilities */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
 * {
   padding: 0;
@@ -12,6 +11,7 @@
   text-align: center;
 }
 
+/* Importando universales */
 .navbar a {
   transition: 0.25s;
 }
@@ -344,7 +344,7 @@ a {
   letter-spacing: 0.125rem;
 }
 
-/* Importando estilos comunes de secciones  */
+/* Importando components  */
 /* ------------ MODO OSCURO/CLARO ------------ */
 #toggleMode {
   visibility: hidden;
@@ -449,7 +449,7 @@ footer h4 {
   margin: 0;
 }
 
-/* Importando estilos en páginas */
+/* Importando pages */
 main#index {
   padding-top: 1.8rem;
 }
@@ -661,7 +661,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   width: 1.1rem;
 }
 
-/* Importando mediaqueries */
+/* Importando breakpoints */
 @media (max-width: 992px) {
   .main .section2 {
     flex-direction: column;
