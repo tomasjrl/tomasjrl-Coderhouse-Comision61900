@@ -1,24 +1,24 @@
-/* Importando utilities */
+// Importando utilities *
 @import "utilities/reset";
 
-/* Importando universales */
+// Importando global
 @import "global/animaciones";
-@import "global/colores";
+@import "global/colores"; // variables y colores
 @import "global/textos";
 
-/* Importando components  */
-@import "components/toggle";
+// Importando components  
+@import "components/toggle"; // modo dark-light
 @import "components/header";
 @import "components/main";
 @import "components/footer";
 
-/* Importando pages */
+// Importando pages 
 @import "pages/index";
 @import "pages/canto-piano-violin";
 @import "pages/contacto";
 
 
-/* Importando breakpoints */
+// Importando breakpoints 
 @import "breakpoints/medium";
 @import "breakpoints/small";
 @import "breakpoints/x-small";
