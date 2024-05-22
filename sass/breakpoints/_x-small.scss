@@ -1,13 +1,13 @@
 // MEDIAQUERIES 576px
 @media (max-width: 576px) {
-  // FOOTER
+  // FOOTER 
   footer {
     div#redes ul {
       gap: 1rem;
     }
   }
 
-  // TITULOS Y TEXTOS
+  // TITULOS Y TEXTOS 
   h1,
   h1 strong,
   h2,
@@ -20,7 +20,7 @@
     font-size: 0.9rem;
   }
 
-  // INDEX.HTML
+  // INDEX.HTML 
 
   .main {
     .section2 {
@@ -29,15 +29,17 @@
         flex-direction: column-reverse;
 
         .divisor-imagen {
+          
           img {
             max-height: 9rem;
+            
           }
         }
       }
     }
   }
 
-  // #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML
+// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML
   main#musica {
     h1,
     h3 {
@@ -78,21 +80,21 @@
       }
     }
 
-    // ANIMACIONES
-    .fade1 {
-      animation-delay: 0.6s;
-      animation-fill-mode: forwards;
-    }
+  // ANIMACIONES
+.fade1 {
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
 
-    .fade2 {
-      animation-delay: 0.8s;
-      animation-fill-mode: forwards;
-    }
+.fade2 {
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
 
-    .fade3 {
-      animation-delay: 0.4s;
-      animation-fill-mode: forwards;
-    }
+.fade3 {
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
   }
 
   // CONTACTO.HTML
