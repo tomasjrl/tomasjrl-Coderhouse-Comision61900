@@ -6,11 +6,11 @@ $color-fondo-op50: rgba(0, 0, 0, 0.5);
 $color-fondo-op100: rgb(0, 0, 0);
 
 @mixin background-image($url) {
-  background: linear-gradient(#{$color-fondo-op100}, #{$color-fondo-op50}), url($url);
-   background-size: cover;
-   background-position: center;
- }
-
+  background: linear-gradient(#{$color-fondo-op100}, #{$color-fondo-op50}),
+    url($url);
+  background-size: cover;
+  background-position: center;
+}
 
 $color-primero-claro: rgb(234, 234, 234);
 $color-segundo-claro: rgb(27, 26, 25);
@@ -19,30 +19,28 @@ $color-cuarto-claro: rgb(83, 152, 225);
 $color-fondo-op50-claro: rgba(220, 220, 220, 0.5);
 $color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
 
-
-
 // MODO OSCURO
 
 main {
   &.principal {
-  @include background-image("../assets/img/background/1.webp");
- }
+    @include background-image("../assets/img/background/1.webp");
+  }
 
- &.piano {
-  @include background-image("../assets/img/background/1.webp");
- }
+  &.piano {
+    @include background-image("../assets/img/background/1.webp");
+  }
 
- &.canto {
-  @include background-image("../assets/img/background/4.webp");
- }
+  &.canto {
+    @include background-image("../assets/img/background/4.webp");
+  }
 
- &.violin {
-  @include background-image("../assets/img/background/3.webp");
- }
+  &.violin {
+    @include background-image("../assets/img/background/3.webp");
+  }
 
- &.contacto {
-  @include background-image("../assets/img/background/2.webp");
- }
+  &.contacto {
+    @include background-image("../assets/img/background/2.webp");
+  }
 }
 
 .navbar-toggler,
@@ -85,7 +83,6 @@ main.contacto .contenedor .section3 form button {
   color: $color-segundo;
 }
 
-
 .toggleDark,
 .toggleLight:hover,
 .navbar-brand:hover,
@@ -119,7 +116,6 @@ main#musica .divisor-2 .section4 a {
   accent-color: $color-tercero;
 }
 
-
 .toggleDark:hover,
 .toggleLight {
   color: $color-cuarto;
@@ -128,118 +124,117 @@ main#musica .divisor-2 .section4 a {
 // MODO CLARO
 
 body.light-mode {
-
   @mixin background-image($url) {
-    background: linear-gradient(#{$color-fondo-op100-claro}, #{$color-fondo-op50-claro}), url($url);
-     background-size: cover;
-     background-position: center;
-   }
+    background: linear-gradient(
+        #{$color-fondo-op100-claro},
+        #{$color-fondo-op50-claro}
+      ),
+      url($url);
+    background-size: cover;
+    background-position: center;
+  }
 
-   main {
+  main {
     &.principal {
-    @include background-image("../assets/img/background/1.webp");
-   }
-  
-   &.piano {
-    @include background-image("../assets/img/background/1.webp");
-   }
-  
-   &.canto {
-    @include background-image("../assets/img/background/4.webp");
-   }
-  
-   &.violin {
-    @include background-image("../assets/img/background/3.webp");
-   }
-  
-   &.contacto {
-    @include background-image("../assets/img/background/2.webp");
-   }
+      @include background-image("../assets/img/background/1.webp");
+    }
+
+    &.piano {
+      @include background-image("../assets/img/background/1.webp");
+    }
+
+    &.canto {
+      @include background-image("../assets/img/background/4.webp");
+    }
+
+    &.violin {
+      @include background-image("../assets/img/background/3.webp");
+    }
+
+    &.contacto {
+      @include background-image("../assets/img/background/2.webp");
+    }
   }
 
   .navbar-toggler,
-main .divisor2 .card a.link:hover,
-main#musica .divisor-2 .section4 a:hover,
-main.contacto .contenedor .section3 form button:hover,
-main.contacto .contenedor .section3 form input:hover,
-main.contacto .contenedor .section3 form textarea:hover,
-header a[aria-current="page"],
-.nav-link:hover {
-  color: $color-primero-claro;
+  main .divisor2 .card a.link:hover,
+  main#musica .divisor-2 .section4 a:hover,
+  main.contacto .contenedor .section3 form button:hover,
+  main.contacto .contenedor .section3 form input:hover,
+  main.contacto .contenedor .section3 form textarea:hover,
+  header a[aria-current="page"],
+  .nav-link:hover {
+    color: $color-primero-claro;
+  }
+
+  header nav.navbar,
+  footer,
+  .main .section3 .divisor1 h2,
+  .main .divisor2 .card a.link,
+  main#musica .divisor-2 .section4 a,
+  main.contacto .contenedor .section3 form button {
+    background-color: $color-primero-claro;
+  }
+
+  .main .section3 .divisor3 .mapa {
+    border: solid 1px $color-primero-claro;
+  }
+
+  main.contacto {
+    @include background-image("../assets/img/background/2.webp");
+  }
+
+  .navbar-brand,
+  .navbar-brand:visited,
+  .navbar-toggler svg,
+  .navbar-nav a,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  .main .section3 .divisor1 h2,
+  main.contacto .contenedor .section3 form label,
+  main.contacto .contenedor .section3 form button {
+    color: $color-segundo-claro;
+  }
+
+  .toggleDark,
+  .toggleLight:hover,
+  .navbar-brand:hover,
+  .navbar-toggler svg:hover,
+  footer div#redes ul li a:hover {
+    color: $color-tercero-claro;
+  }
+
+  main .divisor2 .card a.link:hover,
+  main#musica .divisor-2 .section4 a:hover,
+  main.contacto .contenedor .section3 form button:hover,
+  main.contacto .contenedor .section3 form input:hover,
+  main.contacto .contenedor .section3 form textarea:hover,
+  a[aria-current="page"],
+  .nav-link:hover {
+    background-color: $color-tercero-claro;
+  }
+
+  .main .section3 .divisor1 h2,
+  .main .section3 .divisor2 h3,
+  .main .section3 .divisor2 img,
+  .main .divisor2 .card a.link,
+  main#musica .divisor-1 section div img,
+  main#musica .divisor-2 .section4 img,
+  main.contacto .contenedor .section3 form button,
+  main#musica .divisor-2 .section4 a {
+    border: solid 1px $color-tercero-claro;
+  }
+
+  .checkbox input#checkbox {
+    accent-color: $color-tercero-claro;
+  }
+
+  .toggleDark:hover,
+  .toggleLight {
+    color: $color-cuarto-claro;
+  }
 }
-
-header nav.navbar,
-footer,
-.main .section3 .divisor1 h2,
-.main .divisor2 .card a.link,
-main#musica .divisor-2 .section4 a,
-main.contacto .contenedor .section3 form button {
-  background-color: $color-primero-claro;
-}
-
-.main .section3 .divisor3 .mapa {
-  border: solid 1px $color-primero-claro;
-}
-
-main.contacto {
-  @include background-image("../assets/img/background/2.webp");
-}
-
-.navbar-brand,
-.navbar-brand:visited,
-.navbar-toggler svg,
-.navbar-nav a,
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-.main .section3 .divisor1 h2,
-main.contacto .contenedor .section3 form label,
-main.contacto .contenedor .section3 form button {
-  color: $color-segundo-claro;
-}
-
-
-.toggleDark,
-.toggleLight:hover,
-.navbar-brand:hover,
-.navbar-toggler svg:hover,
-footer div#redes ul li a:hover {
-  color: $color-tercero-claro;
-}
-
-main .divisor2 .card a.link:hover,
-main#musica .divisor-2 .section4 a:hover,
-main.contacto .contenedor .section3 form button:hover,
-main.contacto .contenedor .section3 form input:hover,
-main.contacto .contenedor .section3 form textarea:hover,
-a[aria-current="page"],
-.nav-link:hover {
-  background-color: $color-tercero-claro;
-}
-
-.main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
-.main .section3 .divisor2 img,
-.main .divisor2 .card a.link,
-main#musica .divisor-1 section div img,
-main#musica .divisor-2 .section4 img,
-main.contacto .contenedor .section3 form button,
-main#musica .divisor-2 .section4 a {
-  border: solid 1px $color-tercero-claro;
-}
-
-.checkbox input#checkbox {
-  accent-color: $color-tercero-claro;
-}
-
-
-.toggleDark:hover,
-.toggleLight {
-  color: $color-cuarto-claro;
-}
-
-}
-

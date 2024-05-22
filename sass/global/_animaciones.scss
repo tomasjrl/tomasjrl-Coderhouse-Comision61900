@@ -30,7 +30,7 @@
 main {
   a,
   img,
-  iframe.mapa  {
+  iframe.mapa {
     @include hover-transform(1.06);
     @include transition(transform 0.25s ease);
   }
@@ -48,7 +48,6 @@ main {
   }
 }
 
-
 // Estilos para img, p, iframe.mapa
 img,
 p,
@@ -59,7 +58,6 @@ iframe.mapa,
   view-timeline-axis: block;
   @include animation(show, --image, entry 15% cover 40%);
 }
-
 
 // Keyframes para animación fade contacto.html
 @keyframes fadeIn {
@@ -77,7 +75,7 @@ iframe.mapa,
   }
 }
 
-.fade-in { 
+.fade-in {
   opacity: 0;
   visibility: hidden;
   animation: fadeIn 1s forwards;

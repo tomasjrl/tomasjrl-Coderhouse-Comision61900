@@ -66,10 +66,9 @@ header {
 
       // Estilos para enlaces con aria-current="page"
 
-  &[aria-current="page"] {
-    pointer-events: none;
-  }
-
+      &[aria-current="page"] {
+        pointer-events: none;
+      }
     }
   }
 

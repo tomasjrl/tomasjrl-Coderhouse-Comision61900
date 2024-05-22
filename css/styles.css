@@ -88,27 +88,32 @@ iframe.mapa,
 }
 
 main.principal {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 main.piano {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 main.canto {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/4.webp");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background/4.webp");
   background-size: cover;
   background-position: center;
 }
 main.violin {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/3.webp");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background/3.webp");
   background-size: cover;
   background-position: center;
 }
 main.contacto {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/2.webp");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -119,7 +124,7 @@ main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-header a[aria-current=page],
+header a[aria-current="page"],
 .nav-link:hover {
   color: rgb(27, 26, 25);
 }
@@ -166,7 +171,7 @@ main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
-a[aria-current=page],
+a[aria-current="page"],
 .nav-link:hover {
   background-color: rgb(225, 202, 83);
 }
@@ -192,27 +197,47 @@ main#musica .divisor-2 .section4 a {
 }
 
 body.light-mode main.principal {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 body.light-mode main.piano {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 body.light-mode main.canto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/4.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/4.webp");
   background-size: cover;
   background-position: center;
 }
 body.light-mode main.violin {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/3.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/3.webp");
   background-size: cover;
   background-position: center;
 }
 body.light-mode main.contacto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -222,7 +247,7 @@ body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
 body.light-mode main.contacto .contenedor .section3 form input:hover,
 body.light-mode main.contacto .contenedor .section3 form textarea:hover,
-body.light-mode header a[aria-current=page],
+body.light-mode header a[aria-current="page"],
 body.light-mode .nav-link:hover {
   color: rgb(234, 234, 234);
 }
@@ -238,7 +263,11 @@ body.light-mode .main .section3 .divisor3 .mapa {
   border: solid 1px rgb(234, 234, 234);
 }
 body.light-mode main.contacto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+  background: linear-gradient(
+      rgba(220, 220, 220, 0.9),
+      rgba(220, 220, 220, 0.5)
+    ),
+    url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -269,7 +298,7 @@ body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
 body.light-mode main.contacto .contenedor .section3 form input:hover,
 body.light-mode main.contacto .contenedor .section3 form textarea:hover,
-body.light-mode a[aria-current=page],
+body.light-mode a[aria-current="page"],
 body.light-mode .nav-link:hover {
   background-color: rgb(83, 152, 225);
 }
@@ -292,15 +321,23 @@ body.light-mode .toggleLight {
 }
 
 /* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
-h1, h1 strong, h2, h2 strong, p, strong {
+h1,
+h1 strong,
+h2,
+h2 strong,
+p,
+strong {
   letter-spacing: 0.25rem;
 }
 
-h3, h4 {
+h3,
+h4 {
   letter-spacing: 0.125rem;
 }
 
@@ -391,7 +428,7 @@ header .navbar-nav a {
   text-align: center;
   margin: 0.2rem;
 }
-header .navbar-nav a[aria-current=page] {
+header .navbar-nav a[aria-current="page"] {
   pointer-events: none;
 }
 header .logo-2 {
@@ -685,7 +722,15 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   .main .section3 .divisor1 {
     padding-top: 1rem;
   }
-  .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 .card-img-top {
+  .main
+    .section3
+    .divisor2
+    .row
+    .card.col-lg-4.col-sm-12
+    .card
+    .row
+    .col-lg-12.col-sm-6
+    .card-img-top {
     max-width: 60%;
   }
   main.contacto .contenedor {
@@ -831,4 +876,4 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main.contacto .contenedor .section3 form textarea {
     margin: auto;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
