@@ -1,14 +1,15 @@
 {
-  "name": "proyecto-final-sass",
+  "name": "proyecto-coderhouse",
   "version": "1.0.0",
   "description": "SOBRE MI:",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:sass": "sass sass/styles.scss css/styles.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
-
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.2"
+  }
 }
