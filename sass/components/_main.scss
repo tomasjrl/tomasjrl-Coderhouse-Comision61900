@@ -1,10 +1,10 @@
-// GENERALES
+// APLICACION DE ESTILOS GENERALES PARA LOS 'MAIN' DE LOS HTML
 main {
   width: 100%;
   min-height: 100vh;
 }
 
-// TOP SECTION CAROUSEL
+// APLICACION DE ESTILOS GENERALES PARA 'TOP-SECTION' (carousel con imágenes en index/piano/canto/violin.html)
 #carouselExampleAutoplaying .carousel-item img {
   object-fit: cover;
   width: 100%;
@@ -12,7 +12,7 @@ main {
   min-height: 200px;
 }
 
-// BORDER RADIUS
+// APLICACION DE BORDER RADIUS PARA LOS ELEMENTOS DECLARADOS
 .main .section2 .divisor img,
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,

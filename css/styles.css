@@ -291,7 +291,6 @@ body.light-mode .toggleLight {
   color: rgb(83, 152, 225);
 }
 
-/* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
 h1,
 h2,
 h3 {
@@ -350,7 +349,6 @@ a {
   letter-spacing: 0.125rem;
 }
 
-/* ------------ MODO OSCURO/CLARO ------------ */
 #toggleMode {
   visibility: hidden;
 }
@@ -374,7 +372,6 @@ a {
   display: none;
 }
 
-/* ----------------- HEADER ----------------- */
 header .navbar-nav.ms-auto {
   align-items: center;
 }

@@ -1,28 +1,28 @@
-// FUENTE TIPOGRAFICA
-/* ----------------- FUENTE TIPOGRAFICA DE GOOGLEFONT----------------- */
+
+// FUENTE TIPOGRAFICA DE GOOGLEFONT IMPORTADA = "ROBOTO"
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
 
-// Mixin para text-transform
+// Mixin para text-transform / Para la capitalización de la tipografía
 @mixin text-transform($transform) {
   text-transform: $transform;
 }
 
-// Mixin para letter-spacing
+// Mixin para letter-spacing  / Para el espaciado de cada letra de la tipografía
 @mixin letter-spacing($spacing) {
   letter-spacing: $spacing;
 }
 
-// Mixin para font-size
+// Mixin para font-size  / Para el tamaño de la tipografía
 @mixin font-size($size) {
   font-size: $size;
 }
 
-// Mixin para font-weight
+// Mixin para font-weight / Para el peso de la tipografía
 @mixin font-weight($weight) {
   font-weight: $weight;
 }
 
-// TITULOS Y TEXTOS
+// APLICACION DE LOS MIXIN EN ELEMENTOS / TITULOS Y TEXTOS
 h1,
 h2,
 h3 {

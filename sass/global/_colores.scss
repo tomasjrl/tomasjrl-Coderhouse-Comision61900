@@ -1,3 +1,5 @@
+// VARIABLES COLOR MODO OSCURO 'DARK MODE' / Función: colores que se aplican en "dark mode"
+
 $color-primero: rgb(27, 26, 25);
 $color-segundo: rgb(234, 234, 234);
 $color-tercero: rgb(225, 202, 83);
@@ -12,6 +14,8 @@ $color-fondo-op100: rgb(0, 0, 0);
   background-position: center;
 }
 
+// VARIABLES COLOR MODO CLARO 'LIGHT MODE' / Función: colores que se aplican en "light mode"
+
 $color-primero-claro: rgb(234, 234, 234);
 $color-segundo-claro: rgb(27, 26, 25);
 $color-tercero-claro: rgb(83, 152, 225);
@@ -19,7 +23,7 @@ $color-cuarto-claro: rgb(83, 152, 225);
 $color-fondo-op50-claro: rgba(220, 220, 220, 0.5);
 $color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
 
-// MODO OSCURO
+// 'DARK MODE' = Declaraciones
 
 main {
   &.principal {
@@ -121,7 +125,7 @@ main#musica .divisor-2 .section4 a {
   color: $color-cuarto;
 }
 
-// MODO CLARO
+// 'LIGHT MODE' = Declaraciones
 
 body.light-mode {
   @mixin background-image($url) {

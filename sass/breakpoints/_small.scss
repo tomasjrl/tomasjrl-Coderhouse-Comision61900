@@ -1,6 +1,6 @@
 // MEDIAQUERIES 768px 
 @media (max-width: 768px) {
-  // TITULOS Y TEXTOS 
+  // declaraciones en titulos y textos
   h1,
   h1 strong,
   h2,
@@ -11,7 +11,7 @@
   p {
     font-size: 0.95rem;
   }
-  // INDEX.HTML 
+  // declaraciones en index.html
   .main {
     .section3 {
       .divisor3 .mapa {
@@ -40,7 +40,7 @@
     }
   }
 
-  // CONTACTO.HTML 
+  // declaraciones en contacto.html
   main.contacto {
     .contenedor {
       position: static;

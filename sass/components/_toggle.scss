@@ -27,7 +27,7 @@
   display: $display;
 }
 
-/* ------------ MODO OSCURO/CLARO ------------ */
+// DECLARACIONES PARA 'TOOGLEMODE' / Función: alterna la visibilidad de los iconos "sol/luna" que representan el "light-mode"/"dark-mode" donde se aplican la variables de colores oscuros/claros
 #toggleMode {
   @include visibility(hidden);
 }

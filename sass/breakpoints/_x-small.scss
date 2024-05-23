@@ -1,13 +1,13 @@
 // MEDIAQUERIES 576px
 @media (max-width: 576px) {
-  // FOOTER 
+  // declaraciones en el "footer" de los html
   footer {
     div#redes ul {
       gap: 1rem;
     }
   }
 
-  // TITULOS Y TEXTOS 
+  // declaraciones en titulos y textos
   h1,
   h1 strong,
   h2,
@@ -20,7 +20,7 @@
     font-size: 0.9rem;
   }
 
-  // INDEX.HTML 
+  // declaraciones en index.html
 
   .main {
     .section2 {
@@ -39,7 +39,7 @@
     }
   }
 
-// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML
+// declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     h1,
     h3 {
@@ -80,7 +80,7 @@
       }
     }
 
-  // ANIMACIONES
+  // aplicación de animaciones para #musica en este breakpoint / Explicación = esto es porque el orden de posicionamiento de los elementos visibles en el html cambió, por lo que se debió cambiar el orden de "animation-delay:" para que coincidieran.
 .fade1 {
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
@@ -97,7 +97,7 @@
 }
   }
 
-  // CONTACTO.HTML
+  // declaraciones en contacto.html
   main.contacto {
     .contenedor {
       .section3 form {

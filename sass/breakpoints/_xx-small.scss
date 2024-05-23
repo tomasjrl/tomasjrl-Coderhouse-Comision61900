@@ -1,6 +1,7 @@
 // MEDIAQUERIES 290px
 @media (max-width: 290px) {
-  // HEADER 
+
+  // declaraciones en el "header" de los html
   header {
     .logo {
       display: none;
@@ -26,13 +27,13 @@
     width: auto;
   }
 
-  // FOOTER 
+  // declaraciones en el "footer" de los html
   footer {
     flex-direction: column;
     height: 6rem;
   }
 
-// #MUSICA = PIANO.HTML / CANTO.HTML / VIOLIN.HTML 
+// declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     margin: 0;
     padding: 0;
@@ -63,7 +64,7 @@
     }
   }
 
-  // CONTACTO 
+  // declaraciones en contacto.html
   main.contacto {
     .contenedor {
       .section3 form {

@@ -11,7 +11,7 @@
   animation-fill-mode: both;
 }
 
-// Mixin para transformaciones al hover
+// Mixin para transformaciones al hacer hover / Función: escala mas grande el elemento al hacer hover y suaviza la animación
 @mixin hover-transform($scale) {
   &:hover {
     @include transition(transform 0.25s ease);
@@ -19,14 +19,14 @@
   }
 }
 
-// Estilos de la barra de navegación
+// Estilos para elementos con animación "transition" / Función: transición para suavizar la animación del cambio de color
 .navbar {
   a {
     @include transition(0.25s);
   }
 }
 
-// Estilos de main con elementos hover
+// Estilos para elementos con animación "hover-transform" y "transition" / Función: transición para suavizar la animación y escala mas grande el elemento al hacer hover
 main {
   a,
   img,
@@ -36,19 +36,19 @@ main {
   }
 }
 
-// Keyframes para animación show
+// Keyframes para animación "show" / Función: escala los elementos al aparecer desde el bottom cuando se hace scroll (se aplica solo en navegador Chrome. No se aplica en Firefox u otros navegadores)
 @keyframes show {
   from {
     opacity: 0;
-    scale: 25%;
+    scale: 25%; // deberia ir " transform: scale(0.25);" pero no se aplica en elementos h p img (puede verse este fallo visible en canto/piano/violin.html usando navegador chrome) . Creo que se superpone con otra declaración de animación pero aun no lo encuentro.
   }
   to {
     opacity: 1;
-    scale: 100%;
+    scale: 100%; // deberia ir " transform: scale(1);" pero no se aplica en elementos h p img (puede verse este fallo visible en canto/piano/violin.html usando navegador chrome) . Creo que se superpone con otra declaración de animación pero aun no lo encuentro.
   }
 }
 
-// Estilos para img, p, iframe.mapa
+// Estilos para elementos con animación "show" 
 img,
 p,
 iframe.mapa,
@@ -59,7 +59,7 @@ iframe.mapa,
   @include animation(show, --image, entry 15% cover 40%);
 }
 
-// Keyframes para animación fade contacto.html
+// Keyframes para animación "fade"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -75,6 +75,7 @@ iframe.mapa,
   }
 }
 
+// Estilos para elementos con animación "fade" con clase .fade-in .fade1 .fade2 .fade3, section1, section2, section3
 .fade-in {
   opacity: 0;
   visibility: hidden;

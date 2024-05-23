@@ -1,6 +1,6 @@
 // MEDIAQUERIES 992px 
 @media (max-width: 992px) {
-  // INDEX.HTML
+  // declaraciones en index.html
   .main {
     .section2 {
       flex-direction: column;
@@ -9,7 +9,7 @@
     }
   }
 
-  // CONTACTO.HTML
+  // declaraciones en contacto.html
   main.contacto {
     .contenedor {
       grid-template-columns: repeat(2, 1fr);
