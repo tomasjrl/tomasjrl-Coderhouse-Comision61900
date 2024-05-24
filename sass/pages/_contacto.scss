@@ -17,6 +17,7 @@ main.contacto {
     display: grid;
     min-height: auto;
     width: 100%;
+    max-width: 1400px;
     margin: auto;
     @include section-padding(4rem, 4rem);
     grid-template-columns: repeat(3, 1fr);
