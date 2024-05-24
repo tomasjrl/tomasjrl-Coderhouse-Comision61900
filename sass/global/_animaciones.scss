@@ -59,7 +59,7 @@ iframe.mapa,
   @include animation(show, --image, entry 15% cover 40%);
 }
 
-// Keyframes para animación "fade"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html
+// Keyframes para animación "fadeIn"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -75,7 +75,7 @@ iframe.mapa,
   }
 }
 
-// Estilos para elementos con animación "fade" con clase .fade-in .fade1 .fade2 .fade3, section1, section2, section3
+// Estilos para elementos con animación "fadeIn" con clase .fade-in .fade1 .fade2 .fade3, section1, section2, section3
 .fade-in {
   opacity: 0;
   visibility: hidden;
