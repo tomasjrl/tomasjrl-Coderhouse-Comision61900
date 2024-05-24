@@ -9,7 +9,8 @@
 - imagenes webp
 - imagenes ajustadas en tamaño
 - ancho/alto declarados
-- metadescription declarado
+- meta description declarado
+- meta keyword declarado
 - title declarado
 - lazyload para contenidos secundarios
 - preload para contenidos primarios
