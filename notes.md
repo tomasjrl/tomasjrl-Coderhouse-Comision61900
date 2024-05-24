@@ -31,7 +31,7 @@
 - 100 SEO  
 
 *Desktop*
-- 98 Rendimiento 
+- 97 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
@@ -39,52 +39,52 @@
 
 **piano.html**
 *Mobile*
-- 73 Rendimiento 
+- 74 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 97 Rendimiento 
+- 85 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
 
 **canto.html**
 *Mobile*
-- 82 Rendimiento 
+- 78 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 99 Rendimiento 
+- 98 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
 
 **violin.html**
 *Mobile*
-- 86 Rendimiento 
+- 81 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 87 Rendimiento 
+- 88 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO   
 
 **contacto.html**
 *Mobile*
-- 99 Rendimiento 
+- 85 Rendimiento 
 - 98 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 86 Rendimiento 
+- 99 Rendimiento 
 - 98 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO   
