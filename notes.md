@@ -6,8 +6,8 @@
 **ACTUALIZACIONES COMENTADAS**
 
 # CARACTERISTICAS SEO ##
-- imagenes webp
-- imagenes ajustadas en tamaño
+- imagenes formato webp
+- imagenes ajustadas en tamaño y compresión
 - ancho/alto declarados
 - meta description declarado
 - meta keyword declarado
@@ -15,6 +15,8 @@
 - lazyload para contenidos secundarios
 - preload para contenidos primarios
 - aria-label para links
+- role para elementos de interacción
+- efectos ccs 3 (transiciones, transformaciones, animaciones, filtros, gradientes, bordes)
 
 ## W3C =  https://validator.w3.org/  ##
 - confirmado archivos html sin errores
