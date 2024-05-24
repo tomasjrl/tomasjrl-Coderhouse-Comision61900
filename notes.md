@@ -78,14 +78,14 @@
 
 **contacto.html**
 *Mobile*
-- 85 Rendimiento 
-- 98 Accesibilidad  
+- 87 Rendimiento 
+- 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
 - 99 Rendimiento 
-- 98 Accesibilidad  
+- 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO   
 
