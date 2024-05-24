@@ -5,6 +5,17 @@
 
 **ACTUALIZACIONES COMENTADAS**
 
+# CARACTERISTICAS SEO ##
+- imagenes webp
+- imagenes ajustadas en tamaño
+- ancho/alto declarados
+- metadescription declarado
+- title declarado
+- defer para archivos js
+- lazyload para contenidos secundarios
+- preload para contenidos primarios
+- aria-label para links
+
 ## W3C =  https://validator.w3.org/  ##
 - confirmado archivos html sin errores
 
