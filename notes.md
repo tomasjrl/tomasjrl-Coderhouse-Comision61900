@@ -11,7 +11,6 @@
 - ancho/alto declarados
 - metadescription declarado
 - title declarado
-- defer para archivos js
 - lazyload para contenidos secundarios
 - preload para contenidos primarios
 - aria-label para links
