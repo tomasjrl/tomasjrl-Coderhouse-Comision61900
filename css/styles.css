@@ -149,7 +149,7 @@ main.contacto .contenedor .section3 form button {
   border: solid 1px rgb(27, 26, 25);
 }
 
-.main .section3 .divisor1 h2,
+main#index .main .section3 .divisor1 h2,
 main#index .main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
@@ -226,8 +226,8 @@ body.light-mode main#musica .divisor-2 .section4 a,
 body.light-mode main.contacto .contenedor .section3 form button {
   background-color: rgb(234, 234, 234);
 }
-body.light-mode .main .section3 .divisor1 h2,
-body.light-mode .main .divisor2 .card a.link,
+body.light-mode main#index .main .section3 .divisor1 h2,
+body.light-mode main#index .main .divisor2 .card a.link,
 body.light-mode main.contacto .contenedor .section3 form input,
 body.light-mode main.contacto .contenedor .section3 form select,
 body.light-mode main.contacto .contenedor .section3 form textarea {

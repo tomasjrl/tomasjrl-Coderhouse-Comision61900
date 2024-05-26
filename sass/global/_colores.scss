@@ -104,7 +104,7 @@ main.contacto .contenedor .section3 form button {
   border: solid 1px $color-primero;
 }
 
-.main .section3 .divisor1 h2,
+main#index .main .section3 .divisor1 h2,
 main#index .main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
@@ -193,8 +193,8 @@ body.light-mode {
     background-color: $color-primero-claro;
   }
 
-  .main .section3 .divisor1 h2,
-.main .divisor2 .card a.link,
+  main#index .main .section3 .divisor1 h2,
+  main#index .main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
