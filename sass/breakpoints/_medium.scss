@@ -1,5 +1,19 @@
 // MEDIAQUERIES 992px 
 @media (max-width: 992px) {
+
+    // declaraciones en titulos y textos
+    h1,
+    h1 strong,
+    h2,
+    h3 {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+
+
   // declaraciones en index.html
   .main {
     .section2 {

@@ -674,6 +674,15 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
 }
 
 @media (max-width: 992px) {
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1rem;
+  }
   .main .section2 {
     flex-direction: column;
     align-items: center;
