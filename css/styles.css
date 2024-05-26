@@ -31,29 +31,6 @@ main iframe.mapa:hover {
   transform: scale(1.06);
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 25%;
-  }
-  to {
-    opacity: 1;
-    scale: 100%;
-  }
-}
-img,
-p,
-iframe.mapa,
-#musica h2,
-#musica h3 {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 15% cover 40%;
-  animation-fill-mode: both;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -132,14 +109,20 @@ header a[aria-current=page],
 
 header nav.navbar,
 footer,
-.main .section3 .divisor1 h2,
-.main .divisor2 .card a.link,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
   background-color: rgb(27, 26, 25);
 }
 
-.main .section3 .divisor3 .mapa {
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
+.main .section3 .divisor2 img,
+.main .divisor2 .card a.link,
+.main .section3 .divisor3 .mapa,
+main#musica .divisor-1 section div img,
+main#musica .divisor-2 .section4 img,
+main.contacto .contenedor .section3 form button,
+main#musica .divisor-2 .section4 a {
   border: solid 1px rgb(27, 26, 25);
 }
 
@@ -167,6 +150,8 @@ main.contacto .contenedor .section3 form button {
   border: solid 1px rgb(27, 26, 25);
 }
 
+.main .section3 .divisor1 h2,
+.main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
@@ -190,17 +175,6 @@ main.contacto .contenedor .section3 form textarea:hover,
 a[aria-current=page],
 .nav-link:hover {
   background-color: rgb(225, 202, 83);
-}
-
-.main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
-.main .section3 .divisor2 img,
-.main .divisor2 .card a.link,
-main#musica .divisor-1 section div img,
-main#musica .divisor-2 .section4 img,
-main.contacto .contenedor .section3 form button,
-main#musica .divisor-2 .section4 a {
-  border: solid 1px rgb(225, 202, 83);
 }
 
 .checkbox input#checkbox {
@@ -249,14 +223,16 @@ body.light-mode .nav-link:hover {
 }
 body.light-mode header nav.navbar,
 body.light-mode footer,
-body.light-mode .main .section3 .divisor1 h2,
-body.light-mode .main .divisor2 .card a.link,
 body.light-mode main#musica .divisor-2 .section4 a,
 body.light-mode main.contacto .contenedor .section3 form button {
   background-color: rgb(234, 234, 234);
 }
-body.light-mode .main .section3 .divisor3 .mapa {
-  border: solid 1px rgb(234, 234, 234);
+body.light-mode .main .section3 .divisor1 h2,
+body.light-mode .main .divisor2 .card a.link,
+body.light-mode main.contacto .contenedor .section3 form input,
+body.light-mode main.contacto .contenedor .section3 form select,
+body.light-mode main.contacto .contenedor .section3 form textarea {
+  background-color: rgba(244, 244, 244, 0.4);
 }
 body.light-mode main.contacto {
   background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
@@ -294,16 +270,6 @@ body.light-mode main.contacto .contenedor .section3 form textarea:hover,
 body.light-mode a[aria-current=page],
 body.light-mode .nav-link:hover {
   background-color: rgb(83, 152, 225);
-}
-body.light-mode .main .section3 .divisor1 h2,
-body.light-mode .main .section3 .divisor2 h3,
-body.light-mode .main .section3 .divisor2 img,
-body.light-mode .main .divisor2 .card a.link,
-body.light-mode main#musica .divisor-1 section div img,
-body.light-mode main#musica .divisor-2 .section4 img,
-body.light-mode main.contacto .contenedor .section3 form button,
-body.light-mode main#musica .divisor-2 .section4 a {
-  border: solid 1px rgb(83, 152, 225);
 }
 body.light-mode .checkbox input#checkbox {
   accent-color: rgb(83, 152, 225);

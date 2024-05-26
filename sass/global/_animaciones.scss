@@ -36,29 +36,6 @@ main {
   }
 }
 
-// Keyframes para animación "show" / Función: escala los elementos al aparecer desde el bottom cuando se hace scroll (se aplica solo en navegador Chrome. No se aplica en Firefox u otros navegadores)
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 25%; // deberia ir " transform: scale(0.25);" pero no se aplica en elementos h p img (puede verse este fallo visible en canto/piano/violin.html usando navegador chrome) . Creo que se superpone con otra declaración de animación pero aun no lo encuentro.
-  }
-  to {
-    opacity: 1;
-    scale: 100%; // deberia ir " transform: scale(1);" pero no se aplica en elementos h p img (puede verse este fallo visible en canto/piano/violin.html usando navegador chrome) . Creo que se superpone con otra declaración de animación pero aun no lo encuentro.
-  }
-}
-
-// Estilos para elementos con animación "show" 
-img,
-p,
-iframe.mapa,
-#musica h2,
-#musica h3 {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  @include animation(show, --image, entry 15% cover 40%);
-}
-
 // Keyframes para animación "fadeIn"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html
 @keyframes fadeIn {
   0% {
