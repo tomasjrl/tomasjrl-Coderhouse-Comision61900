@@ -123,6 +123,7 @@ main .divisor2 .card a.link:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
+main.contacto .contenedor .section3 form select:hover,
 main.contacto .contenedor .section3 form textarea:hover,
 header a[aria-current=page],
 .nav-link:hover {
@@ -154,8 +155,15 @@ p,
 a,
 .main .section3 .divisor1 h2,
 main.contacto .contenedor .section3 form label,
+main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
   color: rgb(234, 234, 234);
+}
+
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea {
+  background-color: rgba(234, 234, 234, 0.1);
 }
 
 .toggleDark,
@@ -168,6 +176,7 @@ footer div#redes ul li a:hover {
 
 main .divisor2 .card a.link:hover,
 main#musica .divisor-2 .section4 a:hover,
+main.contacto .contenedor .section3 form select:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
@@ -259,6 +268,7 @@ body.light-mode p,
 body.light-mode a,
 body.light-mode .main .section3 .divisor1 h2,
 body.light-mode main.contacto .contenedor .section3 form label,
+body.light-mode main.contacto .contenedor .section3 form select,
 body.light-mode main.contacto .contenedor .section3 form button {
   color: rgb(27, 26, 25);
 }
