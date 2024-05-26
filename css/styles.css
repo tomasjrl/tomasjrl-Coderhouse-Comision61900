@@ -555,6 +555,7 @@ main#musica h2,
 main#musica h3 {
   margin-bottom: 1rem;
   line-height: 2.5rem;
+  width: 20%;
 }
 main#musica p {
   width: 40%;
