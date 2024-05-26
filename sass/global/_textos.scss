@@ -36,6 +36,7 @@ h2 strong,
 p,
 strong {
   @include letter-spacing(0.25rem);
+  text-wrap: balance;
 }
 
 h3,
@@ -72,6 +73,7 @@ h4 {
 p {
   @include font-size(1.2rem);
   @include font-weight(400);
+  text-wrap: pretty;
 }
 
 strong {

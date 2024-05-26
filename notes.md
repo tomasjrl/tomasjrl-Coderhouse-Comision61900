@@ -17,6 +17,10 @@
 - aria-label para links
 - role para elementos de interacción
 - efectos ccs 3 (transiciones, transformaciones, animaciones, filtros, gradientes, bordes)
+- min-heigh 100dvh en el body
+- min-width 0 para los elementos
+- text-wrap balance en titulos
+- text-wrap pretty en textos
 
 ## W3C =  https://validator.w3.org/  ##
 - confirmado archivos html sin errores
