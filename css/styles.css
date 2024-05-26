@@ -150,7 +150,7 @@ main.contacto .contenedor .section3 form button {
 }
 
 main#index .main .section3 .divisor1 h2,
-main#index .main .divisor2 .card a.link,
+main#index .main .divisor2 .card a.background,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
@@ -227,7 +227,7 @@ body.light-mode main.contacto .contenedor .section3 form button {
   background-color: rgb(234, 234, 234);
 }
 body.light-mode main#index .main .section3 .divisor1 h2,
-body.light-mode main#index .main .divisor2 .card a.link,
+body.light-mode main#index .main .divisor2 .card a.background,
 body.light-mode main.contacto .contenedor .section3 form input,
 body.light-mode main.contacto .contenedor .section3 form select,
 body.light-mode main.contacto .contenedor .section3 form textarea {
