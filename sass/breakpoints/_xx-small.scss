@@ -67,14 +67,8 @@
   // declaraciones en contacto.html
   main.contacto {
     .contenedor {
-      .section3 form {
-        width: 100%;
-        flex-direction: column;
-
-        input,
-        textarea {
-          margin: auto;
-        }
+      h1 {
+        font-size: 1rem;
       }
     }
   }

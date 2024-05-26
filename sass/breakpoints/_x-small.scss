@@ -101,11 +101,19 @@
   main.contacto {
     .contenedor {
       .section3 form {
-        input,
-        textarea {
-          width: 80%;
-          padding: 0;
+        label {
+          display: none;
         }
+        
+          width: 100%;
+          flex-direction: column;
+  
+          input,
+          select,
+          textarea {
+            margin: auto;
+          }
+        
       }
     }
   }

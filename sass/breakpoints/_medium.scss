@@ -26,6 +26,10 @@
   // declaraciones en contacto.html
   main.contacto {
     .contenedor {
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "section1 section3"

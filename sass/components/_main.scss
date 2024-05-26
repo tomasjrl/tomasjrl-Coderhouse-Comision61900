@@ -19,9 +19,15 @@ main {
 .main .section3 .divisor2 img,
 .main .section3 .divisor3 .mapa,
 main#musica div section div img,
-main#musica .divisor-2 .section4 a,
+main#musica .divisor-2 .section4 a {
+  border-radius: 20px;
+}
+
+// APLICACION DE BORDER RADIUS PARA LOS ELEMENTOS DECLARADOS
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 2px;
 }

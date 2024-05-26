@@ -96,6 +96,7 @@
             type="text"
             id="name"
             name="nombre"
+            autocomplete="name"
             required
             pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
             placeholder="Nombre"
@@ -124,6 +125,7 @@
             type="email"
             id="email"
             name="email"
+            autocomplete="email"
             required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             placeholder="ej@email.com"
@@ -138,6 +140,13 @@
             minlength="10"
             pattern="[0-9]{10,}"
             >
+            <label for="instrumento">Instrumento</label>
+            <select id="instrumento" name="instrumento" autocomplete="off" required>
+              <option value="">Seleccione</option>
+              <option value="piano">Piano</option>
+              <option value="canto">Canto</option>
+              <option value="violin">Violín</option>
+            </select>
           <label for="mensaje">Mensaje</label>
           <textarea
             id="mensaje"
