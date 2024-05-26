@@ -50,7 +50,7 @@ main {
 }
 
 .navbar-toggler,
-main .divisor2 .card a.link:hover,
+main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -68,11 +68,11 @@ main.contacto .contenedor .section3 form button {
   background-color: $color-primero;
 }
 
-.main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
-.main .section3 .divisor2 img,
-.main .divisor2 .card a.link,
-.main .section3 .divisor3 .mapa,
+main#index .main .section3 .divisor1 h2,
+main#index .main .section3 .divisor2 h3,
+main#index .main .section3 .divisor2 img,
+main#index .main .divisor2 .card a.active,
+main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
 main.contacto .contenedor .section3 form button,
@@ -91,7 +91,6 @@ h3,
 h4,
 p,
 a,
-.main .section3 .divisor1 h2,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
@@ -106,7 +105,7 @@ main.contacto .contenedor .section3 form button {
 }
 
 .main .section3 .divisor1 h2,
-.main .divisor2 .card a.link,
+main#index .main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
@@ -121,7 +120,7 @@ footer div#redes ul li a:hover {
   color: $color-tercero;
 }
 
-main .divisor2 .card a.link:hover,
+main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -177,7 +176,7 @@ body.light-mode {
   }
 
   .navbar-toggler,
-  main .divisor2 .card a.link:hover,
+  main#index .main .divisor2 .card a.active:hover,
   main#musica .divisor-2 .section4 a:hover,
   main.contacto .contenedor .section3 form button:hover,
   main.contacto .contenedor .section3 form input:hover,
@@ -216,7 +215,6 @@ main.contacto .contenedor .section3 form textarea {
   h4,
   p,
   a,
-  .main .section3 .divisor1 h2,
   main.contacto .contenedor .section3 form label,
   main.contacto .contenedor .section3 form select,
   main.contacto .contenedor .section3 form button {
@@ -231,7 +229,7 @@ main.contacto .contenedor .section3 form textarea {
     color: $color-tercero-claro;
   }
 
-  main .divisor2 .card a.link:hover,
+  main#index .main .divisor2 .card a.active:hover,
   main#musica .divisor-2 .section4 a:hover,
   main.contacto .contenedor .section3 form button:hover,
   main.contacto .contenedor .section3 form input:hover,

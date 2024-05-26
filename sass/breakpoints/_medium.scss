@@ -21,6 +21,17 @@
         align-items: center;
         gap: 2rem;
       }
+      .section3 {
+        .divisor2 .card {
+          a.link {
+            width: 40%;
+          }
+
+          a.active {
+            width: 40%;
+          }
+        }
+      }
     }
   }
   // declaraciones en contacto.html

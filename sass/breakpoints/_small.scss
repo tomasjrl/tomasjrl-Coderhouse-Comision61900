@@ -15,9 +15,22 @@
   main#index {
     .main {
       .section3 {
+
+        .divisor2 .card {
+          a.link {
+            width: 50%;
+          }
+
+          a.active {
+            width: 50%;
+          }
+        }
+
         .divisor3 .mapa {
           height: 15rem;
         }
+
+    
 
         .divisor1 {
           padding-top: 1rem;

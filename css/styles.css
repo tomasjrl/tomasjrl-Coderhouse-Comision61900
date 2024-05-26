@@ -96,7 +96,7 @@ main.contacto {
 }
 
 .navbar-toggler,
-main .divisor2 .card a.link:hover,
+main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -114,11 +114,11 @@ main.contacto .contenedor .section3 form button {
   background-color: rgb(27, 26, 25);
 }
 
-.main .section3 .divisor1 h2,
-.main .section3 .divisor2 h3,
-.main .section3 .divisor2 img,
-.main .divisor2 .card a.link,
-.main .section3 .divisor3 .mapa,
+main#index .main .section3 .divisor1 h2,
+main#index .main .section3 .divisor2 h3,
+main#index .main .section3 .divisor2 img,
+main#index .main .divisor2 .card a.active,
+main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
 main.contacto .contenedor .section3 form button,
@@ -136,7 +136,6 @@ h3,
 h4,
 p,
 a,
-.main .section3 .divisor1 h2,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
@@ -151,7 +150,7 @@ main.contacto .contenedor .section3 form button {
 }
 
 .main .section3 .divisor1 h2,
-.main .divisor2 .card a.link,
+main#index .main .divisor2 .card a.link,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
@@ -166,7 +165,7 @@ footer div#redes ul li a:hover {
   color: rgb(225, 202, 83);
 }
 
-main .divisor2 .card a.link:hover,
+main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -212,7 +211,7 @@ body.light-mode main.contacto {
   background-position: center;
 }
 body.light-mode .navbar-toggler,
-body.light-mode main .divisor2 .card a.link:hover,
+body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
 body.light-mode main.contacto .contenedor .section3 form input:hover,
@@ -249,7 +248,6 @@ body.light-mode h3,
 body.light-mode h4,
 body.light-mode p,
 body.light-mode a,
-body.light-mode .main .section3 .divisor1 h2,
 body.light-mode main.contacto .contenedor .section3 form label,
 body.light-mode main.contacto .contenedor .section3 form select,
 body.light-mode main.contacto .contenedor .section3 form button {
@@ -262,7 +260,7 @@ body.light-mode .navbar-toggler svg:hover,
 body.light-mode footer div#redes ul li a:hover {
   color: rgb(83, 152, 225);
 }
-body.light-mode main .divisor2 .card a.link:hover,
+body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
 body.light-mode main.contacto .contenedor .section3 form input:hover,
@@ -516,6 +514,7 @@ main#index .section3 .divisor1 h2 {
 main#index .section3 .divisor2 .card {
   background-color: transparent;
   border: none;
+  position: relative;
 }
 main#index .section3 .divisor2 .card a.link {
   border-radius: 20px;
@@ -523,6 +522,15 @@ main#index .section3 .divisor2 .card a.link {
   margin-bottom: 4rem;
   font-size: 1.6rem;
   width: 80%;
+}
+main#index .section3 .divisor2 .card a.active {
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  width: 80%;
+  position: absolute;
+  color: transparent;
 }
 main#index .section3 .divisor2 .card img {
   width: 80%;
@@ -680,6 +688,12 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     align-items: center;
     gap: 2rem;
   }
+  main#index .main .section3 .divisor2 .card a.link {
+    width: 40%;
+  }
+  main#index .main .section3 .divisor2 .card a.active {
+    width: 40%;
+  }
   main.contacto .contenedor {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "section1 section3" "section2 section3";
@@ -699,6 +713,12 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   p {
     font-size: 0.95rem;
+  }
+  main#index .main .section3 .divisor2 .card a.link {
+    width: 50%;
+  }
+  main#index .main .section3 .divisor2 .card a.active {
+    width: 50%;
   }
   main#index .main .section3 .divisor3 .mapa {
     height: 15rem;
@@ -753,6 +773,9 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     max-height: 9rem;
   }
   main#index .main .section3 .divisor2 .card a.link {
+    width: 60%;
+  }
+  main#index .main .section3 .divisor2 .card a.active {
     width: 60%;
   }
   main#musica h1,
@@ -826,6 +849,12 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   footer {
     flex-direction: column;
     height: 6rem;
+  }
+  main#index .main .section3 .divisor2 .card a.link {
+    width: 80%;
+  }
+  main#index .main .section3 .divisor2 .card a.active {
+    width: 80%;
   }
   main#musica {
     margin: 0;

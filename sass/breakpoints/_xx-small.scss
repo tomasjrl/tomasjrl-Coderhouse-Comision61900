@@ -23,6 +23,25 @@
     height: 6rem;
   }
 
+// declaraciones en index.html
+
+main#index {
+  .main {
+    .section3 {
+      .divisor2 .card {
+        a.link {
+          width: 80%;
+        }
+
+        a.active {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+
 // declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     margin: 0;
