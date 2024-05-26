@@ -10,14 +10,13 @@ main {
     h1,
     h2,
     h3 {
-      width: 21rem;
       margin-bottom: 1rem;
       line-height: 2.5rem;
     }
 
     p {
-      width: 80%;
-      padding: 1rem;
+      width: 40%;
+      padding: 0.5rem;
     }
 
     div section div img {
@@ -47,6 +46,9 @@ main {
         display: flex;
         align-items: center;
         padding-bottom: 2rem;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
       }
     }
 

@@ -553,13 +553,12 @@ main#musica {
 main#musica h1,
 main#musica h2,
 main#musica h3 {
-  width: 21rem;
   margin-bottom: 1rem;
   line-height: 2.5rem;
 }
 main#musica p {
-  width: 80%;
-  padding: 1rem;
+  width: 40%;
+  padding: 0.5rem;
 }
 main#musica div section div img {
   width: 12rem;
@@ -586,6 +585,9 @@ main#musica .divisor-1 .section3 {
   display: flex;
   align-items: center;
   padding-bottom: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
 }
 main#musica .divisor-2 {
   margin: auto;
