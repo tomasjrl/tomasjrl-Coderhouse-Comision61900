@@ -37,7 +37,7 @@
 - 100 SEO  
 
 *Desktop*
-- 98 Rendimiento 
+- 99 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
