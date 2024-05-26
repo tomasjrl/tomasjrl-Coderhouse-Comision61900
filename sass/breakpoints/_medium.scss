@@ -1,28 +1,28 @@
-// MEDIAQUERIES 992px 
+// MEDIAQUERIES 992px
 @media (max-width: 992px) {
-
-    // declaraciones en titulos y textos
-    h1,
-    h1 strong,
-    h2,
-    h3 {
-      font-size: 1.6rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-
-
-  // declaraciones en index.html
-  .main {
-    .section2 {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
+  // declaraciones en titulos y textos
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.6rem;
   }
 
+  p {
+    font-size: 1rem;
+  }
+
+  // declaraciones en index.html
+
+  main#index {
+    .main {
+      .section2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
   // declaraciones en contacto.html
   main.contacto {
     .contenedor {

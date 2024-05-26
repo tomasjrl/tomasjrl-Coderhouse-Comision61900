@@ -1,5 +1,5 @@
-// MEDIAQUERIES 576px
-@media (max-width: 576px) {
+// MEDIAQUERIES 575px
+@media (max-width: 575px) {
   // declaraciones en el "footer" de los html
   footer {
     div#redes ul {
@@ -21,25 +21,30 @@
   }
 
   // declaraciones en index.html
-
-  .main {
-    .section2 {
-      .divisor {
-        display: flex;
-        flex-direction: column-reverse;
-
-        .divisor-imagen {
-          
-          img {
-            max-height: 9rem;
-            
+  main#index {
+    .main {
+      .section2 {
+        .divisor {
+          display: flex;
+          flex-direction: column-reverse;
+          .divisor-imagen {
+            img {
+              max-height: 9rem;
+            }
+          }
+        }
+      }
+      .section3 {
+        .divisor2 .card {
+          a.link {
+            width: 60%;
           }
         }
       }
     }
   }
 
-// declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
+  // declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     h1,
     h2,
@@ -82,21 +87,21 @@
       }
     }
 
-  // aplicación de animaciones para #musica en este breakpoint / Explicación = esto es porque el orden de posicionamiento de los elementos visibles en el html cambió, por lo que se debió cambiar el orden de "animation-delay:" para que coincidieran.
-.fade1 {
-  animation-delay: 0.6s;
-  animation-fill-mode: forwards;
-}
+    // aplicación de animaciones para #musica en este breakpoint / Explicación = esto es porque el orden de posicionamiento de los elementos visibles en el html cambió, por lo que se debió cambiar el orden de "animation-delay:" para que coincidieran.
+    .fade1 {
+      animation-delay: 0.6s;
+      animation-fill-mode: forwards;
+    }
 
-.fade2 {
-  animation-delay: 0.8s;
-  animation-fill-mode: forwards;
-}
+    .fade2 {
+      animation-delay: 0.8s;
+      animation-fill-mode: forwards;
+    }
 
-.fade3 {
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
-}
+    .fade3 {
+      animation-delay: 0.4s;
+      animation-fill-mode: forwards;
+    }
   }
 
   // declaraciones en contacto.html
@@ -106,16 +111,15 @@
         label {
           display: none;
         }
-        
-          width: 100%;
-          flex-direction: column;
-  
-          input,
-          select,
-          textarea {
-            margin: auto;
-          }
-        
+
+        width: 100%;
+        flex-direction: column;
+
+        input,
+        select,
+        textarea {
+          margin: auto;
+        }
       }
     }
   }

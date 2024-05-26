@@ -519,8 +519,10 @@ main#index .section3 .divisor2 .card {
 }
 main#index .section3 .divisor2 .card a.link {
   border-radius: 20px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  width: 80%;
 }
 main#index .section3 .divisor2 .card img {
   width: 80%;
@@ -673,7 +675,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   p {
     font-size: 1rem;
   }
-  .main .section2 {
+  main#index .main .section2 {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -698,13 +700,13 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   p {
     font-size: 0.95rem;
   }
-  .main .section3 .divisor3 .mapa {
+  main#index .main .section3 .divisor3 .mapa {
     height: 15rem;
   }
-  .main .section3 .divisor1 {
+  main#index .main .section3 .divisor1 {
     padding-top: 1rem;
   }
-  .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 .card-img-top {
+  main#index .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 .card-img-top {
     max-width: 60%;
   }
   main.contacto .contenedor {
@@ -729,7 +731,7 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     margin-right: 0;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   footer div#redes ul {
     gap: 1rem;
   }
@@ -743,12 +745,15 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#musica .divisor-2 .section3 a {
     font-size: 0.9rem;
   }
-  .main .section2 .divisor {
+  main#index .main .section2 .divisor {
     display: flex;
     flex-direction: column-reverse;
   }
-  .main .section2 .divisor .divisor-imagen img {
+  main#index .main .section2 .divisor .divisor-imagen img {
     max-height: 9rem;
+  }
+  main#index .main .section3 .divisor2 .card a.link {
+    width: 60%;
   }
   main#musica h1,
   main#musica h2,

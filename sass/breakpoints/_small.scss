@@ -1,4 +1,4 @@
-// MEDIAQUERIES 768px 
+// MEDIAQUERIES 768px
 @media (max-width: 768px) {
   // declaraciones en titulos y textos
   h1,
@@ -12,24 +12,26 @@
     font-size: 0.95rem;
   }
   // declaraciones en index.html
-  .main {
-    .section3 {
-      .divisor3 .mapa {
-        height: 15rem;
-      }
+  main#index {
+    .main {
+      .section3 {
+        .divisor3 .mapa {
+          height: 15rem;
+        }
 
-      .divisor1 {
-        padding-top: 1rem;
-      }
+        .divisor1 {
+          padding-top: 1rem;
+        }
 
-      .divisor2 {
-        .row {
-          .card.col-lg-4.col-sm-12 {
-            .card {
-              .row {
-                .col-lg-12.col-sm-6 {
-                  .card-img-top {
-                    max-width: 60%;
+        .divisor2 {
+          .row {
+            .card.col-lg-4.col-sm-12 {
+              .card {
+                .row {
+                  .col-lg-12.col-sm-6 {
+                    .card-img-top {
+                      max-width: 60%;
+                    }
                   }
                 }
               }
@@ -39,7 +41,6 @@
       }
     }
   }
-
   // declaraciones en contacto.html
   main.contacto {
     .contenedor {
