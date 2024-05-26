@@ -768,8 +768,10 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     max-height: 9rem;
   }
   main#musica h1,
-  main#musica h3 {
-    width: auto;
+  main#musica h2,
+  main#musica h3,
+  main#musica p {
+    width: 90%;
   }
   main#musica .divisor-1 .section1,
   main#musica .divisor-1 .section2,
@@ -828,15 +830,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   header .logo-2 {
     display: block;
-  }
-  h1,
-  h1 strong,
-  h2,
-  h2 strong,
-  h3,
-  h4 {
-    font-size: 0.7rem;
-    width: auto;
   }
   p {
     font-size: 0.6rem;

@@ -42,8 +42,10 @@
 // declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     h1,
-    h3 {
-      width: auto;
+    h2,
+    h3,
+    p {
+      width: 90%;
     }
 
     .divisor-1 {
