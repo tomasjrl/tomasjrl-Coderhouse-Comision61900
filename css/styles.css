@@ -162,6 +162,13 @@ main.contacto .contenedor .section3 form button {
 
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
+  border: solid 1px rgb(27, 26, 25);
+}
+
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
   background-color: rgba(234, 234, 234, 0.1);
 }
