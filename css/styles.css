@@ -162,6 +162,7 @@ h3,
 h4,
 p,
 a,
+main#index .main .divisor2 .card span.background,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form label,
@@ -198,7 +199,7 @@ a[aria-current=page],
   color: rgb(83, 152, 225);
 }
 
-main#index .main .divisor2 .card a.background,
+main#index .main .divisor2 .card span.background,
 .back-to-top {
   background-color: rgb(220, 20, 60);
 }
@@ -249,7 +250,6 @@ body.light-mode main.contacto .contenedor .section3 form button {
   color: rgb(27, 26, 25);
 }
 body.light-mode .navbar-toggler,
-body.light-mode main#index .main .divisor2 .card a.background,
 body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
@@ -551,7 +551,7 @@ main#index .section3 .divisor2 .card {
   border: none;
   position: relative;
 }
-main#index .section3 .divisor2 .card a.link {
+main#index .section3 .divisor2 .card .link {
   border-radius: 20px;
   padding: 0.5rem;
   margin-bottom: 4rem;
@@ -721,9 +721,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
     align-items: center;
     gap: 2rem;
   }
-  main#index .main .section3 .divisor2 .card a.link {
-    width: 40%;
-  }
   main#index .main .section3 .divisor2 .card a.active {
     width: 40%;
   }
@@ -746,12 +743,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   p {
     font-size: 0.95rem;
-  }
-  main#index .main .section3 .divisor2 .card a.link {
-    width: 50%;
-  }
-  main#index .main .section3 .divisor2 .card a.active {
-    width: 50%;
   }
   main#index .main .section3 .divisor3 .mapa {
     height: 15rem;
@@ -805,10 +796,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#index .main .section2 .divisor .divisor-imagen img {
     max-height: 9rem;
   }
-  main#index .main .section3 .divisor2 .card a.link {
-    width: 60%;
-  }
-  main#index .main .section3 .divisor2 .card a.active {
+  main#index .main .section3 .divisor2 .card span,
+  main#index .main .section3 .divisor2 .card a.active:hover {
     width: 60%;
   }
   main#musica h1,
@@ -882,12 +871,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   footer {
     flex-direction: column;
     height: 6rem;
-  }
-  main#index .main .section3 .divisor2 .card a.link {
-    width: 80%;
-  }
-  main#index .main .section3 .divisor2 .card a.active {
-    width: 80%;
   }
   main#musica {
     margin: 0;

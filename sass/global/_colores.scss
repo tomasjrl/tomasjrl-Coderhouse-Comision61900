@@ -97,6 +97,7 @@ h3,
 h4,
 p,
 a,
+main#index .main .divisor2 .card span.background,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form label,
@@ -133,7 +134,7 @@ a[aria-current="page"],
   color: $color-cuarto;
 }
 
-main#index .main .divisor2 .card a.background,
+main#index .main .divisor2 .card span.background,
 .back-to-top {
   background-color: $color-quinto;
 }
@@ -196,7 +197,6 @@ body.light-mode {
   }
 
   .navbar-toggler,
-  main#index .main .divisor2 .card a.background,
   main#index .main .divisor2 .card a.active:hover,
   main#musica .divisor-2 .section4 a:hover,
   main.contacto .contenedor .section3 form button:hover,

@@ -36,11 +36,8 @@
       }
       .section3 {
         .divisor2 .card {
-          a.link {
-            width: 60%;
-          }
-
-          a.active {
+          span,
+          a.active:hover {
             width: 60%;
           }
         }
