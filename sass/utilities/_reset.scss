@@ -11,6 +11,11 @@
   text-align: center;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 // RESET PARA ESTILOS DEL BODY
 body {
   min-height: 100dvh;

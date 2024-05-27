@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100dvh;
 }
