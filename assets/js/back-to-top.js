@@ -9,22 +9,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Smooth scrolling function
   function scrollToTop(duration) {
-    const start = window.pageYOffset;
-    const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-
-    function scroll() {
-      const now = 'now' in window.performance ? performance.now() : new Date().getTime();
-      const time = Math.min(1, ((now - startTime) / duration));
-      window.scroll(0, Math.ceil((easeInOutQuad(time) * (0 - start)) + start));
-
-      if (window.pageYOffset === 0) return;
-      window.requestAnimationFrame(scroll);
-    }
-
-    function easeInOutQuad(t) {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    }
-
-    window.requestAnimationFrame(scroll);
+    const scrollHeight = window.scrollY,
+          scrollStep = Math.PI / (duration / 15),
+          cosParameter = scrollHeight / 2;
+    var scrollCount = 0,
+        scrollMargin,
+        scrollInterval = setInterval(function() {
+          if (window.scrollY !== 0) {
+            scrollCount = scrollCount + 1;
+            scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+            window.scrollTo(0, (scrollHeight - scrollMargin));
+          } else clearInterval(scrollInterval);
+        }, 15);
   }
 });
