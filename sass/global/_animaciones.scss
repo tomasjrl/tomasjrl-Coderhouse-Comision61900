@@ -76,3 +76,14 @@ main {
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
+
+// ANIMACIONES BACK-TO-TOP
+
+.back-to-top,
+.back-to-top span {
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span {
+	transform: translateY(-8px);
+}

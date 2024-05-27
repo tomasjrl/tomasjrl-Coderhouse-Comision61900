@@ -1,4 +1,4 @@
-// RESET PARA ESTILOS UNIVERSALES 
+// UNIVERSALES 
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +11,12 @@
   text-align: center;
 }
 
-
+// SCROLL SMOOTH PARA BACK-TO-TOP
 html {
   scroll-behavior: smooth;
 }
 
-// RESET PARA ESTILOS DEL BODY
+// BODY CON DVH
 body {
   min-height: 100dvh;
 }

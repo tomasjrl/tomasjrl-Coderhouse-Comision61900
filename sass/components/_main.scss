@@ -13,6 +13,7 @@ main {
 }
 
 // APLICACION DE BORDER RADIUS PARA LOS ELEMENTOS DECLARADOS
+main .back-to-top,
 .main .section2 .divisor img,
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
@@ -32,8 +33,7 @@ main.contacto .contenedor .section3 form button {
   padding: 2px;
 }
 
-// BACK TO TOP */
-
+// BACK TO TOP
 .back-to-top {
   position: relative;
   bottom: 1rem;
@@ -41,18 +41,11 @@ main.contacto .contenedor .section3 form button {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #dc143c;
-	border-radius: 0.5rem;
 	padding: 0.4rem;
-	text-decoration: none;
-	transition: 0.2s ease-out;
 }
 
 .back-to-top span {
 	font-size: 4rem;
-	transition: 0.2s ease-out;
 }
 
-.back-to-top:hover span {
-	transform: translateY(-8px);
-}
+

@@ -73,6 +73,19 @@ main iframe.mapa:hover {
   animation-fill-mode: forwards;
 }
 
+.back-to-top,
+.back-to-top span {
+  transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span {
+  transform: translateY(-8px);
+}
+
+.back-to-top {
+  background-color: rgb(220, 20, 60);
+}
+
 main.principal {
   background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
   background-size: cover;
@@ -123,14 +136,24 @@ main.contacto .contenedor .section3 form button {
 }
 
 main#index .main .section3 .divisor1 h2,
+main#index .main .divisor2 .card a.active,
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea {
+  background-color: rgba(234, 234, 234, 0.1);
+}
+
+main#index .main .section3 .divisor1 h2,
 main#index .main .section3 .divisor2 h3,
 main#index .main .section3 .divisor2 img,
 main#index .main .divisor2 .card a.active,
 main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
-main.contacto .contenedor .section3 form button,
-main#musica .divisor-2 .section4 a {
+main#musica .divisor-2 .section4 a main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
   border: solid 1px rgb(27, 26, 25);
 }
 
@@ -150,21 +173,6 @@ main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
   color: rgb(234, 234, 234);
-}
-
-main.contacto .contenedor .section3 form input,
-main.contacto .contenedor .section3 form select,
-main.contacto .contenedor .section3 form textarea,
-main.contacto .contenedor .section3 form button {
-  border: solid 1px rgb(27, 26, 25);
-}
-
-main#index .main .section3 .divisor1 h2,
-main#index .main .divisor2 .card a.active,
-main.contacto .contenedor .section3 form input,
-main.contacto .contenedor .section3 form select,
-main.contacto .contenedor .section3 form textarea {
-  background-color: rgba(234, 234, 234, 0.1);
 }
 
 .toggleDark,
@@ -418,6 +426,7 @@ main {
   min-height: 200px;
 }
 
+main .back-to-top,
 .main .section2 .divisor img,
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
@@ -443,20 +452,11 @@ main.contacto .contenedor .section3 form button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #dc143c;
-  border-radius: 0.5rem;
   padding: 0.4rem;
-  text-decoration: none;
-  transition: 0.2s ease-out;
 }
 
 .back-to-top span {
   font-size: 4rem;
-  transition: 0.2s ease-out;
-}
-
-.back-to-top:hover span {
-  transform: translateY(-8px);
 }
 
 footer {
