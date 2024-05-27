@@ -139,7 +139,7 @@
             pattern="[0-9]{10,}"
             >
             <label for="instrumento">Instrumento</label>
-            <select id="instrumento" name="instrumento" autocomplete="off" required>
+            <select id="instrumento" name="instrumento" autocomplete="off" required aria-label="instrumento">
               <option value="">Seleccione</option>
               <option value="piano">Piano</option>
               <option value="canto">Canto</option>
@@ -157,13 +157,14 @@
           >
           <div class="checkbox">
           <label for="checkbox">No soy un robot</label>
-          <input
-          type="checkbox"
-          id="checkbox"
-          name="actividades"
-          value="checkbox"
-          required
-          >
+                    <input
+            type="checkbox"
+            id="checkbox"
+            name="actividades"
+            value="checkbox"
+            required
+            aria-label="checkbox"
+            >
         </div>
           <button type="submit">Enviar</button>
         </form>
