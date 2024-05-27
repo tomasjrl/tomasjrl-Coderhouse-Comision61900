@@ -4,6 +4,7 @@ node_modules/
 tmp/
 
 # Ignora archivos de registro, temporales y generados
+*.map
 *.log
 *.tmp
 *.iml
