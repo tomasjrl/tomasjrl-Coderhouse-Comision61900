@@ -1,18 +1,16 @@
-// COLOR SOLO PARA BACK-TO-TOP 
-.back-to-top {
-	background-color: rgb(220, 20, 60);
-}
-
-
-// VARIABLES COLOR MODO OSCURO 'DARK MODE' / Función: colores que se aplican en "dark mode"
+// VARIABLES COLOR
 
 $color-primero: rgb(27, 26, 25);
 $color-segundo: rgb(234, 234, 234);
 $color-tercero: rgb(225, 202, 83);
 $color-cuarto: rgb(83, 152, 225);
+$color-quinto: rgb(220, 20, 60);
 $color-fondo-op50: rgba(0, 0, 0, 0.5);
+$color-fondo-op50-claro: rgba(220, 220, 220, 0.5);
 $color-fondo-op100: rgb(0, 0, 0);
+$color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
 $color-primero-transparente: rgba(234, 234, 234, 0.1);
+$color-primero-claro-transparente: rgba(244, 244, 244, 0.4);
 
 @mixin background-image($url) {
   background: linear-gradient(#{$color-fondo-op100}, #{$color-fondo-op50}),
@@ -20,16 +18,6 @@ $color-primero-transparente: rgba(234, 234, 234, 0.1);
   background-size: cover;
   background-position: center;
 }
-
-// VARIABLES COLOR MODO CLARO 'LIGHT MODE' / Función: colores que se aplican en "light mode"
-
-$color-primero-claro: rgb(234, 234, 234);
-$color-segundo-claro: rgb(27, 26, 25);
-$color-tercero-claro: rgb(83, 152, 225);
-$color-cuarto-claro: rgb(83, 152, 225);
-$color-fondo-op50-claro: rgba(220, 220, 220, 0.5);
-$color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
-$color-primero-claro-transparente: rgba(244, 244, 244, 0.4);
 
 // 'DARK MODE' = Declaraciones
 
@@ -93,12 +81,18 @@ main#index .main .divisor2 .card a.active,
 main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
-main#musica .divisor-2 .section4 a
-main.contacto .contenedor .section3 form input,
+main#musica
+  .divisor-2
+  .section4
+  a
+  main.contacto
+  .contenedor
+  .section3
+  form
+  input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea,
-main.contacto .contenedor .section3 form button
- {
+main.contacto .contenedor .section3 form button {
   border: solid 1px $color-primero;
 }
 
@@ -148,6 +142,10 @@ a[aria-current="page"],
   color: $color-cuarto;
 }
 
+.back-to-top {
+  background-color: $color-quinto;
+}
+
 // 'LIGHT MODE' = Declaraciones
 
 body.light-mode {
@@ -195,14 +193,14 @@ body.light-mode {
   main.contacto .contenedor .section3 form textarea:hover,
   header a[aria-current="page"],
   .nav-link:hover {
-    color: $color-primero-claro;
+    color: $color-segundo;
   }
 
   header nav.navbar,
   footer,
   main#musica .divisor-2 .section4 a,
   main.contacto .contenedor .section3 form button {
-    background-color: $color-primero-claro;
+    background-color: $color-segundo;
   }
 
   main#index .main .section3 .divisor1 h2,
@@ -232,15 +230,17 @@ body.light-mode {
   main.contacto .contenedor .section3 form label,
   main.contacto .contenedor .section3 form select,
   main.contacto .contenedor .section3 form button {
-    color: $color-segundo-claro;
+    color: $color-primero;
   }
 
-  .toggleDark,
-  .toggleLight:hover,
+  .toggleLight:hover {
+    color: $color-tercero;
+  }
+
   .navbar-brand:hover,
   .navbar-toggler svg:hover,
   footer div#redes ul li a:hover {
-    color: $color-tercero-claro;
+    color: $color-cuarto;
   }
 
   main#index .main .divisor2 .card a.active:hover,
@@ -250,15 +250,10 @@ body.light-mode {
   main.contacto .contenedor .section3 form textarea:hover,
   a[aria-current="page"],
   .nav-link:hover {
-    background-color: $color-tercero-claro;
+    background-color: $color-cuarto;
   }
 
   .checkbox input#checkbox {
-    accent-color: $color-tercero-claro;
-  }
-
-  .toggleDark:hover,
-  .toggleLight {
-    color: $color-cuarto-claro;
+    accent-color: $color-cuarto;
   }
 }
