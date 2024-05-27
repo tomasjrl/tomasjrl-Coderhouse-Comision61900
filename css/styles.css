@@ -95,6 +95,10 @@ main.contacto {
   background-position: center;
 }
 
+main.contacto .contenedor .section3 form ::placeholder {
+  color: rgba(220, 220, 220, 0.5);
+}
+
 .navbar-toggler,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
@@ -136,6 +140,8 @@ h3,
 h4,
 p,
 a,
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
@@ -210,6 +216,9 @@ body.light-mode main.contacto {
   background-size: cover;
   background-position: center;
 }
+body.light-mode main.contacto .contenedor .section3 form ::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
 body.light-mode .navbar-toggler,
 body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
@@ -248,6 +257,8 @@ body.light-mode h3,
 body.light-mode h4,
 body.light-mode p,
 body.light-mode a,
+body.light-mode main.contacto .contenedor .section3 form input,
+body.light-mode main.contacto .contenedor .section3 form textarea,
 body.light-mode main.contacto .contenedor .section3 form label,
 body.light-mode main.contacto .contenedor .section3 form select,
 body.light-mode main.contacto .contenedor .section3 form button {
