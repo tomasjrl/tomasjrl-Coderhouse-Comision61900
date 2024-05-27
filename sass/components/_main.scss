@@ -31,3 +31,28 @@ main.contacto .contenedor .section3 form button {
   border-radius: 10px;
   padding: 2px;
 }
+
+// BACK TO TOP */
+
+.back-to-top {
+  position: relative;
+  bottom: 1rem;
+  height: 4rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dc143c;
+	border-radius: 0.5rem;
+	padding: 0.4rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	font-size: 4rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span {
+	transform: translateY(-8px);
+}
