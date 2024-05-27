@@ -1,0 +1,115 @@
+@mixin section-padding(
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $padding-left
+) {
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+}
+
+main#index {
+  padding-top: 1.8rem;
+
+  .section1 {
+    width: 100%;
+    max-width: 1000px;
+    @include section-padding(4rem, 1rem, 4rem, 1rem);
+    margin: auto;
+  }
+
+  .section2 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .divisor {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      margin: auto;
+      justify-content: space-between;
+
+      img {
+        height: 10rem;
+        object-fit: cover;
+        padding: 0.2rem;
+      }
+
+      .divisor-texto {
+        width: 100%;
+        height: 9rem;
+        margin: auto;
+        order: -1;
+
+        h3 {
+          width: 90%;
+          margin: auto;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+
+    .divisor1 {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      @include section-padding(4rem, 0, 4rem, 0);
+
+      h2 {
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .divisor2 .card {
+      background-color: transparent;
+      border: none;
+      position: relative;
+
+      .link {
+        border-radius: 20px;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+        width: 80%;
+      }
+
+      a.active {
+        position: absolute;
+        color: transparent;
+      }
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .divisor3 {
+      padding-top: 4rem;
+
+      .mapa {
+        max-width: 700px;
+        width: 80%;
+        margin-top: 40px;
+      }
+    }
+  }
+}

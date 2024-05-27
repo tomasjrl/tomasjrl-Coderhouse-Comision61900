@@ -1,0 +1,51 @@
+// APLICACION DE ESTILOS GENERALES PARA LOS 'MAIN' DE LOS HTML
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+// APLICACION DE ESTILOS GENERALES PARA 'TOP-SECTION' (carousel con imágenes en index/piano/canto/violin.html)
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+// APLICACION DE BORDER RADIUS PARA LOS ELEMENTOS DECLARADOS
+main .back-to-top,
+.main .section2 .divisor img,
+.main .section3 .divisor1 h2,
+.main .section3 .divisor2 h3,
+.main .section3 .divisor2 img,
+.main .section3 .divisor3 .mapa,
+main#musica div section div img,
+main#musica .divisor-2 .section4 a {
+  border-radius: 20px;
+}
+
+// APLICACION DE BORDER RADIUS PARA LOS ELEMENTOS DECLARADOS
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form button {
+  border-radius: 10px;
+  padding: 2px;
+}
+
+// BACK TO TOP
+.back-to-top {
+  position: relative;
+  bottom: 1rem;
+  height: 4rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.4rem;
+}
+
+.back-to-top span {
+	font-size: 4rem;
+}
+
+

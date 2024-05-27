@@ -1,0 +1,74 @@
+// MEDIAQUERIES 768px
+@media (max-width: 768px) {
+  // declaraciones en titulos y textos
+  h1,
+  h1 strong,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+  // declaraciones en index.html
+  main#index {
+    .main {
+      .section3 {
+
+        .divisor3 .mapa {
+          height: 15rem;
+        }
+
+        .divisor1 {
+          padding-top: 1rem;
+        }
+
+        .divisor2 {
+          .row {
+            .card.col-lg-4.col-sm-12 {
+              .card {
+                .row {
+                  .col-lg-12.col-sm-6 {
+                    .card-img-top {
+                      max-width: 60%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // declaraciones en contacto.html
+  main.contacto {
+    .contenedor {
+      h1 {
+        font-size: 2rem;
+      }
+      position: static;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+        "section1"
+        "section2"
+        "section3";
+      padding: 2rem;
+
+      .section3 form {
+        padding-top: 1.5rem;
+        gap: 0.1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 18rem;
+
+        input,
+        select,
+        textarea {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

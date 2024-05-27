@@ -1,0 +1,86 @@
+
+// FUENTE TIPOGRAFICA DE GOOGLEFONT IMPORTADA = "ROBOTO"
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap");
+
+// Mixin para text-transform / Para la capitalización de la tipografía
+@mixin text-transform($transform) {
+  text-transform: $transform;
+}
+
+// Mixin para letter-spacing  / Para el espaciado de cada letra de la tipografía
+@mixin letter-spacing($spacing) {
+  letter-spacing: $spacing;
+}
+
+// Mixin para font-size  / Para el tamaño de la tipografía
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+// Mixin para font-weight / Para el peso de la tipografía
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+// APLICACION DE LOS MIXIN EN ELEMENTOS / TITULOS Y TEXTOS
+h1,
+h2,
+h3 {
+  @include text-transform(uppercase);
+}
+
+h1,
+h1 strong,
+h2,
+h2 strong,
+p,
+strong {
+  @include letter-spacing(0.25rem);
+  text-wrap: balance;
+}
+
+h3,
+h4 {
+  @include letter-spacing(0.125rem);
+}
+
+h1 {
+  @include font-size(2.5rem);
+  @include font-weight(500);
+
+  strong {
+    @include font-weight(500);
+  }
+}
+
+h2 {
+  @include font-size(2rem);
+  @include font-weight(500);
+
+  strong {
+    @include font-weight(500);
+  }
+}
+
+h3 {
+  @include font-size(1.5rem);
+}
+
+h4 {
+  @include font-size(0.7rem);
+}
+
+p {
+  @include font-size(1.2rem);
+  @include font-weight(400);
+  text-wrap: pretty;
+}
+
+strong {
+  @include font-weight(400);
+}
+
+a {
+  text-decoration: none;
+  @include letter-spacing(0.125rem);
+}

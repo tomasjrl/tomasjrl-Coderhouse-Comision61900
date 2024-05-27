@@ -1,0 +1,63 @@
+// Mixin para display flex y justify-content
+@mixin flex-container($display: flex, $justify: null, $align: null) {
+  display: $display;
+  @if $justify != null {
+    justify-content: $justify;
+  }
+  @if $align != null {
+    align-items: $align;
+  }
+}
+
+// Mixin para padding
+@mixin padding($padding: null) {
+  @if $padding != null {
+    padding: $padding;
+  }
+}
+
+// Mixin para margin
+@mixin margin($margin: null) {
+  @if $margin != null {
+    margin: $margin;
+  }
+}
+
+// Mixin para width y height
+@mixin size($width: null, $height: null) {
+  @if $width != null {
+    width: $width;
+  }
+  @if $height != null {
+    height: $height;
+  }
+}
+
+// APLICACION DE LOS MIXIN EN ELEMENTOS DE FOOTER
+
+footer {
+  @include flex-container(flex, space-between, center);
+  @include padding(0.8rem);
+  @include size(100%, 4rem);
+
+  div#redes {
+    ul {
+      @include flex-container(flex);
+      @include margin(auto);
+      gap: 3rem;
+      padding-left: 0;
+
+      li {
+        a {
+          @include padding(0);
+          @include margin(0);
+        }
+      }
+    }
+  }
+
+  h4 {
+    @include padding(0);
+    @include margin(0);
+  }
+}

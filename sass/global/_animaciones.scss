@@ -1,0 +1,89 @@
+// Mixin para transiciones
+@mixin transition($properties) {
+  transition: $properties;
+}
+
+// Mixin para animaciones
+@mixin animation($name, $timeline, $range) {
+  animation-timeline: $timeline;
+  animation-name: $name;
+  animation-range: $range;
+  animation-fill-mode: both;
+}
+
+// Mixin para transformaciones al hacer hover / Función: escala mas grande el elemento al hacer hover y suaviza la animación
+@mixin hover-transform($scale) {
+  &:hover {
+    @include transition(transform 0.25s ease);
+    transform: scale($scale);
+  }
+}
+
+// Estilos para elementos con animación "transition" / Función: transición para suavizar la animación del cambio de color
+.navbar {
+  a {
+    @include transition(0.25s);
+  }
+}
+
+// Estilos para elementos con animación "hover-transform" y "transition" / Función: transición para suavizar la animación y escala mas grande el elemento al hacer hover
+main {
+  a,
+  img,
+  iframe.mapa {
+    @include hover-transform(1.06);
+    @include transition(transform 0.25s ease);
+  }
+}
+
+// Keyframes para animación "fadeIn"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// Estilos para elementos con animación "fadeIn" con clase .fade-in .fade1 .fade2 .fade3, section1, section2, section3
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 1s forwards;
+}
+
+.section1,
+.fade1 {
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.section2,
+.fade2 {
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.section3,
+.fade3 {
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+// ANIMACIONES BACK-TO-TOP
+
+.back-to-top,
+.back-to-top span {
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span {
+	transform: translateY(-8px);
+}

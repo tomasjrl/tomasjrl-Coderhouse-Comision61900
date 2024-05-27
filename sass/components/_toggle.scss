@@ -1,0 +1,49 @@
+// Mixin para visibilidad
+@mixin visibility($visibility) {
+  visibility: $visibility;
+}
+
+// Mixin para cursor
+@mixin cursor($cursor) {
+  cursor: $cursor;
+}
+
+// Mixin para posición
+@mixin position($position, $top: null, $left: null, $zIndex: null) {
+  position: $position;
+  @if $top != null {
+    top: $top;
+  }
+  @if $left != null {
+    left: $left;
+  }
+  @if $zIndex != null {
+    z-index: $zIndex;
+  }
+}
+
+// Mixin para display
+@mixin display($display) {
+  display: $display;
+}
+
+// DECLARACIONES PARA 'TOOGLEMODE' / Función: alterna la visibilidad de los iconos "sol/luna" que representan el "light-mode"/"dark-mode" donde se aplican la variables de colores oscuros/claros
+#toggleMode {
+  @include visibility(hidden);
+}
+
+.toggleDark,
+.toggleLight {
+  @include cursor(pointer);
+  @include position(fixed, 15px, 10px, 9999);
+}
+
+.toggleDark,
+#toggleMode:checked ~ .toggleLight {
+  @include display(block);
+}
+
+.toggleLight,
+#toggleMode:checked ~ .toggleDark {
+  @include display(none);
+}

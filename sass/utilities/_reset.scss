@@ -1,0 +1,22 @@
+// UNIVERSALES 
+* {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+// SCROLL SMOOTH PARA BACK-TO-TOP
+html {
+  scroll-behavior: smooth;
+}
+
+// BODY CON DVH
+body {
+  min-height: 100dvh;
+}
