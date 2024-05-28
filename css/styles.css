@@ -113,6 +113,7 @@ main.contacto .contenedor .section3 form ::placeholder {
 }
 
 .navbar-toggler,
+main#index .main .divisor2 .card a.active,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -179,6 +180,7 @@ footer div#redes ul li a:hover {
   color: rgb(225, 202, 83);
 }
 
+main#index .main .divisor2 .card a.active,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
@@ -250,6 +252,7 @@ body.light-mode main.contacto .contenedor .section3 form button {
   color: rgb(27, 26, 25);
 }
 body.light-mode .navbar-toggler,
+body.light-mode main#index .main .divisor2 .card a.active,
 body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
@@ -284,6 +287,7 @@ body.light-mode .navbar-toggler svg:hover,
 body.light-mode footer div#redes ul li a:hover {
   color: rgb(83, 152, 225);
 }
+body.light-mode main#index .main .divisor2 .card a.active,
 body.light-mode main#index .main .divisor2 .card a.active:hover,
 body.light-mode main#musica .divisor-2 .section4 a:hover,
 body.light-mode main.contacto .contenedor .section3 form button:hover,
@@ -560,7 +564,10 @@ main#index .section3 .divisor2 .card .link {
 }
 main#index .section3 .divisor2 .card a.active {
   position: absolute;
-  color: transparent;
+  opacity: 0;
+}
+main#index .section3 .divisor2 .card a.active:hover {
+  opacity: 1;
 }
 main#index .section3 .divisor2 .card img {
   width: 80%;
