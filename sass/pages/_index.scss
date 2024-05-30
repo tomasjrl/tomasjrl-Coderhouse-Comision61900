@@ -1,38 +1,47 @@
-@mixin section-padding(
-  $padding-top,
-  $padding-right,
-  $padding-bottom,
-  $padding-left
-) {
+@mixin section-padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
   padding-top: $padding-top;
   padding-right: $padding-right;
   padding-bottom: $padding-bottom;
   padding-left: $padding-left;
 }
 
+%full-width {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+%padding-horizontal {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 main#index {
   padding-top: 1.8rem;
 
   .section1 {
-    width: 100%;
-    max-width: 1000px;
+    @extend %full-width;
     @include section-padding(4rem, 1rem, 4rem, 1rem);
-    margin: auto;
   }
 
   .section2 {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @extend %full-width;
+    @extend %padding-horizontal;
 
     .divisor {
-      width: 100%;
-      display: flex;
+      @extend %full-width;
+      @extend %flex-space-between;
       gap: 0.5rem;
-      margin: auto;
-      justify-content: space-between;
 
       img {
         height: 10rem;
@@ -43,7 +52,6 @@ main#index {
       .divisor-texto {
         width: 100%;
         height: 9rem;
-        margin: auto;
         order: -1;
 
         h3 {
@@ -56,20 +64,14 @@ main#index {
   }
 
   .section3 {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    flex-direction: column;
+    @extend %padding-horizontal;
+    @extend %flex-column;
     justify-content: space-between;
     padding-bottom: 4rem;
 
     .divisor1 {
-      width: 100%;
-      max-width: 1000px;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
+      @extend %full-width;
+      @extend %flex-column;
       @include section-padding(4rem, 0, 4rem, 0);
 
       h2 {
@@ -94,7 +96,11 @@ main#index {
 
       a.active {
         position: absolute;
-        color: transparent;
+        opacity: 0;
+
+        &:hover {
+          opacity: 1;
+        }
       }
 
       img {
