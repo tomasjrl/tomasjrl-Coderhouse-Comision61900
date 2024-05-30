@@ -483,31 +483,38 @@ footer h4 {
   margin: 0;
 }
 
+main#index .section3 .divisor1, main#index .section2 .divisor, main#index .section2, main#index .section1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main#index .section3, main#index .section2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .section3 .divisor1, main#index .section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+main#index .section2 .divisor {
+  display: flex;
+  justify-content: space-between;
+}
+
 main#index {
   padding-top: 1.8rem;
 }
 main#index .section1 {
-  width: 100%;
-  max-width: 1000px;
   padding-top: 4rem;
   padding-right: 1rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
-  margin: auto;
-}
-main#index .section2 {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 main#index .section2 .divisor {
-  width: 100%;
-  display: flex;
   gap: 0.5rem;
-  margin: auto;
-  justify-content: space-between;
 }
 main#index .section2 .divisor img {
   height: 10rem;
@@ -517,7 +524,6 @@ main#index .section2 .divisor img {
 main#index .section2 .divisor .divisor-texto {
   width: 100%;
   height: 9rem;
-  margin: auto;
   order: -1;
 }
 main#index .section2 .divisor .divisor-texto h3 {
@@ -526,20 +532,10 @@ main#index .section2 .divisor .divisor-texto h3 {
   padding-bottom: 10px;
 }
 main#index .section3 {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 4rem;
 }
 main#index .section3 .divisor1 {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
   padding-top: 4rem;
   padding-right: 0;
   padding-bottom: 4rem;
@@ -581,13 +577,24 @@ main#index .section3 .divisor3 .mapa {
   margin-top: 40px;
 }
 
+main#musica .divisor-1 .section1,
+main#musica .divisor-1 .section2,
+main#musica .divisor-1 .section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .section3, main#index .section3 .divisor1 {
+  display: flex;
+  flex-direction: column;
+}
+
 main#musica {
   background-size: cover;
   background-position: center;
 }
-main#musica h1,
-main#musica h2,
-main#musica h3 {
+main#musica h1, main#musica h2, main#musica h3 {
   margin-bottom: 1rem;
   line-height: 2.5rem;
   width: 20%;
@@ -609,8 +616,6 @@ main#musica .divisor-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
   margin-top: 4rem;
@@ -619,19 +624,16 @@ main#musica .divisor-1 .section1,
 main#musica .divisor-1 .section2,
 main#musica .divisor-1 .section3 {
   display: flex;
-  align-items: center;
-  padding-bottom: 2rem;
-  width: 100%;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 main#musica .divisor-2 {
   margin: auto;
   padding-top: 2rem;
 }
 main#musica .divisor-2 .section4 {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
@@ -644,6 +646,27 @@ main#musica .divisor-2 .section4 a {
 }
 main#musica .divisor-2 .section4 h3 {
   width: 100%;
+}
+
+main.contacto .contenedor .section3 form, main#index .section3, main#index .section3 .divisor1, main#musica .divisor-1, main#musica .divisor-2 .section4 {
+  display: flex;
+  flex-direction: column;
+}
+
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea,
+main.contacto .contenedor .section3 form button {
+  max-width: 10rem;
+  min-height: 1.4rem;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+main.contacto .contenedor .section3 form input,
+main.contacto .contenedor .section3 form select,
+main.contacto .contenedor .section3 form textarea {
+  font-style: italic;
 }
 
 main.contacto {
@@ -676,32 +699,15 @@ main.contacto .contenedor .section3 {
 main.contacto .contenedor .section3 form {
   width: 100%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
 }
 main.contacto .contenedor .section3 form label {
   padding: 4px;
   letter-spacing: 0.25rem;
 }
-main.contacto .contenedor .section3 form input,
-main.contacto .contenedor .section3 form select,
-main.contacto .contenedor .section3 form textarea,
-main.contacto .contenedor .section3 form button {
-  max-width: 10rem;
-  min-height: 1.4rem;
-  margin: auto;
-  letter-spacing: 1px;
-}
-main.contacto .contenedor .section3 form input,
-main.contacto .contenedor .section3 form select,
-main.contacto .contenedor .section3 form textarea {
-  font-style: italic;
-}
 main.contacto .contenedor .section3 form button {
   padding: 0.8em;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 main.contacto .contenedor .section3 form .checkbox {
   display: flex;
