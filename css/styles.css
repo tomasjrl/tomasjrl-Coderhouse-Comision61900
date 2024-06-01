@@ -83,37 +83,37 @@ main iframe.mapa:hover {
 }
 
 main.principal {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 main.piano {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
 main.canto {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/4.webp");
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/4.webp");
   background-size: cover;
   background-position: center;
 }
 main.violin {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/3.webp");
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/3.webp");
   background-size: cover;
   background-position: center;
 }
 main.contacto {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/2.webp");
+  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
 
 main.contacto .contenedor .section3 form ::placeholder {
-  color: rgba(220, 220, 220, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-toggler,
-main#index .main .divisor2 .card a.active,
+main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -122,21 +122,21 @@ main.contacto .contenedor .section3 form select:hover,
 main.contacto .contenedor .section3 form textarea:hover,
 header a[aria-current=page],
 .nav-link:hover {
-  color: rgb(27, 26, 25);
+  color: rgb(234, 234, 234);
 }
 
 header nav.navbar,
 footer,
 main#musica .divisor-2 .section4 a,
 main.contacto .contenedor .section3 form button {
-  background-color: rgb(27, 26, 25);
+  background-color: rgb(234, 234, 234);
 }
 
 main#index .main .section3 .divisor1 h2,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
-  background-color: rgba(234, 234, 234, 0.1);
+  background-color: rgba(244, 244, 244, 0.4);
 }
 
 main#index .main .section3 .divisor1 h2,
@@ -163,13 +163,12 @@ h3,
 h4,
 p,
 a,
-main#index .main .divisor2 .card span.background,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form label,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form button {
-  color: rgb(234, 234, 234);
+  color: rgb(27, 26, 25);
 }
 
 .toggleDark,
@@ -177,10 +176,9 @@ main.contacto .contenedor .section3 form button {
 .navbar-brand:hover,
 .navbar-toggler svg:hover,
 footer div#redes ul li a:hover {
-  color: rgb(225, 202, 83);
+  color: rgb(83, 152, 225);
 }
 
-main#index .main .divisor2 .card a.active,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
@@ -189,16 +187,16 @@ main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
 a[aria-current=page],
 .nav-link:hover {
-  background-color: rgb(225, 202, 83);
+  background-color: rgb(83, 152, 225);
 }
 
 .checkbox input#checkbox {
-  accent-color: rgb(225, 202, 83);
+  accent-color: rgb(83, 152, 225);
 }
 
 .toggleDark:hover,
 .toggleLight {
-  color: rgb(83, 152, 225);
+  color: rgb(225, 202, 83);
 }
 
 main#index .main .divisor2 .card span.background,
@@ -206,99 +204,97 @@ main#index .main .divisor2 .card span.background,
   background-color: rgb(220, 20, 60);
 }
 
-body.light-mode main.principal {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+body.dark-mode main.principal {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode main.piano {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/1.webp");
+body.dark-mode main.piano {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/1.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode main.canto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/4.webp");
+body.dark-mode main.canto {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/4.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode main.violin {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/3.webp");
+body.dark-mode main.violin {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/3.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode main.contacto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+body.dark-mode main.contacto {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode main.contacto .contenedor .section3 form ::placeholder {
-  color: rgba(0, 0, 0, 0.5);
+body.dark-mode main.contacto .contenedor .section3 form ::placeholder {
+  color: rgba(220, 220, 220, 0.5);
 }
-body.light-mode .navbar-brand,
-body.light-mode .navbar-brand:visited,
-body.light-mode .navbar-toggler svg,
-body.light-mode .navbar-nav a,
-body.light-mode h1,
-body.light-mode h2,
-body.light-mode h3,
-body.light-mode h4,
-body.light-mode p,
-body.light-mode a,
-body.light-mode main.contacto .contenedor .section3 form input,
-body.light-mode main.contacto .contenedor .section3 form textarea,
-body.light-mode main.contacto .contenedor .section3 form label,
-body.light-mode main.contacto .contenedor .section3 form select,
-body.light-mode main.contacto .contenedor .section3 form button {
-  color: rgb(27, 26, 25);
-}
-body.light-mode .navbar-toggler,
-body.light-mode main#index .main .divisor2 .card a.active,
-body.light-mode main#index .main .divisor2 .card a.active:hover,
-body.light-mode main#musica .divisor-2 .section4 a:hover,
-body.light-mode main.contacto .contenedor .section3 form button:hover,
-body.light-mode main.contacto .contenedor .section3 form input:hover,
-body.light-mode main.contacto .contenedor .section3 form textarea:hover,
-body.light-mode header a[aria-current=page],
-body.light-mode .nav-link:hover {
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-brand:visited,
+body.dark-mode .navbar-toggler svg,
+body.dark-mode .navbar-nav a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode main.contacto .contenedor .section3 form input,
+body.dark-mode main.contacto .contenedor .section3 form textarea,
+body.dark-mode main.contacto .contenedor .section3 form label,
+body.dark-mode main.contacto .contenedor .section3 form select,
+body.dark-mode main.contacto .contenedor .section3 form button {
   color: rgb(234, 234, 234);
 }
-body.light-mode header nav.navbar,
-body.light-mode footer,
-body.light-mode main#musica .divisor-2 .section4 a,
-body.light-mode main.contacto .contenedor .section3 form button {
-  background-color: rgb(234, 234, 234);
+body.dark-mode .navbar-toggler,
+body.dark-mode main#index .main .divisor2 .card a.active:hover,
+body.dark-mode main#musica .divisor-2 .section4 a:hover,
+body.dark-mode main.contacto .contenedor .section3 form button:hover,
+body.dark-mode main.contacto .contenedor .section3 form input:hover,
+body.dark-mode main.contacto .contenedor .section3 form textarea:hover,
+body.dark-mode header a[aria-current=page],
+body.dark-mode .nav-link:hover {
+  color: rgb(27, 26, 25);
 }
-body.light-mode main#index .main .section3 .divisor1 h2,
-body.light-mode main.contacto .contenedor .section3 form input,
-body.light-mode main.contacto .contenedor .section3 form select,
-body.light-mode main.contacto .contenedor .section3 form textarea {
-  background-color: rgba(244, 244, 244, 0.4);
+body.dark-mode header nav.navbar,
+body.dark-mode footer,
+body.dark-mode main#musica .divisor-2 .section4 a,
+body.dark-mode main.contacto .contenedor .section3 form button {
+  background-color: rgb(27, 26, 25);
 }
-body.light-mode main.contacto {
-  background: linear-gradient(rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.5)), url("../assets/img/background/2.webp");
+body.dark-mode main#index .main .section3 .divisor1 h2,
+body.dark-mode main.contacto .contenedor .section3 form input,
+body.dark-mode main.contacto .contenedor .section3 form select,
+body.dark-mode main.contacto .contenedor .section3 form textarea {
+  background-color: rgba(234, 234, 234, 0.1);
+}
+body.dark-mode main.contacto {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/background/2.webp");
   background-size: cover;
   background-position: center;
 }
-body.light-mode .toggleLight:hover {
-  color: rgb(225, 202, 83);
-}
-body.light-mode .navbar-brand:hover,
-body.light-mode .navbar-toggler svg:hover,
-body.light-mode footer div#redes ul li a:hover {
+body.dark-mode .toggleDark:hover {
   color: rgb(83, 152, 225);
 }
-body.light-mode main#index .main .divisor2 .card a.active,
-body.light-mode main#index .main .divisor2 .card a.active:hover,
-body.light-mode main#musica .divisor-2 .section4 a:hover,
-body.light-mode main.contacto .contenedor .section3 form button:hover,
-body.light-mode main.contacto .contenedor .section3 form input:hover,
-body.light-mode main.contacto .contenedor .section3 form textarea:hover,
-body.light-mode a[aria-current=page],
-body.light-mode .nav-link:hover {
-  background-color: rgb(83, 152, 225);
+body.dark-mode .navbar-brand:hover,
+body.dark-mode .navbar-toggler svg:hover,
+body.dark-mode footer div#redes ul li a:hover {
+  color: rgb(225, 202, 83);
 }
-body.light-mode .checkbox input#checkbox {
-  accent-color: rgb(83, 152, 225);
+body.dark-mode main#index .main .divisor2 .card a.active:hover,
+body.dark-mode main#musica .divisor-2 .section4 a:hover,
+body.dark-mode main.contacto .contenedor .section3 form button:hover,
+body.dark-mode main.contacto .contenedor .section3 form input:hover,
+body.dark-mode main.contacto .contenedor .section3 form textarea:hover,
+body.dark-mode a[aria-current=page],
+body.dark-mode .nav-link:hover {
+  background-color: rgb(225, 202, 83);
+}
+body.dark-mode .checkbox input#checkbox {
+  accent-color: rgb(225, 202, 83);
 }
 
 h1,

@@ -1,16 +1,16 @@
 // VARIABLES COLOR
 
-$color-primero: rgb(27, 26, 25);
-$color-segundo: rgb(234, 234, 234);
-$color-tercero: rgb(225, 202, 83);
-$color-cuarto: rgb(83, 152, 225);
+$color-primero: rgb(234, 234, 234);
+$color-segundo: rgb(27, 26, 25);
+$color-tercero: rgb(83, 152, 225);
+$color-cuarto: rgb(225, 202, 83);
 $color-quinto: rgb(220, 20, 60);
-$color-fondo-op50: rgba(0, 0, 0, 0.5);
-$color-fondo-op50-claro: rgba(220, 220, 220, 0.5);
-$color-fondo-op100: rgb(0, 0, 0);
-$color-fondo-op100-claro: rgb(220, 220, 220, 0.9);
-$color-primero-transparente: rgba(234, 234, 234, 0.1);
-$color-primero-claro-transparente: rgba(244, 244, 244, 0.4);
+$color-fondo-op50: rgba(220, 220, 220, 0.5);
+$color-fondo-op50-oscuro: rgba(0, 0, 0, 0.5);
+$color-fondo-op100: rgb(220, 220, 220, 0.9);
+$color-fondo-op100-oscuro: rgb(0, 0, 0);
+$color-primero-transparente: rgba(244, 244, 244, 0.4);
+$color-primero-oscuro-transparente: rgba(234, 234, 234, 0.1);
 
 @mixin background-image($url) {
   background: linear-gradient(#{$color-fondo-op100}, #{$color-fondo-op50}),
@@ -19,7 +19,7 @@ $color-primero-claro-transparente: rgba(244, 244, 244, 0.4);
   background-position: center;
 }
 
-// 'DARK MODE' = Declaraciones
+// 'LIGHT MODE' = Declaraciones
 
 main {
   &.principal {
@@ -44,11 +44,11 @@ main {
 }
 
 main.contacto .contenedor .section3 form ::placeholder {
-  color: $color-fondo-op50-claro;
+  color: $color-fondo-op50-oscuro;
 }
 
 .navbar-toggler,
-main#index .main .divisor2 .card a.active,
+main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
@@ -85,7 +85,7 @@ main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form button {
-  border: solid 1px $color-primero;
+  border: solid 1px $color-segundo;
 }
 
 .navbar-brand,
@@ -98,7 +98,6 @@ h3,
 h4,
 p,
 a,
-main#index .main .divisor2 .card span.background,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form textarea,
 main.contacto .contenedor .section3 form label,
@@ -115,7 +114,6 @@ footer div#redes ul li a:hover {
   color: $color-tercero;
 }
 
-main#index .main .divisor2 .card a.active,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
@@ -141,13 +139,13 @@ main#index .main .divisor2 .card span.background,
   background-color: $color-quinto;
 }
 
-// 'LIGHT MODE' = Declaraciones
+// 'DARK MODE' = Declaraciones
 
-body.light-mode {
+body.dark-mode {
   @mixin background-image($url) {
     background: linear-gradient(
-        #{$color-fondo-op100-claro},
-        #{$color-fondo-op50-claro}
+        #{$color-fondo-op100-oscuro},
+        #{$color-fondo-op50-oscuro}
       ),
       url($url);
     background-size: cover;
@@ -199,7 +197,6 @@ body.light-mode {
   }
 
   .navbar-toggler,
-  main#index .main .divisor2 .card a.active,
   main#index .main .divisor2 .card a.active:hover,
   main#musica .divisor-2 .section4 a:hover,
   main.contacto .contenedor .section3 form button:hover,
@@ -221,16 +218,14 @@ body.light-mode {
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form select,
   main.contacto .contenedor .section3 form textarea {
-    background-color: $color-primero-claro-transparente;
+    background-color: $color-primero-oscuro-transparente;
   }
 
   main.contacto {
     @include background-image("../assets/img/background/2.webp");
   }
 
-
-
-  .toggleLight:hover {
+  .toggleDark:hover {
     color: $color-tercero;
   }
 
@@ -240,7 +235,6 @@ body.light-mode {
     color: $color-cuarto;
   }
 
-  main#index .main .divisor2 .card a.active,
   main#index .main .divisor2 .card a.active:hover,
   main#musica .divisor-2 .section4 a:hover,
   main.contacto .contenedor .section3 form button:hover,
