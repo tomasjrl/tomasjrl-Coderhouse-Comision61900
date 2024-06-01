@@ -12,13 +12,12 @@
 - meta description declarado
 - meta keyword declarado
 - title declarado
+- preload para contenidos primarios
 - lazyload para contenidos secundarios
 - aria-label para links
 - efectos ccs 3 (transiciones, transformaciones, animaciones, filtros, gradientes, bordes)
 - min-heigh 100dvh en el body
 - min-width 0 para los elementos
-- text-wrap balance en títulos
-- text-wrap pretty en textos
 - archivo sitemap.xml
 - archivo robots.txt
 - certificado SSL
@@ -32,13 +31,13 @@
 
 **index.html**
 *Mobile*
-- 75 Rendimiento 
+- 68 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 99 Rendimiento 
+- 89 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
@@ -46,46 +45,46 @@
 
 **piano.html**
 *Mobile*
-- 76 Rendimiento 
+- 72 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 99 Rendimiento 
+- 81 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
 
 **canto.html**
 *Mobile*
-- 78 Rendimiento 
+- 75 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 99 Rendimiento 
+- 82 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO
 
 **violin.html**
 *Mobile*
-- 86 Rendimiento 
+- 88 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
 
 *Desktop*
-- 99 Rendimiento 
+- 82 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO   
 
 **contacto.html**
 *Mobile*
-- 87 Rendimiento 
+- 86 Rendimiento 
 - 100 Accesibilidad  
 - 100 Prácticas recomendadas  
 - 100 SEO  
