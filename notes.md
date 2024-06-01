@@ -20,7 +20,8 @@
 - text-wrap balance en títulos
 - text-wrap pretty en textos
 - archivo sitemap.xml
-- certificado https
+- archivo robots.txt
+- certificado SSL
 
 ## W3C =  https://validator.w3.org/  ##
 - confirmado archivos html sin errores
