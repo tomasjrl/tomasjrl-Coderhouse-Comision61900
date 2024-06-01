@@ -1,7 +1,3 @@
-# Notas y comentarios 
-
-- Creado notes.md para comentar cambios y problemas encontrados.
-
 
 **ACTUALIZACIONES COMENTADAS**
 
@@ -27,73 +23,7 @@
 
 
 ## GoogleSpeed Insights = https://pagespeed.web.dev  ##
-- Aplicadas recomendaciones anunciadas, los resultados obtenidos actualmente son:
-
-**index.html**
-*Mobile*
-- 69 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO  
-
-*Desktop*
-- 92 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO
-
-
-**piano.html**
-*Mobile*
-- 70 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO  
-
-*Desktop*
-- 80 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO
-
-**canto.html**
-*Mobile*
-- 94 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO  
-
-*Desktop*
-- 86 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO
-
-**violin.html**
-*Mobile*
-- 73 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO  
-
-*Desktop*
-- 87 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO   
-
-**contacto.html**
-*Mobile*
-- 86 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO  
-
-*Desktop*
-- 98 Rendimiento 
-- 100 Accesibilidad  
-- 100 Prácticas recomendadas  
-- 100 SEO   
+- Aplicadas recomendaciones anunciadas.
 
 
 
