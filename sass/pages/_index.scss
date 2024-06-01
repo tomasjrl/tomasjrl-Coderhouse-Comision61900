@@ -32,6 +32,10 @@ main#index {
   .section1 {
     @extend %full-width;
     @include section-padding(4rem, 1rem, 4rem, 1rem);
+
+  h1 {
+    padding-bottom: 1.5rem;
+  }
   }
 
   .section2 {
@@ -42,6 +46,15 @@ main#index {
       @extend %full-width;
       @extend %flex-space-between;
       gap: 0.5rem;
+
+      h2 {
+        padding: 1.5rem;
+      }
+
+      p {
+        width: 90%;
+        margin: auto;
+      }
 
       img {
         height: 10rem;
@@ -72,12 +85,12 @@ main#index {
     .divisor1 {
       @extend %full-width;
       @extend %flex-column;
-      @include section-padding(4rem, 0, 4rem, 0);
+      @include section-padding(4rem, 0, 2rem, 0);
 
       h2 {
         padding: 1rem;
         margin: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -106,10 +119,19 @@ main#index {
       img {
         width: 80%;
       }
+
+      p {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
     }
 
     .divisor3 {
       padding-top: 4rem;
+
+      h3 {
+        padding: 1.5rem;
+      }
 
       .mapa {
         max-width: 700px;

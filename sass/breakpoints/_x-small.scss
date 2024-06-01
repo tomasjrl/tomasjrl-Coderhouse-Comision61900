@@ -12,7 +12,7 @@
   h1 strong,
   h2,
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   p,
@@ -24,9 +24,13 @@
   main#index {
     .main {
       .section2 {
+        padding-bottom: 4rem;
         .divisor {
           display: flex;
           flex-direction: column-reverse;
+          .divisor-texto {
+            margin-bottom: 1rem;
+          }
           .divisor-imagen {
             img {
               max-height: 9rem;
