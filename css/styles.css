@@ -171,14 +171,24 @@ main.contacto .contenedor .section3 form button {
   color: rgb(27, 26, 25);
 }
 
-.toggleDark,
-.toggleLight:hover,
-.navbar-brand:hover,
-.navbar-toggler svg:hover,
-footer div#redes ul li a:hover {
+.toggleDark:hover {
   color: rgb(7, 61, 212);
 }
 
+.toggleLight:hover {
+  color: rgb(225, 202, 83);
+}
+
+.toggleDark,
+.toggleLight,
+.navbar-brand:hover,
+.navbar-toggler svg:hover,
+footer div#redes ul li a:hover {
+  color: rgb(220, 20, 60);
+}
+
+main#index .main .divisor2 .card span.background,
+.back-to-top,
 main#index .main .divisor2 .card a.active:hover,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form select:hover,
@@ -187,21 +197,11 @@ main.contacto .contenedor .section3 form input:hover,
 main.contacto .contenedor .section3 form textarea:hover,
 a[aria-current=page],
 .nav-link:hover {
-  background-color: rgb(7, 61, 212);
+  background-color: rgb(220, 20, 60);
 }
 
 .checkbox input#checkbox {
-  accent-color: rgb(7, 61, 212);
-}
-
-.toggleDark:hover,
-.toggleLight {
-  color: rgb(225, 202, 83);
-}
-
-main#index .main .divisor2 .card span.background,
-.back-to-top {
-  background-color: rgb(220, 20, 60);
+  accent-color: rgb(220, 20, 60);
 }
 
 body.dark-mode main.principal {
@@ -249,14 +249,7 @@ body.dark-mode main.contacto .contenedor .section3 form select,
 body.dark-mode main.contacto .contenedor .section3 form button {
   color: rgb(240, 240, 240);
 }
-body.dark-mode .navbar-toggler,
-body.dark-mode main#index .main .divisor2 .card a.active:hover,
-body.dark-mode main#musica .divisor-2 .section4 a:hover,
-body.dark-mode main.contacto .contenedor .section3 form button:hover,
-body.dark-mode main.contacto .contenedor .section3 form input:hover,
-body.dark-mode main.contacto .contenedor .section3 form textarea:hover,
-body.dark-mode header a[aria-current=page],
-body.dark-mode .nav-link:hover {
+body.dark-mode .navbar-toggler {
   color: rgb(27, 26, 25);
 }
 body.dark-mode header nav.navbar,
@@ -276,25 +269,20 @@ body.dark-mode main.contacto {
   background-size: cover;
   background-position: center;
 }
-body.dark-mode .toggleDark:hover {
-  color: rgb(7, 61, 212);
+body.dark-mode .navbar-brand:hover {
+  color: rgb(220, 20, 60);
 }
-body.dark-mode .navbar-brand:hover,
-body.dark-mode .navbar-toggler svg:hover,
-body.dark-mode footer div#redes ul li a:hover {
-  color: rgb(225, 202, 83);
-}
+body.dark-mode main#index .main .divisor2 .card span.background,
+body.dark-mode .back-to-top,
 body.dark-mode main#index .main .divisor2 .card a.active:hover,
 body.dark-mode main#musica .divisor-2 .section4 a:hover,
+body.dark-mode main.contacto .contenedor .section3 form select:hover,
 body.dark-mode main.contacto .contenedor .section3 form button:hover,
 body.dark-mode main.contacto .contenedor .section3 form input:hover,
 body.dark-mode main.contacto .contenedor .section3 form textarea:hover,
 body.dark-mode a[aria-current=page],
 body.dark-mode .nav-link:hover {
-  background-color: rgb(225, 202, 83);
-}
-body.dark-mode .checkbox input#checkbox {
-  accent-color: rgb(225, 202, 83);
+  background-color: rgb(220, 20, 60);
 }
 
 h1,
