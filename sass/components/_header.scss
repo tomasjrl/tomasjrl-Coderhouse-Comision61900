@@ -60,10 +60,11 @@ header {
     @include flex-container(100%, space-evenly);
 
     a {
-      @include font-weight(200);
+      @include font-weight(400);
       width: 6rem;
       text-align: center;
       margin: 0.2rem;
+      
 
       // Estilos para enlaces con aria-current="page"
 
