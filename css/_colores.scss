@@ -218,8 +218,7 @@ body.dark-mode {
     @include background-image("../assets/img/background/2.webp");
   }
 
-  .navbar-brand:hover,
-  .navbar-toggler svg:hover {
+  .navbar-brand:hover {
     color: $color-quinto;
   }
 

@@ -269,7 +269,8 @@ body.dark-mode main.contacto {
   background-size: cover;
   background-position: center;
 }
-body.dark-mode .navbar-brand:hover {
+body.dark-mode .navbar-brand:hover,
+body.dark-mode .navbar-toggler svg:hover {
   color: rgb(220, 20, 60);
 }
 body.dark-mode main#index .main .divisor2 .card span.background,
