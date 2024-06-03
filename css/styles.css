@@ -112,6 +112,7 @@ main.contacto .contenedor .section3 form ::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.toggleLight:hover,
 .navbar-toggler,
 main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
