@@ -153,9 +153,9 @@ main.contacto .contenedor .section3 form button {
   border: solid 1px rgb(27, 26, 25);
 }
 
+.toggleDark:hover,
 .navbar-brand,
 .navbar-brand:visited,
-.navbar-toggler svg,
 .navbar-nav a,
 h1,
 h2,
@@ -171,17 +171,10 @@ main.contacto .contenedor .section3 form button {
   color: rgb(27, 26, 25);
 }
 
-.toggleDark:hover {
-  color: rgb(7, 61, 212);
-}
-
-.toggleLight:hover {
-  color: rgb(225, 202, 83);
-}
-
 .toggleDark,
 .toggleLight,
 .navbar-brand:hover,
+.navbar-toggler svg,
 .navbar-toggler svg:hover,
 footer div#redes ul li a:hover {
   color: rgb(220, 20, 60);
@@ -234,7 +227,6 @@ body.dark-mode main.contacto .contenedor .section3 form ::placeholder {
 }
 body.dark-mode .navbar-brand,
 body.dark-mode .navbar-brand:visited,
-body.dark-mode .navbar-toggler svg,
 body.dark-mode .navbar-nav a,
 body.dark-mode h1,
 body.dark-mode h2,
@@ -375,7 +367,7 @@ header .navbar-nav.ms-auto {
 header .navbar-brand {
   font-weight: 200;
   font-size: 1.8rem;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 header .navbar-toggler {
   border: none;

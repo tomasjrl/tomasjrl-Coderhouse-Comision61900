@@ -45,7 +45,7 @@ header {
   .navbar-brand {
     @include font-weight(200);
     @include font-size(1.8rem);
-    @include padding(20px);
+    @include padding(30px);
   }
 
   .navbar-toggler {
