@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /downloads/
 Allow: /
-
-Sitemap: https://musicarte.infinityfreeapp.com/sitemap.xml
