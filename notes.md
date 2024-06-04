@@ -7,6 +7,7 @@
 - ancho/alto declarados
 - meta description declarado
 - meta keyword declarado
+- meta author declarado
 - title declarado
 - preload para contenidos primarios
 - lazyload para contenidos secundarios
