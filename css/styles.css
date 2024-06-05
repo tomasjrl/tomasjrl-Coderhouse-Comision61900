@@ -461,23 +461,23 @@ footer h4 {
   margin: 0;
 }
 
-main#index .section3 .divisor1, main#index .section2 .divisor, main#index .section2, main#index .section1 {
+main#index .main .section3 .divisor1, main#index .main .section2 .divisor, main#index .main .section2, main#index .main .section1 {
   width: 100%;
   max-width: 1000px;
   margin: auto;
 }
 
-main#index .section3, main#index .section2 {
+main#index .main .section3, main#index .main .section2 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .section3 .divisor1, main#index .section3 {
+main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .main .section3 .divisor1, main#index .main .section3 {
   display: flex;
   flex-direction: column;
 }
 
-main#index .section2 .divisor {
+main#index .main .section2 .divisor {
   display: flex;
   justify-content: space-between;
 }
@@ -485,88 +485,91 @@ main#index .section2 .divisor {
 main#index {
   padding-top: 1.8rem;
 }
-main#index .section1 {
+main#index .main {
+  backdrop-filter: blur(8px);
+}
+main#index .main .section1 {
   padding-top: 4rem;
   padding-right: 1rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
 }
-main#index .section1 h1 {
+main#index .main .section1 h1 {
   padding-bottom: 1.5rem;
 }
-main#index .section2 .divisor {
+main#index .main .section2 .divisor {
   gap: 0.5rem;
 }
-main#index .section2 .divisor h2 {
+main#index .main .section2 .divisor h2 {
   padding: 1.5rem;
 }
-main#index .section2 .divisor p {
+main#index .main .section2 .divisor p {
   width: 90%;
   margin: auto;
 }
-main#index .section2 .divisor img {
+main#index .main .section2 .divisor img {
   height: 10rem;
   object-fit: cover;
   padding: 0.2rem;
 }
-main#index .section2 .divisor .divisor-texto {
+main#index .main .section2 .divisor .divisor-texto {
   width: 100%;
   height: 9rem;
   order: -1;
 }
-main#index .section2 .divisor .divisor-texto h3 {
+main#index .main .section2 .divisor .divisor-texto h3 {
   width: 90%;
   margin: auto;
   padding-bottom: 10px;
 }
-main#index .section3 {
+main#index .main .section3 {
   justify-content: space-between;
   padding-bottom: 4rem;
 }
-main#index .section3 .divisor1 {
+main#index .main .section3 .divisor1 {
   padding-top: 4rem;
   padding-right: 0;
   padding-bottom: 2rem;
   padding-left: 0;
 }
-main#index .section3 .divisor1 h2 {
+main#index .main .section3 .divisor1 h2 {
   padding: 1rem;
   margin: auto;
   margin-bottom: 2rem;
 }
-main#index .section3 .divisor2 .card {
+main#index .main .section3 .divisor2 .card {
   background-color: transparent;
   border: none;
   position: relative;
 }
-main#index .section3 .divisor2 .card .link {
+main#index .main .section3 .divisor2 .card .link {
   border-radius: 20px;
   padding: 0.5rem;
   margin-bottom: 4rem;
   font-size: 1.6rem;
   width: 80%;
 }
-main#index .section3 .divisor2 .card a.active {
+main#index .main .section3 .divisor2 .card a.active {
   position: absolute;
   opacity: 0;
 }
-main#index .section3 .divisor2 .card a.active:hover {
+main#index .main .section3 .divisor2 .card a.active:hover {
   opacity: 1;
 }
-main#index .section3 .divisor2 .card img {
+main#index .main .section3 .divisor2 .card img {
   width: 80%;
 }
-main#index .section3 .divisor2 .card p {
+main#index .main .section3 .divisor2 .card p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-main#index .section3 .divisor3 {
+main#index .main .section3 .divisor3 {
   padding-top: 4rem;
 }
-main#index .section3 .divisor3 h3 {
+main#index .main .section3 .divisor3 h3 {
   padding: 1.5rem;
 }
-main#index .section3 .divisor3 .mapa {
+main#index .main .section3 .divisor3 .mapa {
   max-width: 700px;
   width: 80%;
   margin-top: 40px;
@@ -580,7 +583,7 @@ main#musica .divisor-1 .section3 {
   justify-content: center;
 }
 
-main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .section3, main#index .section3 .divisor1 {
+main.contacto .contenedor .section3 form, main#musica .divisor-2 .section4, main#musica .divisor-1, main#index .main .section3, main#index .main .section3 .divisor1 {
   display: flex;
   flex-direction: column;
 }
@@ -644,7 +647,7 @@ main#musica .divisor-2 .section4 h3 {
   padding: 1rem;
 }
 
-main.contacto .contenedor .section3 form, main#index .section3, main#index .section3 .divisor1, main#musica .divisor-1, main#musica .divisor-2 .section4 {
+main.contacto .contenedor .section3 form, main#index .main .section3, main#index .main .section3 .divisor1, main#musica .divisor-1, main#musica .divisor-2 .section4 {
   display: flex;
   flex-direction: column;
 }

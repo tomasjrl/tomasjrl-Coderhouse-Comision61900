@@ -1,4 +1,9 @@
-@mixin section-padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+@mixin section-padding(
+  $padding-top,
+  $padding-right,
+  $padding-bottom,
+  $padding-left
+) {
   padding-top: $padding-top;
   padding-right: $padding-right;
   padding-bottom: $padding-bottom;
@@ -29,114 +34,118 @@
 main#index {
   padding-top: 1.8rem;
 
-  .section1 {
-    @extend %full-width;
-    @include section-padding(4rem, 1rem, 4rem, 1rem);
+  .main {
+    backdrop-filter: blur(8px);
 
-  h1 {
-    padding-bottom: 1.5rem;
-  }
-  }
-
-  .section2 {
-    @extend %full-width;
-    @extend %padding-horizontal;
-
-    .divisor {
+    .section1 {
       @extend %full-width;
-      @extend %flex-space-between;
-      gap: 0.5rem;
+      @include section-padding(4rem, 1rem, 4rem, 1rem);
 
-      h2 {
-        padding: 1.5rem;
+      h1 {
+        padding-bottom: 1.5rem;
       }
+    }
 
-      p {
-        width: 90%;
-        margin: auto;
-      }
+    .section2 {
+      @extend %full-width;
+      @extend %padding-horizontal;
 
-      img {
-        height: 10rem;
-        object-fit: cover;
-        padding: 0.2rem;
-      }
+      .divisor {
+        @extend %full-width;
+        @extend %flex-space-between;
+        gap: 0.5rem;
 
-      .divisor-texto {
-        width: 100%;
-        height: 9rem;
-        order: -1;
+        h2 {
+          padding: 1.5rem;
+        }
 
-        h3 {
+        p {
           width: 90%;
           margin: auto;
-          padding-bottom: 10px;
+        }
+
+        img {
+          height: 10rem;
+          object-fit: cover;
+          padding: 0.2rem;
+        }
+
+        .divisor-texto {
+          width: 100%;
+          height: 9rem;
+          order: -1;
+
+          h3 {
+            width: 90%;
+            margin: auto;
+            padding-bottom: 10px;
+          }
         }
       }
     }
-  }
 
-  .section3 {
-    @extend %padding-horizontal;
-    @extend %flex-column;
-    justify-content: space-between;
-    padding-bottom: 4rem;
-
-    .divisor1 {
-      @extend %full-width;
+    .section3 {
+      @extend %padding-horizontal;
       @extend %flex-column;
-      @include section-padding(4rem, 0, 2rem, 0);
+      justify-content: space-between;
+      padding-bottom: 4rem;
 
-      h2 {
-        padding: 1rem;
-        margin: auto;
-        margin-bottom: 2rem;
-      }
-    }
+      .divisor1 {
+        @extend %full-width;
+        @extend %flex-column;
+        @include section-padding(4rem, 0, 2rem, 0);
 
-    .divisor2 .card {
-      background-color: transparent;
-      border: none;
-      position: relative;
-
-      .link {
-        border-radius: 20px;
-        padding: 0.5rem;
-        margin-bottom: 4rem;
-        font-size: 1.6rem;
-        width: 80%;
-      }
-
-      a.active {
-        position: absolute;
-        opacity: 0;
-
-        &:hover {
-          opacity: 1;
+        h2 {
+          padding: 1rem;
+          margin: auto;
+          margin-bottom: 2rem;
         }
       }
 
-      img {
-        width: 80%;
+      .divisor2 .card {
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+        .link {
+          border-radius: 20px;
+          padding: 0.5rem;
+          margin-bottom: 4rem;
+          font-size: 1.6rem;
+          width: 80%;
+        }
+
+        a.active {
+          position: absolute;
+          opacity: 0;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 80%;
+        }
+
+        p {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
       }
 
-      p {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-    }
+      .divisor3 {
+        padding-top: 4rem;
 
-    .divisor3 {
-      padding-top: 4rem;
+        h3 {
+          padding: 1.5rem;
+        }
 
-      h3 {
-        padding: 1.5rem;
-      }
-
-      .mapa {
-        max-width: 700px;
-        width: 80%;
-        margin-top: 40px;
+        .mapa {
+          max-width: 700px;
+          width: 80%;
+          margin-top: 40px;
+        }
       }
     }
   }
