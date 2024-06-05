@@ -19,7 +19,7 @@ $color-transparente-oscuro: rgba(234, 234, 234, 0.1);
 
 main {
   &.principal {
-    @include background-image("../assets/img/background/1.webp");
+    @include background-image("../assets/img/background/0.webp");
   }
 
   &.piano {
@@ -148,7 +148,7 @@ body.dark-mode {
 
   main {
     &.principal {
-      @include background-image("../assets/img/background/1.webp");
+      @include background-image("../assets/img/background/0.webp");
     }
 
     &.piano {
