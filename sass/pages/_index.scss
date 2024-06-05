@@ -40,9 +40,14 @@ main#index {
     .section1 {
       @extend %full-width;
       @include section-padding(4rem, 1rem, 4rem, 1rem);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
 
       h1 {
-        padding-bottom: 1.5rem;
+        margin: auto;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
       }
     }
 
@@ -136,12 +141,18 @@ main#index {
 
       .divisor3 {
         padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         h3 {
           padding: 1.5rem;
+          margin: auto;
+          margin-bottom: 2rem;
         }
 
         .mapa {
+          margin: auto;
           max-width: 700px;
           width: 80%;
           margin-top: 40px;

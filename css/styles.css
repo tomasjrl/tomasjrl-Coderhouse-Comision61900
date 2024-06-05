@@ -133,16 +133,20 @@ main.contacto .contenedor .section3 form button {
   background-color: rgb(240, 240, 240);
 }
 
+main#index .main .section1 h1,
 main#index .main .section3 .divisor1 h2,
+main#index .main .section3 .divisor3 h3,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
   background-color: rgba(244, 244, 244, 0.4);
 }
 
+main#index .main .section1 h1,
 main#index .main .section3 .divisor1 h2,
 main#index .main .section3 .divisor2 h3,
 main#index .main .section3 .divisor2 img,
+main#index .main .section3 .divisor3 h3,
 main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
@@ -251,7 +255,9 @@ body.dark-mode main#musica .divisor-2 .section4 a,
 body.dark-mode main.contacto .contenedor .section3 form button {
   background-color: rgb(27, 26, 25);
 }
+body.dark-mode main#index .main .section1 h1,
 body.dark-mode main#index .main .section3 .divisor1 h2,
+body.dark-mode main#index .main .section3 .divisor3 h3,
 body.dark-mode main.contacto .contenedor .section3 form input,
 body.dark-mode main.contacto .contenedor .section3 form select,
 body.dark-mode main.contacto .contenedor .section3 form textarea {
@@ -406,9 +412,11 @@ main {
 }
 
 main .back-to-top,
+.main .section1 h1,
 .main .section2 .divisor img,
 .main .section3 .divisor1 h2,
 .main .section3 .divisor2 h3,
+.main .section3 .divisor3 h3,
 .main .section3 .divisor2 img,
 .main .section3 .divisor3 .mapa,
 main#musica div section div img,
@@ -493,9 +501,14 @@ main#index .main .section1 {
   padding-right: 1rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 main#index .main .section1 h1 {
-  padding-bottom: 1.5rem;
+  margin: auto;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 main#index .main .section2 .divisor {
   gap: 0.5rem;
@@ -565,11 +578,17 @@ main#index .main .section3 .divisor2 .card p {
 }
 main#index .main .section3 .divisor3 {
   padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main#index .main .section3 .divisor3 h3 {
   padding: 1.5rem;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 main#index .main .section3 .divisor3 .mapa {
+  margin: auto;
   max-width: 700px;
   width: 80%;
   margin-top: 40px;

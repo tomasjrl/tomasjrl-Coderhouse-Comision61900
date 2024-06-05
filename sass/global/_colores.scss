@@ -64,16 +64,20 @@ main.contacto .contenedor .section3 form button {
   background-color: $color-primero;
 }
 
+main#index .main .section1 h1,
 main#index .main .section3 .divisor1 h2,
+main#index .main .section3 .divisor3 h3,
 main.contacto .contenedor .section3 form input,
 main.contacto .contenedor .section3 form select,
 main.contacto .contenedor .section3 form textarea {
   background-color: $color-transparente-claro;
 }
 
+main#index .main .section1 h1,
 main#index .main .section3 .divisor1 h2,
 main#index .main .section3 .divisor2 h3,
 main#index .main .section3 .divisor2 img,
+main#index .main .section3 .divisor3 h3,
 main#index .main .section3 .divisor3 .mapa,
 main#musica .divisor-1 section div img,
 main#musica .divisor-2 .section4 img,
@@ -196,7 +200,9 @@ body.dark-mode {
     background-color: $color-segundo;
   }
 
+  main#index .main .section1 h1,
   main#index .main .section3 .divisor1 h2,
+  main#index .main .section3 .divisor3 h3,
   main.contacto .contenedor .section3 form input,
   main.contacto .contenedor .section3 form select,
   main.contacto .contenedor .section3 form textarea {
