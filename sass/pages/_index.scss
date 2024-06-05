@@ -35,8 +35,6 @@ main#index {
   padding-top: 1.8rem;
 
   .main {
-    backdrop-filter: blur(8px);
-
     .section1 {
       @extend %full-width;
       @include section-padding(4rem, 1rem, 4rem, 1rem);

@@ -493,9 +493,6 @@ main#index .main .section2 .divisor {
 main#index {
   padding-top: 1.8rem;
 }
-main#index .main {
-  backdrop-filter: blur(8px);
-}
 main#index .main .section1 {
   padding-top: 4rem;
   padding-right: 1rem;
