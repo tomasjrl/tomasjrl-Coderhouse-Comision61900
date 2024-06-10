@@ -1,5 +1,21 @@
-// MEDIAQUERIES 290px
-@media (max-width: 290px) {
+// MEDIAQUERIES 324px
+@media (max-width: 324px) {
+  // declaraciones generales
+
+  h1,
+  h1 strong {
+    font-size: 1.2rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    width: auto;
+  }
 
   // declaraciones en el "header" de los html
   header {
@@ -12,26 +28,48 @@
     }
   }
 
-  p {
-    font-size: 0.6rem;
-    width: auto;
-  }
-
   // declaraciones en el "footer" de los html
   footer {
     flex-direction: column;
     height: 6rem;
   }
 
-// declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
+  // declaraciones en index.html
+
+  main#index {
+    .main {
+      .section2 {
+        .divisor {
+          .divisor-imagen {
+            .segunda-imagen {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .section3 {
+        .divisor2 {
+          .row {
+            .card.col-lg-4.col-sm-12 {
+              .card {
+                .row {
+                  .col-lg-12.col-sm-6 {
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // declaraciones en piano/canto/violin.html = #musica (aplica a los tres html mencionados)
   main#musica {
     margin: 0;
     padding: 0;
-
-    h1,
-    h3 {
-      width: 100%;
-    }
 
     p {
       padding: 0;
@@ -55,10 +93,12 @@
   }
 
   // declaraciones en contacto.html
-  main.contacto {
+  .contacto {
     .contenedor {
-      h1 {
-        font-size: 1rem;
+      .section1 {
+        h1 {
+          font-size: 1.2rem;
+        }
       }
     }
   }

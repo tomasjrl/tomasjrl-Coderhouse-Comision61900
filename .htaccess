@@ -1,0 +1,5 @@
+ErrorDocument 400 http://www.musicarte.infinityfreeapp.com/pages/400.html
+ErrorDocument 401 http://www.musicarte.infinityfreeapp.com/pages/401.html
+ErrorDocument 403 http://www.musicarte.infinityfreeapp.com/pages/403.html
+ErrorDocument 404 http://www.musicarte.infinityfreeapp.com/pages/404.html
+ErrorDocument 503 http://www.musicarte.infinityfreeapp.com/pages/503.html
