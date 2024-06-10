@@ -15,29 +15,12 @@
   main#index {
     .main {
       .section3 {
-
         .divisor3 .mapa {
           height: 15rem;
         }
 
         .divisor1 {
           padding-top: 1rem;
-        }
-
-        .divisor2 {
-          .row {
-            .card.col-lg-4.col-sm-12 {
-              .card {
-                .row {
-                  .col-lg-12.col-sm-6 {
-                    .card-img-top {
-                      max-width: 60%;
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -57,7 +40,9 @@
       padding: 2rem;
 
       .section2 {
-        p {padding: 0.5rem;}
+        p {
+          padding: 0.5rem;
+        }
       }
 
       .section3 form {

@@ -127,8 +127,32 @@ main#index {
           }
         }
 
-        img {
-          width: 80%;
+        .overlay {
+          position: relative;
+
+          img {
+            // width: 80%;
+
+            &:hover {
+              display: none;
+            }
+          }
+
+          .name {
+            position: absolute;
+            top: 0;
+            left: 12px;
+            width: calc(100% - 1.5rem);
+            height: calc(100% - 1rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
         }
 
         p {

@@ -34,6 +34,10 @@ main {
     @include hover-transform(1.06);
     @include transition(transform 0.25s ease);
   }
+
+  .name {
+    @include transition(0.25s);
+  }
 }
 
 // Keyframes para animación "fadeIn"  / Función: suaviza aparición de los elementos de izquierda a derecha. Visible en canto/piano/violin/contacto.html

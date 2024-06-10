@@ -34,6 +34,9 @@ main iframe.mapa:hover {
   transition: transform 0.25s ease;
   transform: scale(1.06);
 }
+main .name {
+  transition: 0.25s;
+}
 
 @keyframes fadeIn {
   0% {
@@ -108,6 +111,10 @@ main.contacto {
   background-position: center;
 }
 
+main#index .main .divisor2 .card .overlay .name {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 main.contacto .contenedor .section3 form ::placeholder {
   color: rgba(0, 0, 0, 0.8);
 }
@@ -116,6 +123,7 @@ main.contacto .contenedor .section3 form ::placeholder {
 .navbar-toggler,
 main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
+main#index .main .divisor2 .card .overlay p.name,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -418,6 +426,7 @@ main .back-to-top,
 .main .section3 .divisor2 h3,
 .main .section3 .divisor3 h3,
 .main .section3 .divisor2 img,
+.main .section3 .divisor2 .name,
 .main .section3 .divisor3 .mapa,
 main#musica div section div img,
 main#musica .divisor-2 .section4 a {
@@ -566,8 +575,25 @@ main#index .main .section3 .divisor2 .card a.active {
 main#index .main .section3 .divisor2 .card a.active:hover {
   opacity: 1;
 }
-main#index .main .section3 .divisor2 .card img {
-  width: 80%;
+main#index .main .section3 .divisor2 .card .overlay {
+  position: relative;
+}
+main#index .main .section3 .divisor2 .card .overlay img:hover {
+  display: none;
+}
+main#index .main .section3 .divisor2 .card .overlay .name {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+main#index .main .section3 .divisor2 .card .overlay .name:hover {
+  opacity: 1;
 }
 main#index .main .section3 .divisor2 .card p {
   padding-top: 2rem;
@@ -756,6 +782,10 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#index .main .section3 .divisor2 .card a.active {
     width: 40%;
   }
+  main#index .main .section3 .divisor2 .card .col-lg-12.col-sm-6 {
+    max-width: 60%;
+    margin: auto;
+  }
   main.contacto .contenedor {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "section1 section3" "section2 section3";
@@ -781,9 +811,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   main#index .main .section3 .divisor1 {
     padding-top: 1rem;
-  }
-  main#index .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 .card-img-top {
-    max-width: 60%;
   }
   main.contacto .contenedor {
     position: static;
@@ -923,6 +950,9 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   main#index .main .section2 .divisor .divisor-imagen .segunda-imagen {
     display: none;
+  }
+  main#index .main .section3 .divisor2 .row .card.col-lg-4.col-sm-12 .card .row .col-lg-12.col-sm-6 {
+    max-width: 100%;
   }
   main#musica {
     margin: 0;
