@@ -864,9 +864,8 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#index .main .section2 .divisor .divisor-imagen img {
     max-height: 9rem;
   }
-  main#index .main .section3 .divisor2 .card span,
   main#index .main .section3 .divisor2 .card a.active:hover {
-    width: 80%;
+    width: 45%;
   }
   main#musica h1,
   main#musica h2,
