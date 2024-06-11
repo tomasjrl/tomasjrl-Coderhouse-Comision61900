@@ -837,6 +837,50 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   main#index .main .section3 .divisor1 {
     padding-top: 1rem;
   }
+  main#musica h1,
+  main#musica h2,
+  main#musica h3,
+  main#musica p {
+    width: 90%;
+  }
+  main#musica .divisor-1 .section1,
+  main#musica .divisor-1 .section2,
+  main#musica .divisor-1 .section3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  main#musica .divisor-1 section div {
+    order: -1;
+  }
+  main#musica .divisor-2 {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: auto;
+  }
+  main#musica .divisor-2 .section3 {
+    flex-direction: column;
+  }
+  main#musica .divisor-2 .section3 p {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  main#musica .divisor-2 .section3 a {
+    width: 30%;
+    margin: auto;
+  }
+  main#musica .fade1 {
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+  }
+  main#musica .fade2 {
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  main#musica .fade3 {
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
   main.contacto .contenedor {
     position: static;
     grid-template-columns: repeat(1, 1fr);
@@ -891,50 +935,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   main#index .main .section3 .divisor2 .card a.active:hover {
     width: 45%;
-  }
-  main#musica h1,
-  main#musica h2,
-  main#musica h3,
-  main#musica p {
-    width: 90%;
-  }
-  main#musica .divisor-1 .section1,
-  main#musica .divisor-1 .section2,
-  main#musica .divisor-1 .section3 {
-    flex-direction: column;
-    align-items: center;
-  }
-  main#musica .divisor-1 section div {
-    order: -1;
-  }
-  main#musica .divisor-2 {
-    width: 100%;
-    height: auto;
-    position: static;
-    margin: auto;
-  }
-  main#musica .divisor-2 .section3 {
-    flex-direction: column;
-  }
-  main#musica .divisor-2 .section3 p {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-  main#musica .divisor-2 .section3 a {
-    width: 30%;
-    margin: auto;
-  }
-  main#musica .fade1 {
-    animation-delay: 0.6s;
-    animation-fill-mode: forwards;
-  }
-  main#musica .fade2 {
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-  }
-  main#musica .fade3 {
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
   }
   main.contacto .contenedor .section3 form {
     width: 100%;
