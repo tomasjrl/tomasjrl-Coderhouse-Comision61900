@@ -591,6 +591,7 @@ main#index .main .section3 .divisor2 .card .overlay .name {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  cursor: default;
 }
 main#index .main .section3 .divisor2 .card .overlay .name:hover {
   opacity: 1;

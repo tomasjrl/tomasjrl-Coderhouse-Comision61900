@@ -148,6 +148,7 @@ main#index {
             align-items: center;
             justify-content: center;
             opacity: 0;
+            cursor: default;
 
             &:hover {
               opacity: 1;
