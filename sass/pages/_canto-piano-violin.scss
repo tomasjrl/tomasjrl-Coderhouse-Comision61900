@@ -95,6 +95,36 @@ main {
           width: 100%;
           padding: 1rem;
         }
+
+        .overlay {
+          position: relative;
+
+          img {
+            // width: 80%;
+
+            &:hover {
+              display: none;
+            }
+          }
+
+          .name {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 2rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            cursor: default;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
       }
     }
   }

@@ -111,7 +111,8 @@ main.contacto {
   background-position: center;
 }
 
-main#index .main .divisor2 .card .overlay .name {
+main#index .main .divisor2 .card .overlay .name,
+main#musica .divisor-2 .section4 .overlay .name {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -124,6 +125,7 @@ main.contacto .contenedor .section3 form ::placeholder {
 main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
 main#index .main .divisor2 .card .overlay p.name,
+main#musica .divisor-2 .section4 .overlay .name,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
@@ -429,7 +431,8 @@ main .back-to-top,
 .main .section3 .divisor2 .name,
 .main .section3 .divisor3 .mapa,
 main#musica div section div img,
-main#musica .divisor-2 .section4 a {
+main#musica .divisor-2 .section4 a,
+main#musica .divisor-2 .section4 .overlay .name {
   border-radius: 20px;
 }
 
@@ -688,6 +691,27 @@ main#musica .divisor-2 .section4 a {
 main#musica .divisor-2 .section4 h3 {
   width: 100%;
   padding: 1rem;
+}
+main#musica .divisor-2 .section4 .overlay {
+  position: relative;
+}
+main#musica .divisor-2 .section4 .overlay img:hover {
+  display: none;
+}
+main#musica .divisor-2 .section4 .overlay .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: default;
+}
+main#musica .divisor-2 .section4 .overlay .name:hover {
+  opacity: 1;
 }
 
 main.contacto .contenedor .section3 form, main#index .main .section3, main#index .main .section3 .divisor1, main#musica .divisor-1, main#musica .divisor-2 .section4 {
@@ -970,9 +994,6 @@ main.contacto .contenedor .section3 form .checkbox input#checkbox {
   }
   main#musica .divisor-2 .section4 a {
     padding: 0.5rem;
-  }
-  main#musica .divisor-2 .section4 img {
-    width: 90%;
   }
   .contacto .contenedor .section1 h1 {
     font-size: 1.2rem;

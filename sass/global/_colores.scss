@@ -39,7 +39,8 @@ main {
   }
 }
 
-main#index .main .divisor2 .card .overlay .name {
+main#index .main .divisor2 .card .overlay .name,
+main#musica .divisor-2 .section4 .overlay .name {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -52,6 +53,7 @@ main.contacto .contenedor .section3 form ::placeholder {
 main#index .main .divisor2 .card span.background,
 main#index .main .divisor2 .card a.active:hover,
 main#index .main .divisor2 .card .overlay p.name,
+main#musica .divisor-2 .section4 .overlay .name,
 main#musica .divisor-2 .section4 a:hover,
 main.contacto .contenedor .section3 form button:hover,
 main.contacto .contenedor .section3 form input:hover,
