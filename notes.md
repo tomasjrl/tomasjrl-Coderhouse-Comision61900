@@ -1,30 +1,52 @@
 
 **ACTUALIZACIONES COMENTADAS**
 
+## W3C =  https://validator.w3.org/  ##
+- confirmado archivos html sin errores
+
+## GoogleSpeed Insights = https://pagespeed.web.dev  ##
+- Aplicadas recomendaciones anunciadas.
+
 # CARACTERISTICAS SEO ##
-- imagenes formato webp
-- imagenes ajustadas en tamaño y compresión
-- ancho/alto declarados
+- Responsive web design
+- revisión con  W3C = Archivos .html sin errores
+- revisión con GoogleSpeed Insights = Recomendaciones aplicadas
+- certificado SSL
+- archivo sitemap.xml
+- archivo robots.txt
+- archivo .htaccess
+- imágenes formato .webp optimizadas en tamaño y compresión
+- atributo ancho/alto en imágenes
+- atributo preload para contenidos primarios
+- atributo lazyload para contenidos secundarios
+- atributo alt declarados
+- atributo aria-label para links
+- jerarquías de títulos h1 h2 h3 h4
 - meta description declarado
 - meta keyword declarado
 - meta author declarado
 - title declarado
-- preload para contenidos primarios
-- lazyload para contenidos secundarios
-- aria-label para links
-- efectos ccs 3 (transiciones, transformaciones, animaciones, filtros, gradientes, bordes)
-- min-heigh 100dvh en el body
-- min-width 0 para los elementos
+- favicon incorporado
+- animaciones incorporadas
+
+**GITHUB**
+- Actualizaciones desarrolladas en rama "SASS" 
+- Merge a rama "Master" para entrega final
+- archivo notes.md
 - archivo sitemap.xml
 - archivo robots.txt
-- certificado SSL
+- archivo .gitignore
+- archivo package.json
+- archivo package-lock.json
 
-## W3C =  https://validator.w3.org/  ##
-- confirmado archivos html sin errores
+**SERVIDOR**
+- Sitio alojado en Infinityfree
+- Certificado SSL incorporado
+- archivo sitemap.xml
+- archivo robots.txt
+- archivo .htaccess
 
 
-## GoogleSpeed Insights = https://pagespeed.web.dev  ##
-- Aplicadas recomendaciones anunciadas.
 
 
 
